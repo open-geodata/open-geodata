@@ -1,6 +1,7 @@
 #pycep_correios>=5.0.0
-requests>=2.26.0
-setuptools>=58.2.0
-chardet>=4.0.0
-folium>=0.12.0
-tqdm>=4.62.3
+#requests>=2.26.0
+#setuptools>=58.2.0
+#chardet>=4.0.0
+#folium>=0.12.0
+#tqdm>=4.62.3
+geopandas>=0.10.2
