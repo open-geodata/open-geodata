@@ -3,6 +3,8 @@
 <br>
 
 Pacote para disponibilizar dados espaciais!
+<br>
+Todos os datasets estão com *datum* WGS84 (EPSG: 4326).
 
 <br>
 
@@ -23,10 +25,13 @@ pip3 install open-geodata --upgrade
 ```python
 from open_geodata import geo
 
-geo.sp_250k
+
+# List geodataframes
+geo.get_dataset_names()
+
+# Load geodataframe
+geo.load_dataset('sp_250k_wgs84.geojson')
 ```
-
-
 
 <br>
 
@@ -35,4 +40,4 @@ geo.sp_250k
 ### *TODO*
 
 1. ...
-2. 
+
