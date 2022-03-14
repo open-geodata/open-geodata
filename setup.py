@@ -9,7 +9,7 @@ for line in open('requirements.txt'):
     if not li.startswith('#'):
         requirements.append(line.rstrip())
 
-VERSION = (0, 0, 3)  # (1, 0, 7, 'dev0')
+VERSION = (0, 0, 5)  # (1, 0, 7, 'dev0')
 __version__ = '.'.join(map(str, VERSION))
 
 setup(
@@ -17,7 +17,7 @@ setup(
     version=__version__,
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
-    description='Dados!',
+    description='Dados Espaciais do Brasil',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-geodata/open-geodata',
