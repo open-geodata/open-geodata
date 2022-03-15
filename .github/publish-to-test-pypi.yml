@@ -14,17 +14,36 @@ jobs:
       with:
         python-version: 3.9
 
+    # Git Add and Commit
     - name: Install pypa/build and incremental
       run: >-
         python -m pip install build incremental[scripts] --user
 
+    # Git Add and Commit
     - name: Update package version
       run: >-
         python -m incremental.update open_geodata --patch
 
+    # Git Add and Commit
     - name: Build a binary wheel and a source tarball
       run: >-
         python -m build --sdist --wheel --outdir dist/ .
+
+    # Git Add and Commit
+    - name: commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "Update Data using GitAction" -a
+
+    # Git Push
+    - name: push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.API_TOKEN_GITHUB }} # Definido na Organização
+        branch: ${{ github.ref }}
+
 
     - name: Publish distribution 📦 to Test PyPI
       uses: pypa/gh-action-pypi-publish@master
