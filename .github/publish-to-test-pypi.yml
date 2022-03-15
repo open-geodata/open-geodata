@@ -6,7 +6,6 @@ jobs:
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to TestPyPI
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@master
     - name: Set up Python 3.9
@@ -44,7 +43,7 @@ jobs:
         github_token: ${{ secrets.API_TOKEN_GITHUB }} # Definido na Organização
         branch: ${{ github.ref }}
 
-
+    #
     - name: Publish distribution 📦 to Test PyPI
       uses: pypa/gh-action-pypi-publish@master
       with:
