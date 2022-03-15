@@ -25,7 +25,7 @@ jobs:
 
     - name: Atualiza a versão
       run: >-
-        python -m incremental.update open_geodata
+        python -m incremental.update open_geodata --rc
 
     - name: Install pypa/build
       run: >-
