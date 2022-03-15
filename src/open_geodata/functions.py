@@ -5,9 +5,6 @@
 # Funções para trabalhar com dados geoespaciais
 
 
-
-
-
 def find_neighbors(gdf, column_name):
     """
     Encontre os vizinhos e insere coluna "neighbors" no geodataframe com seus nomes
