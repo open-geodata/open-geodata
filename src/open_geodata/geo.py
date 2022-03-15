@@ -5,7 +5,7 @@
 
 import os
 import geopandas as gpd
-from open_geodata import share_boundary
+from open_geodata.functions import share_boundary
 
 
 def get_dataset_names():
