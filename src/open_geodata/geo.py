@@ -4,8 +4,8 @@
 # Funções para carregar dados geoespaciais
 
 import os
-from functions import *
 import geopandas as gpd
+from open_geodata import share_boundary
 
 
 def get_dataset_names():

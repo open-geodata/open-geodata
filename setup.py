@@ -9,7 +9,7 @@ for line in open('requirements.txt'):
     if not li.startswith('#'):
         requirements.append(line.rstrip())
 
-VERSION = (0, 0, 9)  # (1, 0, 7, 'dev0')
+VERSION = (0, 0, 10)  # (1, 0, 7, 'dev0')
 __version__ = '.'.join(map(str, VERSION))
 
 setup(
@@ -49,6 +49,3 @@ setup(
         'Intended Audience :: Developers',
     ],
 )
-
-# TODO: Add version in traquitanas.__version__
-# https://stackoverflow.com/questions/17791481/creating-a-version-attribute-for-python-packages-without-getting-into-troubl
