@@ -14,23 +14,21 @@ jobs:
       with:
         python-version: 3.9
 
-    - name: Install pypa/build
+    - name: Install pypa/build and incremental
       run: >-
-        python -m
-        pip install
-        build
-        --user
+        python -m pip install build incremental[scripts] --user
+
+    - name: Update package version
+      run: >-
+        python -m incremental.update open_geodata --patch
+
     - name: Build a binary wheel and a source tarball
       run: >-
-        python -m
-        build
-        --sdist
-        --wheel
-        --outdir dist/
-        .
+        python -m build --sdist --wheel --outdir dist/ .
 
     - name: Publish distribution 📦 to Test PyPI
       uses: pypa/gh-action-pypi-publish@master
       with:
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
         repository_url: https://test.pypi.org/legacy/
+        print_hash: true

@@ -15,21 +15,13 @@ jobs:
       with:
         python-version: 3.9
 
-    - name: Atualiza pip
+    - name: Install pypa/build and incremental
       run: >-
-        python -m pip install --upgrade pip
+        python -m pip install build incremental[scripts] --user
 
-    - name: Instala incremenal
-      run: >-
-        pip3 install incremental[scripts]
-
-    - name: Atualiza a versão
+    - name: Update package version
       run: >-
         python -m incremental.update open_geodata --patch
-
-    - name: Install pypa/build
-      run: >-
-        python -m pip install build --user
 
     - name: Build a binary wheel and a source tarball
       run: >-
