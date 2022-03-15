@@ -15,10 +15,16 @@ jobs:
       with:
         python-version: 3.9
 
-    - name: Atualiza a versão
+    - name: Atualiza pip
       run: >-
         python -m pip install --upgrade pip
+
+    - name: Instala incremenal
+      run: >-
         pip3 install incremental[scripts]
+
+    - name: Atualiza a versão
+      run: >-
         python -m incremental.update open_geodata
 
     - name: Install pypa/build
