@@ -25,7 +25,6 @@ jobs:
 
     - name: Atualiza a versão
       run: >-
-        #https://github.com/twisted/incremental
         python -m incremental.update open_geodata --patch
 
     - name: Install pypa/build
