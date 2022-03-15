@@ -9,12 +9,11 @@ for line in open('requirements.txt'):
     if not li.startswith('#'):
         requirements.append(line.rstrip())
 
-VERSION = (0, 0, 14)  # (1, 0, 7, 'dev0')
-__version__ = '.'.join(map(str, VERSION))
+#VERSION = (0, 0, 14)  # (1, 0, 7, 'dev0')
+#__version__ = '.'.join(map(str, VERSION))
 
 setup(
     name='open_geodata',  # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
-    version=__version__,
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
     description='Dados Espaciais do Brasil',
@@ -22,6 +21,12 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/open-geodata/open-geodata',
     keywords='python, endereço aleatório, address',
+
+    # Version
+    # https://github.com/twisted/incremental
+    # version=__version__,
+    use_incremental=True,
+    setup_requires=['incremental'],
 
     # Python and Packages
     python_requires='>=3',
