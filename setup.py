@@ -33,7 +33,8 @@ setup(
     install_requires=requirements,
 
     # Entry
-    package_dir={'': 'src'},  # Our packages live under src but src is not a package itself
+    # Our packages live under src but src is not a package itself
+    package_dir={'': 'src'},
 
     # Quando são diversos módulos...
     packages=find_packages('src', exclude=['test']),

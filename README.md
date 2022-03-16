@@ -1,8 +1,6 @@
 # Open Geodata
 
 [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
-<br>
-[![Publish Python 🐍 distributions 📦 to TestPyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-test-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-test-pypi.yml)
 
 <br>
 
@@ -54,4 +52,3 @@ Limites administrativos municipais do Estado de São Paulo.
 ### *TODO*
 
 1. https://github.com/twisted/incremental
-
