@@ -2,6 +2,7 @@
 
 [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
 
+
 <br>
 
 Pacote para disponibilizar dados espaciais!
