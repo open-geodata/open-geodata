@@ -2,7 +2,6 @@
 
 [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
 
-
 <br>
 
 Pacote para disponibilizar dados espaciais!
@@ -27,7 +26,6 @@ pip3 install open-geodata --upgrade
 
 ```python
 from open_geodata import geo
-
 
 # List geodataframes
 geo.get_dataset_names()
