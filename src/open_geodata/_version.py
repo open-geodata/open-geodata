@@ -7,5 +7,5 @@ Provides open_geodata version information.
 
 from incremental import Version
 
-__version__ = Version("open_geodata", 22, 3, 17)
+__version__ = Version("open_geodata", 22, 3, 18)
 __all__ = ["__version__"]
