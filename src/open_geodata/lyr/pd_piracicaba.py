@@ -6,7 +6,7 @@ import seaborn as sns
 
 def macrozona():
     # Input
-    root = os.path.join(os.path.dirname(__file__), 'data', 'geo', 'sp_piracicaba')
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
     gdf = gpd.read_file(os.path.join(root, 'macrozonas.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
@@ -96,7 +96,7 @@ def popup_macrozona(row):
 
 def perimetro_urbano():
     # Input
-    root = os.path.join(os.path.dirname(__file__), 'data', 'geo', 'sp_piracicaba')
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
     gdf = gpd.read_file(os.path.join(root, 'divisa_perimetro.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
@@ -128,7 +128,7 @@ def perimetro_urbano():
 
 def divisa_municipal():
     # Input
-    root = os.path.join(os.path.dirname(__file__), 'data', 'geo', 'sp_piracicaba')
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
     gdf = gpd.read_file(os.path.join(root, 'divisa_municipal.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
@@ -152,7 +152,7 @@ def divisa_municipal():
 
 def divisa_urbano_rural():
     # Input
-    root = os.path.join(os.path.dirname(__file__), 'data', 'geo', 'sp_piracicaba')
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
     gdf = gpd.read_file(os.path.join(root, 'divisa_urbanorural.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
@@ -183,7 +183,7 @@ def divisa_urbano_rural():
 
 def divisa_abairramento():
     # Input
-    root = os.path.join(os.path.dirname(__file__), 'data', 'geo', 'sp_piracicaba')
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
     gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
