@@ -1,0 +1,646 @@
+id_municipio,municipio_nome,regiaogoverno_nome
+3500105,Adamantina,Adamantina
+3500204,Adolfo,São José do Rio Preto
+3500303,Aguaí,São João da Boa Vista
+3500402,Águas da Prata,São João da Boa Vista
+3500501,Águas de Lindóia,Bragança Paulista
+3500550,Águas de Santa Bárbara,Avaré
+3500600,Águas de São Pedro,Piracicaba
+3500709,Agudos,Bauru
+3500758,Alambari,Itapetininga
+3500808,Alfredo Marcondes,Presidente Prudente
+3500907,Altair,Barretos
+3501004,Altinópolis,Ribeirão Preto
+3501103,Alto Alegre,Araçatuba
+3501152,Alumínio,Sorocaba
+3501202,Álvares Florence,Votuporanga
+3501301,Álvares Machado,Presidente Prudente
+3501400,Álvaro de Carvalho,Marília
+3501509,Alvinlândia,Marília
+3501608,Americana,Campinas
+3501707,Américo Brasiliense,Araraquara
+3501806,Américo de Campos,Votuporanga
+3501905,Amparo,Bragança Paulista
+3502002,Analândia,Rio Claro
+3502101,Andradina,Andradina
+3502200,Angatuba,Itapetininga
+3502309,Anhembi,Botucatu
+3502408,Anhumas,Presidente Prudente
+3502507,Aparecida,Guaratinguetá
+3502606,Aparecida d'Oeste,Jales
+3502705,Apiaí,Itapeva
+3502754,Araçariguama,Sorocaba
+3502804,Araçatuba,Araçatuba
+3502903,Araçoiaba da Serra,Sorocaba
+3503000,Aramina,Franca
+3503109,Arandu,Avaré
+3503158,Arapeí,Cruzeiro
+3503208,Araraquara,Araraquara
+3503307,Araras,Limeira
+3503356,Arco-Íris,Tupã
+3503406,Arealva,Bauru
+3503505,Areias,Cruzeiro
+3503604,Areiópolis,Botucatu
+3503703,Ariranha,Catanduva
+3503802,Artur Nogueira,Campinas
+3503901,Arujá,São Paulo
+3503950,Aspásia,Jales
+3504008,Assis,Assis
+3504107,Atibaia,Bragança Paulista
+3504206,Auriflama,Araçatuba
+3504305,Avaí,Bauru
+3504404,Avanhandava,Araçatuba
+3504503,Avaré,Avaré
+3504602,Bady Bassitt,São José do Rio Preto
+3504701,Balbinos,Bauru
+3504800,Bálsamo,São José do Rio Preto
+3504909,Bananal,Cruzeiro
+3505005,Barão de Antonina,Avaré
+3505104,Barbosa,Araçatuba
+3505203,Bariri,Jaú
+3505302,Barra Bonita,Jaú
+3505351,Barra do Chapéu,Itapeva
+3505401,Barra do Turvo,Registro
+3505500,Barretos,Barretos
+3505609,Barrinha,Ribeirão Preto
+3505708,Barueri,São Paulo
+3505807,Bastos,Tupã
+3505906,Batatais,Franca
+3506003,Bauru,Bauru
+3506102,Bebedouro,Barretos
+3506201,Bento de Abreu,Araçatuba
+3506300,Bernardino de Campos,Ourinhos
+3506359,Bertioga,Santos
+3506409,Bilac,Araçatuba
+3506508,Birigui,Araçatuba
+3506607,Biritiba-Mirim,São Paulo
+3506706,Boa Esperança do Sul,Araraquara
+3506805,Bocaina,Jaú
+3506904,Bofete,Botucatu
+3507001,Boituva,Itapetininga
+3507100,Bom Jesus dos Perdões,Bragança Paulista
+3507159,Bom Sucesso de Itararé,Itapeva
+3507209,Borá,Tupã
+3507308,Boracéia,Jaú
+3507407,Borborema,Araraquara
+3507456,Borebi,Bauru
+3507506,Botucatu,Botucatu
+3507605,Bragança Paulista,Bragança Paulista
+3507704,Braúna,Araçatuba
+3507753,Brejo Alegre,Araçatuba
+3507803,Brodowski,Ribeirão Preto
+3507902,Brotas,Rio Claro
+3508009,Buri,Itapeva
+3508108,Buritama,Araçatuba
+3508207,Buritizal,Franca
+3508306,Cabrália Paulista,Bauru
+3508405,Cabreúva,Jundiaí
+3508504,Caçapava,São José dos Campos
+3508603,Cachoeira Paulista,Guaratinguetá
+3508702,Caconde,São João da Boa Vista
+3508801,Cafelândia,Lins
+3508900,Caiabu,Presidente Prudente
+3509007,Caieiras,São Paulo
+3509106,Caiuá,Presidente Prudente
+3509205,Cajamar,São Paulo
+3509254,Cajati,Registro
+3509304,Cajobi,Barretos
+3509403,Cajuru,Ribeirão Preto
+3509452,Campina do Monte Alegre,Itapetininga
+3509502,Campinas,Campinas
+3509601,Campo Limpo Paulista,Jundiaí
+3509700,Campos do Jordão,Taubaté
+3509809,Campos Novos Paulista,Assis
+3509908,Cananéia,Registro
+3509957,Canas,Guaratinguetá
+3510005,Cândido Mota,Assis
+3510104,Cândido Rodrigues,Araraquara
+3510153,Canitar,Ourinhos
+3510203,Capão Bonito,Itapeva
+3510302,Capela do Alto,Itapetininga
+3510401,Capivari,Piracicaba
+3510500,Caraguatatuba,Caraguatatuba
+3510609,Carapicuíba,São Paulo
+3510708,Cardoso,Votuporanga
+3510807,Casa Branca,São João da Boa Vista
+3510906,Cássia dos Coqueiros,Ribeirão Preto
+3511003,Castilho,Andradina
+3511102,Catanduva,Catanduva
+3511201,Catiguá,Catanduva
+3511300,Cedral,São José do Rio Preto
+3511409,Cerqueira César,Avaré
+3511508,Cerquilho,Itapetininga
+3511607,Cesário Lange,Itapetininga
+3511706,Charqueada,Piracicaba
+3557204,Chavantes,Ourinhos
+3511904,Clementina,Araçatuba
+3512001,Colina,Barretos
+3512100,Colômbia,Barretos
+3512209,Conchal,Limeira
+3512308,Conchas,Botucatu
+3512407,Cordeirópolis,Limeira
+3512506,Coroados,Araçatuba
+3512605,Coronel Macedo,Avaré
+3512704,Corumbataí,Rio Claro
+3512803,Cosmópolis,Campinas
+3512902,Cosmorama,Votuporanga
+3513009,Cotia,São Paulo
+3513108,Cravinhos,Ribeirão Preto
+3513207,Cristais Paulista,Franca
+3513306,Cruzália,Assis
+3513405,Cruzeiro,Cruzeiro
+3513504,Cubatão,Santos
+3513603,Cunha,Guaratinguetá
+3513702,Descalvado,São Carlos
+3513801,Diadema,São Paulo
+3513850,Dirce Reis,Jales
+3513900,Divinolândia,São João da Boa Vista
+3514007,Dobrada,Araraquara
+3514106,Dois Córregos,Jaú
+3514205,Dolcinópolis,Jales
+3514304,Dourado,São Carlos
+3514403,Dracena,Dracena
+3514502,Duartina,Bauru
+3514601,Dumont,Ribeirão Preto
+3514700,Echaporã,Marília
+3514809,Eldorado,Registro
+3514908,Elias Fausto,Piracicaba
+3514924,Elisiário,Catanduva
+3514957,Embaúba,Barretos
+3515004,Embu das Artes,São Paulo
+3515103,Embu-Guaçu,São Paulo
+3515129,Emilianópolis,Presidente Prudente
+3515152,Engenheiro Coelho,Campinas
+3515186,Espírito Santo do Pinhal,São João da Boa Vista
+3515194,Espírito Santo do Turvo,Ourinhos
+3557303,Estiva Gerbi,Campinas
+3515301,Estrela do Norte,Presidente Prudente
+3515202,Estrela d'Oeste,Fernandópolis
+3515350,Euclides da Cunha Paulista,Presidente Prudente
+3515400,Fartura,Avaré
+3515608,Fernando Prestes,Araraquara
+3515509,Fernandópolis,Fernandópolis
+3515657,Fernão,Marília
+3515707,Ferraz de Vasconcelos,São Paulo
+3515806,Flora Rica,Adamantina
+3515905,Floreal,Votuporanga
+3516002,Flórida Paulista,Adamantina
+3516101,Florínea,Assis
+3516200,Franca,Franca
+3516309,Francisco Morato,São Paulo
+3516408,Franco da Rocha,São Paulo
+3516507,Gabriel Monteiro,Araçatuba
+3516606,Gália,Marília
+3516705,Garça,Marília
+3516804,Gastão Vidigal,Araçatuba
+3516853,Gavião Peixoto,Araraquara
+3516903,General Salgado,Araçatuba
+3517000,Getulina,Lins
+3517109,Glicério,Araçatuba
+3517208,Guaiçara,Lins
+3517307,Guaimbê,Lins
+3517406,Guaíra,Barretos
+3517505,Guapiaçu,São José do Rio Preto
+3517604,Guapiara,Itapeva
+3517703,Guará,Franca
+3517802,Guaraçaí,Andradina
+3517901,Guaraci,Barretos
+3518008,Guarani d'Oeste,Fernandópolis
+3518107,Guarantã,Lins
+3518206,Guararapes,Araçatuba
+3518305,Guararema,São Paulo
+3518404,Guaratinguetá,Guaratinguetá
+3518503,Guareí,Itapetininga
+3518602,Guariba,Ribeirão Preto
+3518701,Guarujá,Santos
+3518800,Guarulhos,São Paulo
+3518859,Guatapará,Ribeirão Preto
+3518909,Guzolândia,Araçatuba
+3519006,Herculândia,Tupã
+3519055,Holambra,Campinas
+3519071,Hortolândia,Campinas
+3519105,Iacanga,Bauru
+3519204,Iacri,Tupã
+3519253,Iaras,Avaré
+3519303,Ibaté,São Carlos
+3519402,Ibirá,São José do Rio Preto
+3519501,Ibirarema,Assis
+3519600,Ibitinga,Araraquara
+3519709,Ibiúna,Sorocaba
+3519808,Icém,São José do Rio Preto
+3519907,Iepê,Presidente Prudente
+3520004,Igaraçu do Tietê,Jaú
+3520103,Igarapava,Franca
+3520202,Igaratá,São José dos Campos
+3520301,Iguape,Registro
+3520426,Ilha Comprida,Registro
+3520442,Ilha Solteira,Andradina
+3520400,Ilhabela,Caraguatatuba
+3520509,Indaiatuba,Campinas
+3520608,Indiana,Presidente Prudente
+3520707,Indiaporã,Fernandópolis
+3520806,Inúbia Paulista,Adamantina
+3520905,Ipaussu,Ourinhos
+3521002,Iperó,Sorocaba
+3521101,Ipeúna,Rio Claro
+3521150,Ipiguá,São José do Rio Preto
+3521200,Iporanga,Itapeva
+3521309,Ipuã,São Joaquim da Barra
+3521408,Iracemápolis,Limeira
+3521507,Irapuã,Catanduva
+3521606,Irapuru,Adamantina
+3521705,Itaberá,Itapeva
+3521804,Itaí,Avaré
+3521903,Itajobi,Catanduva
+3522000,Itaju,Jaú
+3522109,Itanhaém,Santos
+3522158,Itaóca,Itapeva
+3522208,Itapecerica da Serra,São Paulo
+3522307,Itapetininga,Itapetininga
+3522406,Itapeva,Itapeva
+3522505,Itapevi,São Paulo
+3522604,Itapira,Campinas
+3522653,Itapirapuã Paulista,Itapeva
+3522703,Itápolis,Araraquara
+3522802,Itaporanga,Avaré
+3522901,Itapuí,Jaú
+3523008,Itapura,Andradina
+3523107,Itaquaquecetuba,São Paulo
+3523206,Itararé,Itapeva
+3523305,Itariri,Registro
+3523404,Itatiba,Campinas
+3523503,Itatinga,Botucatu
+3523602,Itirapina,Rio Claro
+3523701,Itirapuã,Franca
+3523800,Itobi,São João da Boa Vista
+3523909,Itu,Sorocaba
+3524006,Itupeva,Jundiaí
+3524105,Ituverava,Franca
+3524204,Jaborandi,Barretos
+3524303,Jaboticabal,Ribeirão Preto
+3524402,Jacareí,São José dos Campos
+3524501,Jaci,São José do Rio Preto
+3524600,Jacupiranga,Registro
+3524709,Jaguariúna,Campinas
+3524808,Jales,Jales
+3524907,Jambeiro,São José dos Campos
+3525003,Jandira,São Paulo
+3525102,Jardinópolis,Ribeirão Preto
+3525201,Jarinu,Jundiaí
+3525300,Jaú,Jaú
+3525409,Jeriquara,Franca
+3525508,Joanópolis,Bragança Paulista
+3525607,João Ramalho,Tupã
+3525706,José Bonifácio,São José do Rio Preto
+3525805,Júlio Mesquita,Marília
+3525854,Jumirim,Sorocaba
+3525904,Jundiaí,Jundiaí
+3526001,Junqueirópolis,Dracena
+3526100,Juquiá,Registro
+3526209,Juquitiba,São Paulo
+3526308,Lagoinha,Taubaté
+3526407,Laranjal Paulista,Botucatu
+3526506,Lavínia,Andradina
+3526605,Lavrinhas,Cruzeiro
+3526704,Leme,Limeira
+3526803,Lençóis Paulista,Bauru
+3526902,Limeira,Limeira
+3527009,Lindóia,Bragança Paulista
+3527108,Lins,Lins
+3527207,Lorena,Guaratinguetá
+3527256,Lourdes,Araçatuba
+3527306,Louveira,Jundiaí
+3527405,Lucélia,Adamantina
+3527504,Lucianópolis,Bauru
+3527603,Luís Antônio,Ribeirão Preto
+3527702,Luiziânia,Araçatuba
+3527801,Lupércio,Marília
+3527900,Lutécia,Assis
+3528007,Macatuba,Bauru
+3528106,Macaubal,Votuporanga
+3528205,Macedônia,Fernandópolis
+3528304,Magda,Votuporanga
+3528403,Mairinque,Sorocaba
+3528502,Mairiporã,São Paulo
+3528601,Manduri,Avaré
+3528700,Marabá Paulista,Presidente Prudente
+3528809,Maracaí,Assis
+3528858,Marapoama,Catanduva
+3528908,Mariápolis,Adamantina
+3529005,Marília,Marília
+3529104,Marinópolis,Jales
+3529203,Martinópolis,Presidente Prudente
+3529302,Matão,Araraquara
+3529401,Mauá,São Paulo
+3529500,Mendonça,São José do Rio Preto
+3529609,Meridiano,Fernandópolis
+3529658,Mesópolis,Jales
+3529708,Miguelópolis,Franca
+3529807,Mineiros do Tietê,Jaú
+3530003,Mira Estrela,Fernandópolis
+3529906,Miracatu,Registro
+3530102,Mirandópolis,Andradina
+3530201,Mirante do Paranapanema,Presidente Prudente
+3530300,Mirassol,São José do Rio Preto
+3530409,Mirassolândia,São José do Rio Preto
+3530508,Mococa,São João da Boa Vista
+3530706,Mogi Guaçu,Campinas
+3530607,Mogi das Cruzes,São Paulo
+3530805,Mogi Mirim,Campinas
+3530904,Mombuca,Piracicaba
+3531001,Monções,Votuporanga
+3531100,Mongaguá,Santos
+3531209,Monte Alegre do Sul,Bragança Paulista
+3531308,Monte Alto,Ribeirão Preto
+3531407,Monte Aprazível,São José do Rio Preto
+3531506,Monte Azul Paulista,Barretos
+3531605,Monte Castelo,Dracena
+3531803,Monte Mor,Campinas
+3531704,Monteiro Lobato,São José dos Campos
+3531902,Morro Agudo,São Joaquim da Barra
+3532009,Morungaba,Campinas
+3532058,Motuca,Araraquara
+3532108,Murutinga do Sul,Andradina
+3532157,Nantes,Presidente Prudente
+3532207,Narandiba,Presidente Prudente
+3532306,Natividade da Serra,Taubaté
+3532405,Nazaré Paulista,Bragança Paulista
+3532504,Neves Paulista,São José do Rio Preto
+3532603,Nhandeara,Votuporanga
+3532702,Nipoã,São José do Rio Preto
+3532801,Nova Aliança,São José do Rio Preto
+3532827,Nova Campina,Itapeva
+3532843,Nova Canaã Paulista,Jales
+3532868,Nova Castilho,Araçatuba
+3532900,Nova Europa,Araraquara
+3533007,Nova Granada,São José do Rio Preto
+3533106,Nova Guataporanga,Dracena
+3533205,Nova Independência,Andradina
+3533304,Nova Luzitânia,Araçatuba
+3533403,Nova Odessa,Campinas
+3533254,Novais,Catanduva
+3533502,Novo Horizonte,Catanduva
+3533601,Nuporanga,São Joaquim da Barra
+3533700,Ocauçu,Marília
+3533809,Óleo,Ourinhos
+3533908,Olímpia,Barretos
+3534005,Onda Verde,São José do Rio Preto
+3534104,Oriente,Marília
+3534203,Orindiúva,São José do Rio Preto
+3534302,Orlândia,São Joaquim da Barra
+3534401,Osasco,São Paulo
+3534500,Oscar Bressane,Marília
+3534609,Osvaldo Cruz,Adamantina
+3534708,Ourinhos,Ourinhos
+3534807,Ouro Verde,Dracena
+3534757,Ouroeste,Fernandópolis
+3534906,Pacaembu,Adamantina
+3535002,Palestina,São José do Rio Preto
+3535101,Palmares Paulista,Catanduva
+3535200,Palmeira d'Oeste,Jales
+3535309,Palmital,Assis
+3535408,Panorama,Dracena
+3535507,Paraguaçu Paulista,Assis
+3535606,Paraibuna,São José dos Campos
+3535705,Paraíso,Catanduva
+3535804,Paranapanema,Avaré
+3535903,Paranapuã,Jales
+3536000,Parapuã,Tupã
+3536109,Pardinho,Botucatu
+3536208,Pariquera-Açu,Registro
+3536257,Parisi,Votuporanga
+3536307,Patrocínio Paulista,Franca
+3536406,Paulicéia,Dracena
+3536505,Paulínia,Campinas
+3536570,Paulistânia,Bauru
+3536604,Paulo de Faria,São José do Rio Preto
+3536703,Pederneiras,Bauru
+3536802,Pedra Bela,Bragança Paulista
+3536901,Pedranópolis,Fernandópolis
+3537008,Pedregulho,Franca
+3537107,Pedreira,Campinas
+3537156,Pedrinhas Paulista,Assis
+3537206,Pedro de Toledo,Registro
+3537305,Penápolis,Araçatuba
+3537404,Pereira Barreto,Andradina
+3537503,Pereiras,Botucatu
+3537602,Peruíbe,Santos
+3537701,Piacatu,Araçatuba
+3537800,Piedade,Sorocaba
+3537909,Pilar do Sul,Sorocaba
+3538006,Pindamonhangaba,Taubaté
+3538105,Pindorama,Catanduva
+3538204,Pinhalzinho,Bragança Paulista
+3538303,Piquerobi,Presidente Prudente
+3538501,Piquete,Guaratinguetá
+3538600,Piracaia,Bragança Paulista
+3538709,Piracicaba,Piracicaba
+3538808,Piraju,Avaré
+3538907,Pirajuí,Bauru
+3539004,Pirangi,Barretos
+3539103,Pirapora do Bom Jesus,São Paulo
+3539202,Pirapozinho,Presidente Prudente
+3539301,Pirassununga,Limeira
+3539400,Piratininga,Bauru
+3539509,Pitangueiras,Ribeirão Preto
+3539608,Planalto,São José do Rio Preto
+3539707,Platina,Assis
+3539806,Poá,São Paulo
+3539905,Poloni,São José do Rio Preto
+3540002,Pompéia,Marília
+3540101,Pongaí,Lins
+3540200,Pontal,Ribeirão Preto
+3540259,Pontalinda,Jales
+3540309,Pontes Gestal,Votuporanga
+3540408,Populina,Fernandópolis
+3540507,Porangaba,Botucatu
+3540606,Porto Feliz,Sorocaba
+3540705,Porto Ferreira,São Carlos
+3540754,Potim,Guaratinguetá
+3540804,Potirendaba,São José do Rio Preto
+3540853,Pracinha,Adamantina
+3540903,Pradópolis,Ribeirão Preto
+3541000,Praia Grande,Santos
+3541059,Pratânia,Botucatu
+3541109,Presidente Alves,Bauru
+3541208,Presidente Bernardes,Presidente Prudente
+3541307,Presidente Epitácio,Presidente Prudente
+3541406,Presidente Prudente,Presidente Prudente
+3541505,Presidente Venceslau,Presidente Prudente
+3541604,Promissão,Lins
+3541653,Quadra,Itapetininga
+3541703,Quatá,Tupã
+3541802,Queiroz,Tupã
+3541901,Queluz,Cruzeiro
+3542008,Quintana,Tupã
+3542107,Rafard,Piracicaba
+3542206,Rancharia,Presidente Prudente
+3542305,Redenção da Serra,Taubaté
+3542404,Regente Feijó,Presidente Prudente
+3542503,Reginópolis,Bauru
+3542602,Registro,Registro
+3542701,Restinga,Franca
+3542800,Ribeira,Itapeva
+3542909,Ribeirão Bonito,São Carlos
+3543006,Ribeirão Branco,Itapeva
+3543105,Ribeirão Corrente,Franca
+3543204,Ribeirão do Sul,Ourinhos
+3543238,Ribeirão dos Índios,Presidente Prudente
+3543253,Ribeirão Grande,Itapeva
+3543303,Ribeirão Pires,São Paulo
+3543402,Ribeirão Preto,Ribeirão Preto
+3543600,Rifaina,Franca
+3543709,Rincão,Araraquara
+3543808,Rinópolis,Tupã
+3543907,Rio Claro,Rio Claro
+3544004,Rio das Pedras,Piracicaba
+3544103,Rio Grande da Serra,São Paulo
+3544202,Riolândia,Votuporanga
+3543501,Riversul,Itapeva
+3544251,Rosana,Presidente Prudente
+3544301,Roseira,Guaratinguetá
+3544400,Rubiácea,Araçatuba
+3544509,Rubinéia,Jales
+3544608,Sabino,Lins
+3544707,Sagres,Adamantina
+3544806,Sales,Catanduva
+3544905,Sales Oliveira,São Joaquim da Barra
+3545001,Salesópolis,São Paulo
+3545100,Salmourão,Adamantina
+3545159,Saltinho,Piracicaba
+3545209,Salto,Sorocaba
+3545308,Salto de Pirapora,Sorocaba
+3545407,Salto Grande,Ourinhos
+3545506,Sandovalina,Presidente Prudente
+3545605,Santa Adélia,Catanduva
+3545704,Santa Albertina,Jales
+3545803,Santa Bárbara d'Oeste,Campinas
+3546009,Santa Branca,São José dos Campos
+3546108,Santa Clara d'Oeste,Jales
+3546207,Santa Cruz da Conceição,Limeira
+3546256,Santa Cruz da Esperança,Ribeirão Preto
+3546306,Santa Cruz das Palmeiras,São João da Boa Vista
+3546405,Santa Cruz do Rio Pardo,Ourinhos
+3546504,Santa Ernestina,Araraquara
+3546603,Santa Fé do Sul,Jales
+3546702,Santa Gertrudes,Rio Claro
+3546801,Santa Isabel,São Paulo
+3546900,Santa Lúcia,Araraquara
+3547007,Santa Maria da Serra,Piracicaba
+3547106,Santa Mercedes,Dracena
+3547502,Santa Rita do Passa Quatro,São Carlos
+3547403,Santa Rita d'Oeste,Jales
+3547601,Santa Rosa de Viterbo,Ribeirão Preto
+3547650,Santa Salete,Jales
+3547205,Santana da Ponte Pensa,Jales
+3547304,Santana de Parnaíba,São Paulo
+3547700,Santo Anastácio,Presidente Prudente
+3547809,Santo André,São Paulo
+3547908,Santo Antônio da Alegria,Ribeirão Preto
+3548005,Santo Antônio de Posse,Campinas
+3548054,Santo Antônio do Aracanguá,Araçatuba
+3548104,Santo Antônio do Jardim,São João da Boa Vista
+3548203,Santo Antônio do Pinhal,Taubaté
+3548302,Santo Expedito,Presidente Prudente
+3548401,Santópolis do Aguapeí,Araçatuba
+3548500,Santos,Santos
+3548609,São Bento do Sapucaí,Taubaté
+3548708,São Bernardo do Campo,São Paulo
+3548807,São Caetano do Sul,São Paulo
+3548906,São Carlos,São Carlos
+3549003,São Francisco,Jales
+3549102,São João da Boa Vista,São João da Boa Vista
+3549201,São João das Duas Pontes,Fernandópolis
+3549250,São João de Iracema,Araçatuba
+3549300,São João do Pau d'Alho,Dracena
+3549409,São Joaquim da Barra,São Joaquim da Barra
+3549508,São José da Bela Vista,Franca
+3549607,São José do Barreiro,Cruzeiro
+3549706,São José do Rio Pardo,São João da Boa Vista
+3549805,São José do Rio Preto,São José do Rio Preto
+3549904,São José dos Campos,São José dos Campos
+3549953,São Lourenço da Serra,São Paulo
+3550001,São Luís do Paraitinga,Taubaté
+3550100,São Manuel,Botucatu
+3550209,São Miguel Arcanjo,Itapetininga
+3550308,São Paulo,São Paulo
+3550407,São Pedro,Piracicaba
+3550506,São Pedro do Turvo,Ourinhos
+3550605,São Roque,Sorocaba
+3550704,São Sebastião,Caraguatatuba
+3550803,São Sebastião da Grama,São João da Boa Vista
+3550902,São Simão,Ribeirão Preto
+3551009,São Vicente,Santos
+3551108,Sarapuí,Itapetininga
+3551207,Sarutaiá,Avaré
+3551306,Sebastianópolis do Sul,Votuporanga
+3551405,Serra Azul,Ribeirão Preto
+3551603,Serra Negra,Bragança Paulista
+3551504,Serrana,Ribeirão Preto
+3551702,Sertãozinho,Ribeirão Preto
+3551801,Sete Barras,Registro
+3551900,Severínia,Barretos
+3552007,Silveiras,Cruzeiro
+3552106,Socorro,Bragança Paulista
+3552205,Sorocaba,Sorocaba
+3552304,Sud Mennucci,Andradina
+3552403,Sumaré,Campinas
+3552551,Suzanápolis,Andradina
+3552502,Suzano,São Paulo
+3552601,Tabapuã,Catanduva
+3552700,Tabatinga,Araraquara
+3552809,Taboão da Serra,São Paulo
+3552908,Taciba,Presidente Prudente
+3553005,Taguaí,Avaré
+3553104,Taiaçu,Barretos
+3553203,Taiúva,Barretos
+3553302,Tambaú,São João da Boa Vista
+3553401,Tanabi,São José do Rio Preto
+3553500,Tapiraí,Sorocaba
+3553609,Tapiratiba,São João da Boa Vista
+3553658,Taquaral,Ribeirão Preto
+3553708,Taquaritinga,Araraquara
+3553807,Taquarituba,Avaré
+3553856,Taquarivaí,Itapeva
+3553906,Tarabai,Presidente Prudente
+3553955,Tarumã,Assis
+3554003,Tatuí,Itapetininga
+3554102,Taubaté,Taubaté
+3554201,Tejupá,Avaré
+3554300,Teodoro Sampaio,Presidente Prudente
+3554409,Terra Roxa,Barretos
+3554508,Tietê,Sorocaba
+3554607,Timburi,Ourinhos
+3554656,Torre de Pedra,Botucatu
+3554706,Torrinha,Rio Claro
+3554755,Trabiju,Araraquara
+3554805,Tremembé,Taubaté
+3554904,Três Fronteiras,Jales
+3554953,Tuiuti,Bragança Paulista
+3555000,Tupã,Tupã
+3555109,Tupi Paulista,Dracena
+3555208,Turiúba,Araçatuba
+3555307,Turmalina,Fernandópolis
+3555356,Ubarana,São José do Rio Preto
+3555406,Ubatuba,Caraguatatuba
+3555505,Ubirajara,Bauru
+3555604,Uchoa,São José do Rio Preto
+3555703,União Paulista,São José do Rio Preto
+3555802,Urânia,Jales
+3555901,Uru,Lins
+3556008,Urupês,Catanduva
+3556107,Valentim Gentil,Votuporanga
+3556206,Valinhos,Campinas
+3556305,Valparaíso,Araçatuba
+3556354,Vargem,Bragança Paulista
+3556404,Vargem Grande do Sul,São João da Boa Vista
+3556453,Vargem Grande Paulista,São Paulo
+3556503,Várzea Paulista,Jundiaí
+3556602,Vera Cruz,Marília
+3556701,Vinhedo,Campinas
+3556800,Viradouro,Barretos
+3556909,Vista Alegre do Alto,Barretos
+3556958,Vitória Brasil,Jales
+3557006,Votorantim,Sorocaba
+3557105,Votuporanga,Votuporanga
+3557154,Zacarias,São José do Rio Preto
