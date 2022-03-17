@@ -41,8 +41,18 @@ geo.load_dataset('sp_250k_wgs84')
 from open_geodata import lyr
 
 # List geodataframes
-lry.google_hybrid(min_zoom, max_zoom)
+lry.base.google_hybrid(min_zoom, max_zoom)
 ```
+
+
+
+```python
+from open_geodata import folium_plus
+
+# List geodataframes
+folium_plus.adds.google_hybrid(min_zoom, max_zoom)
+```
+
 
 
 <br>
