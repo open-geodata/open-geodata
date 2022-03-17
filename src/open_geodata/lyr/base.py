@@ -5,7 +5,7 @@
 import folium
 
 
-def add_lyr_google_hybrid(min_zoom, max_zoom):
+def google_hybrid(min_zoom, max_zoom):
     row = {
         'link': 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
         'name': 'Google Hybrid',
@@ -25,7 +25,7 @@ def add_lyr_google_hybrid(min_zoom, max_zoom):
     return lyr
 
 
-def add_lyr_google_satellite(min_zoom, max_zoom):
+def google_satellite(min_zoom, max_zoom):
     row = {
         'link': 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
         'name': 'Google Satelite',
@@ -45,7 +45,7 @@ def add_lyr_google_satellite(min_zoom, max_zoom):
     return lyr
 
 
-def add_lyr_google_terrain(min_zoom, max_zoom):
+def google_terrain(min_zoom, max_zoom):
     row = {
         'link': 'https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
         'name': 'Google Terrain',
@@ -65,7 +65,7 @@ def add_lyr_google_terrain(min_zoom, max_zoom):
     return lyr
 
 
-def add_lyr_google_streets(min_zoom, max_zoom):
+def google_streets(min_zoom, max_zoom):
     row = {
         'link': 'https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
         'name': 'Google Streets',
@@ -85,7 +85,7 @@ def add_lyr_google_streets(min_zoom, max_zoom):
     return lyr
 
 
-def add_lyr_cartodbpositron(min_zoom, max_zoom):
+def cartodb_positron(min_zoom, max_zoom):
     lyr = folium.TileLayer(
         tiles='cartodbpositron',
         attr='Carto',

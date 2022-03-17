@@ -35,6 +35,16 @@ geo.get_dataset_names()
 geo.load_dataset('sp_250k_wgs84')
 ```
 
+
+
+```python
+from open_geodata import lyr
+
+# List geodataframes
+lry.google_hybrid(min_zoom, max_zoom)
+```
+
+
 <br>
 
 ---
