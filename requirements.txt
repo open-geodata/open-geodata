@@ -1,4 +1,5 @@
 setuptools>=58.2.0
 geopandas>=0.10.2
-folium~=0.12.1.post1
+folium>=0.11.0
 incremental~=21.3.0
+seaborn>=0.10
