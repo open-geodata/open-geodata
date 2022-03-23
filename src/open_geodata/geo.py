@@ -81,8 +81,8 @@ if __name__ == '__main__':
 
     # Read Geaodata
     # gdf = load_dataset('sp_250k_wgs84')
-    # gdf = load_dataset('divisa_municipal') # Localmente funciona
-    gdf = geo.load_dataset('divisa_municipal')  # Pacote funciona
+    #gdf = load_dataset('divisa_municipal') # Localmente funciona
+    gdf = geo.load_dataset('divisa_municipal')  # Pacote não funciona
     print(gdf.head())
 
     # Teste "find_neighbors" attribute table

@@ -1,8 +1,6 @@
 # Open Geodata
 
-
 [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
-
 
 <br>
 
@@ -36,16 +34,12 @@ geo.get_dataset_names()
 geo.load_dataset('sp_250k_wgs84')
 ```
 
-
-
 ```python
 from open_geodata import lyr
 
 # Add Layers
 lry.base.google_hybrid(min_zoom, max_zoom)
 ```
-
-
 
 ```python
 from open_geodata import folium_plus
@@ -54,7 +48,6 @@ from open_geodata import folium_plus
 m = folium_plus.adds.create_map_multitiles()
 m
 ```
-
 
 <br>
 
@@ -84,6 +77,5 @@ Limites do Plano Diretor do Município de Piracicaba.
 
 ### *TODO*
 
-1. https://github.com/twisted/incremental
+1. <https://github.com/twisted/incremental>
 2. Definir os *layers*
-
