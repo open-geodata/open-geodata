@@ -38,6 +38,8 @@ def load_dataset(name):
     # ff
     filename = os.path.basename(select_file)
     extension = os.path.splitext(filename)[1][1:]
+    print(select_file)
+    print(extension)
 
     # Load por tipo de arquivo
     if extension == '7z':
@@ -56,18 +58,20 @@ def load_dataset(name):
     if extension == 'geojson':
         gdf = gpd.read_file(os.path.join(select_file))
 
-    gdf.info()
     return gdf
 
 
 if __name__ == '__main__':
-    # dd
-    #list_shp = get_dataset_names()
-    #print(list_shp)
+    from open_geodata import geo
 
-    # Lê dados
+    # List Geodata
+    list_shp = get_dataset_names()
+    print(list_shp)
+
+    # Read Geaodata
     #gdf = load_dataset('sp_250k_wgs84')
-    gdf = load_dataset('divisa_municipal')
+    #gdf = load_dataset('divisa_municipal') # Localmente funciona
+    gdf = geo.load_dataset('divisa_municipal')  # Pacote funciona
     print(gdf.head())
 
     # Teste "find_neighbors" attribute table

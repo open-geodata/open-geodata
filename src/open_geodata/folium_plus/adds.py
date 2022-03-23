@@ -6,6 +6,7 @@ import os
 import folium
 import webbrowser
 import pandas as pd
+from open_geodata import lyr
 
 
 def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
@@ -52,13 +53,14 @@ def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
 
 
 if __name__ == '__main__':
-    # Tiles Path
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'tab', 'folium'))
-    print(root)
-
-    # Create Paths
+    # Create Map
     m = create_map_multitiles()
-    folium.LayerControl('topright', collapsed=True).add_to(m)
+
+    # Add Layers
+    m.add_child(lyr.pd_piracicaba.macrozona())
+
+    # Add Layer Control
+    folium.LayerControl('topright', collapsed=False).add_to(m)
 
     # Save/Open Map
     down_path = os.path.join(os.path.expanduser('~'), 'Downloads')

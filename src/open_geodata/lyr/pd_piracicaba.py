@@ -1,7 +1,12 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+
 import os
 import folium
 import geopandas as gpd
 import seaborn as sns
+from open_geodata import geo
 
 
 def macrozona():
@@ -9,13 +14,13 @@ def macrozona():
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
     gdf = gpd.read_file(os.path.join(root, 'macrozonas.geojson'))
     gdf = gdf.to_crs(epsg=4326)
+    print(root)
 
     # Column with category
     col_categories = 'Macrozona'
 
     # Set palette
-    palette_polygon = 'Paired'
-    palette_polygon = 'colorblind'
+    palette_polygon = 'colorblind' # 'Paired'
 
     # Get list of unique values
     categories = set(gdf[col_categories])
@@ -129,6 +134,7 @@ def perimetro_urbano():
 def divisa_municipal():
     # Input
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
+    print(root)
     gdf = gpd.read_file(os.path.join(root, 'divisa_municipal.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
@@ -164,7 +170,6 @@ def divisa_urbano_rural():
 
     # Shapefile
     lyr = folium.features.GeoJson(
-        # gjson,
         gdf,
         name='Divisão Urbano Rural',
         style_function=lambda x: {
@@ -183,8 +188,9 @@ def divisa_urbano_rural():
 
 def divisa_abairramento():
     # Input
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
+    #root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
+    #gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
+    gdf = geo.load_dataset('divisa_abairramento')
     gdf = gdf.to_crs(epsg=4326)
 
     # Shapefile
@@ -205,7 +211,6 @@ def divisa_abairramento():
             opacity=0.9,
             direction='auto',
         ),
-
         highlight_function=lambda x: {
             'weight': 3
         },
@@ -218,4 +223,25 @@ def divisa_abairramento():
 
 
 if __name__ == '__main__':
-    pass
+    # Create Maps
+    m = folium.Map(
+        location=[-23.9619271, -46.3427499],
+        zoom_start=10,
+        tiles=None,
+    )
+
+    # Read geodata
+    #root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
+    #gdf = gpd.read_file(os.path.join(root, 'macrozonas.geojson'))
+    #gdf = gdf.to_crs(epsg=4326)
+    #print(gdf.info())
+
+    #divisa_abairramento()
+    #a = os.path.isdir('/home/michel/Documents/Conda/envs/pablocarreira-py39/lib/python3.9/site-packages/open_geodata/data/geo/sp_piracicaba/')
+    #print(a)
+    gdf = geo.load_dataset('divisa_abairramento')
+    gdf = gdf.to_crs(epsg=4326)
+    print(gdf.info())
+
+
+    #macrozona()
