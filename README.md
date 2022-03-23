@@ -4,7 +4,6 @@
 
 <br>
 
-
 Pacote para disponibilizar dados espaciais!
 <br>
 Todos os datasets estão com *datum* WGS84 (EPSG: 4326).
