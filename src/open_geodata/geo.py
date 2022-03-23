@@ -35,7 +35,7 @@ def load_dataset(name):
             if file.split('.', maxsplit=1)[0] == name:
                 select_file = os.path.join(path, file)
 
-    # ff
+    # File
     filename = os.path.basename(select_file)
     extension = os.path.splitext(filename)[1][1:]
     print(select_file)
