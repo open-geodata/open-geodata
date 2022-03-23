@@ -1,15 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Funções para carregar dados geoespaciais
 
 import os
 import py7zr
 import geopandas as gpd
-#from open_geodata.functions import share_boundary, find_neighbors
+
+
+# from open_geodata.functions import share_boundary, find_neighbors
 
 
 def get_dataset_names():
+    """
+
+    :rtype: object
+    """
     list_shp = []
     root = os.path.join(os.path.dirname(__file__), 'data', 'geo')
     for path, subdir, files in os.walk(root):
@@ -19,6 +24,12 @@ def get_dataset_names():
 
 
 def load_dataset(name):
+    """
+    Funções para carregar dados geoespaciais
+
+    :param name:
+    :return:
+    """
     # Checa se existe
     list_shp = get_dataset_names()
     if name not in list_shp:
@@ -56,6 +67,7 @@ def load_dataset(name):
         gdf = gpd.read_file(bio)
 
     if extension == 'geojson':
+        print('Cheguei aqui!')
         gdf = gpd.read_file(os.path.join(select_file))
 
     return gdf
@@ -69,16 +81,16 @@ if __name__ == '__main__':
     print(list_shp)
 
     # Read Geaodata
-    #gdf = load_dataset('sp_250k_wgs84')
+    # gdf = load_dataset('sp_250k_wgs84')
     #gdf = load_dataset('divisa_municipal') # Localmente funciona
     gdf = geo.load_dataset('divisa_municipal')  # Pacote funciona
     print(gdf.head())
 
     # Teste "find_neighbors" attribute table
-    #gdf = find_neighbors(gdf, 'municipio_nome')
-    #print(gdf.head())
+    # gdf = find_neighbors(gdf, 'municipio_nome')
+    # print(gdf.head())
 
     # Teste "find_neighbors" spatial
-    #gdf_interest = gdf.loc[gdf['id_municipio'] == 3548906]
-    #gdf = share_boundary(gdf, gdf_interest)
-    #print(gdf.head())
+    # gdf_interest = gdf.loc[gdf['id_municipio'] == 3548906]
+    # gdf = share_boundary(gdf, gdf_interest)
+    # print(gdf.head())
