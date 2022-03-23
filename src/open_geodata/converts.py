@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Funções para carregar dados geoespaciais
-
-
-
-
 
 def dms2dd(coord):
     """
