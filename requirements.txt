@@ -4,3 +4,4 @@ folium>=0.11.0
 incremental~=21.3.0
 seaborn>=0.10
 pandas>=0.10
+py7zr>=0.18.1

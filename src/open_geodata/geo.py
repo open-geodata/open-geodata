@@ -6,7 +6,7 @@
 import os
 import py7zr
 import geopandas as gpd
-from open_geodata.functions import share_boundary, find_neighbors
+#from open_geodata.functions import share_boundary, find_neighbors
 
 
 def get_dataset_names():

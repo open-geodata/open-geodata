@@ -39,7 +39,7 @@ geo.load_dataset('sp_250k_wgs84')
 ```python
 from open_geodata import lyr
 
-# List geodataframes
+# Add Layers
 lry.base.google_hybrid(min_zoom, max_zoom)
 ```
 
@@ -48,10 +48,10 @@ lry.base.google_hybrid(min_zoom, max_zoom)
 ```python
 from open_geodata import folium_plus
 
-# List geodataframes
-folium_plus.adds.google_hybrid(min_zoom, max_zoom)
+# Create Map
+m = folium_plus.adds.create_map_multitiles()
+m
 ```
-
 
 
 <br>
