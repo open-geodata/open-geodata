@@ -1,0 +1,5 @@
+src/open_geodata/data/geo/sp_piracicaba/divisa_abairramento.geojson
+src/open_geodata/data/geo/sp_piracicaba/divisa_municipal.geojson
+src/open_geodata/data/geo/sp_piracicaba/divisa_perimetro.geojson
+src/open_geodata/data/geo/sp_piracicaba/divisa_urbanorural.geojson
+src/open_geodata/data/geo/sp_piracicaba/macrozonas.geojson
