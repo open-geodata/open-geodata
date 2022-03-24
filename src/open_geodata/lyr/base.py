@@ -11,7 +11,7 @@ def google_hybrid(min_zoom, max_zoom):
         'name': 'Google Hybrid',
         'attribution': 'https://www.google.com/maps',
     }
-    lyr = folium.TileLayer(
+    return folium.TileLayer(
         tiles=row['link'],
         attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
         name=row['name'],
@@ -22,7 +22,6 @@ def google_hybrid(min_zoom, max_zoom):
         control=True,
         show=True,
     )
-    return lyr
 
 
 def google_satellite(min_zoom, max_zoom):
@@ -31,7 +30,7 @@ def google_satellite(min_zoom, max_zoom):
         'name': 'Google Satelite',
         'attribution': 'https://www.google.com/maps',
     }
-    lyr = folium.TileLayer(
+    return folium.TileLayer(
         tiles=row['link'],
         attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
         name=row['name'],
@@ -42,7 +41,6 @@ def google_satellite(min_zoom, max_zoom):
         control=True,
         show=False,
     )
-    return lyr
 
 
 def google_terrain(min_zoom, max_zoom):
@@ -51,7 +49,7 @@ def google_terrain(min_zoom, max_zoom):
         'name': 'Google Terrain',
         'attribution': 'https://www.google.com/maps',
     }
-    lyr = folium.TileLayer(
+    return folium.TileLayer(
         tiles=row['link'],
         attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
         name=row['name'],
@@ -62,7 +60,6 @@ def google_terrain(min_zoom, max_zoom):
         control=True,
         show=False,
     )
-    return lyr
 
 
 def google_streets(min_zoom, max_zoom):
@@ -71,7 +68,7 @@ def google_streets(min_zoom, max_zoom):
         'name': 'Google Streets',
         'attribution': 'https://www.google.com/maps',
     }
-    lyr = folium.TileLayer(
+    return folium.TileLayer(
         tiles=row['link'],
         attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
         name=row['name'],
@@ -82,11 +79,10 @@ def google_streets(min_zoom, max_zoom):
         control=True,
         show=False,
     )
-    return lyr
 
 
 def cartodb_positron(min_zoom, max_zoom):
-    lyr = folium.TileLayer(
+    return folium.TileLayer(
         tiles='cartodbpositron',
         attr='Carto',
         name='CartoDB Positron',
@@ -96,7 +92,6 @@ def cartodb_positron(min_zoom, max_zoom):
         control=True,
         show=False,
     )
-    return lyr
 
 
 if __name__ == '__main__':

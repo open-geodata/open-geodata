@@ -35,7 +35,7 @@ def dms2dd(coord):
 def dms2dd_infoaguas(coord_dms):
     """
 
-    Para usar eum uma coluna
+    Para usar em uma coluna
     df.loc[:, 'latitude_dd'] = df['latitude_dms'].astype(str).apply(lambda x: dms2dd(x))
 
     :param coord_dms:
