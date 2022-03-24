@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import geopandas as gpd
+from shapely.geometry import Point
+
 
 def dms2dd(coord):
     """
@@ -100,6 +103,29 @@ def df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=Tr
         geojson['features'].append(feature)
 
     return geojson
+
+
+def df2geojson2(df, lat='latitude', long='longitude', epsg=4326):
+    """
+
+    :param epsg:
+    :param df:
+    :param lat:
+    :param long:
+    :param remove_coords_properties:
+    :return:
+    """
+    # Create Geometry
+    geometry = [Point(xy) for xy in zip(df[long], df[lat])]
+
+    # Create Geodataframe
+    gdf = gpd.GeoDataFrame(
+        df,
+        crs='EPSG:{}'.format(epsg),
+        geometry=geometry
+    )
+    gdf.drop([lat, long], axis=1, inplace=True, errors='ignore')
+    return gdf
 
 
 if __name__ == '__main__':

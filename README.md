@@ -49,6 +49,13 @@ m = folium_plus.adds.create_map_multitiles()
 m
 ```
 
+```python
+from open_geodata import converts
+
+converts.df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=True)
+```
+
+
 <br>
 
 ---

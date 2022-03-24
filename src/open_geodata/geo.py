@@ -46,8 +46,6 @@ def load_dataset(name):
     # File
     filename = os.path.basename(select_file)
     extension = os.path.splitext(filename)[1][1:]
-    print(select_file)
-    print(extension)
 
     # Load por tipo de arquivo
     if extension == '7z':
@@ -65,7 +63,6 @@ def load_dataset(name):
 
     # Se o arquivo é um
     if extension == 'geojson':
-        print('Cheguei aqui!')
         gdf = gpd.read_file(select_file)
 
     return gdf
@@ -80,16 +77,16 @@ if __name__ == '__main__':
     print(list_shp)
 
     # Read Geaodata
-    # gdf = load_dataset('sp_250k_wgs84')
+    gdf = load_dataset('sp_250k_wgs84')
     #gdf = load_dataset('divisa_municipal') # Localmente funciona
-    gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
-    print(gdf.head())
+    #gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
 
     # Teste "find_neighbors" attribute table
-    # gdf = find_neighbors(gdf, 'municipio_nome')
-    # print(gdf.head())
+    #gdf = find_neighbors(gdf, 'municipio_nome')
 
     # Teste "find_neighbors" spatial
     # gdf_interest = gdf.loc[gdf['id_municipio'] == 3548906]
     # gdf = share_boundary(gdf, gdf_interest)
-    # print(gdf.head())
+
+    # Results
+    print(gdf.head())

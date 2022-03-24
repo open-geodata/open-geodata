@@ -4,9 +4,8 @@
 
 import os
 import folium
+import webbrowser
 import geopandas as gpd
-import seaborn as sns
-from open_geodata import geo
 
 
 def macrozona():
@@ -14,35 +13,27 @@ def macrozona():
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
     gdf = gpd.read_file(os.path.join(root, 'macrozonas.geojson'))
     gdf = gdf.to_crs(epsg=4326)
-    print(root)
-
-    # Column with category
-    col_categories = 'Macrozona'
-
-    # Set palette
-    palette_polygon = 'colorblind' # 'Paired'
-
-    # Get list of unique values
-    categories = set(gdf[col_categories])
-    categories = list(categories)
-    categories.sort()
-
-    # See the palette chosed
-    pal = sns.color_palette(palette_polygon, n_colors=len(categories))
 
     # Set dictionary
-    color_polygon = dict(zip(categories, pal.as_hex()))
+    colors = {
+        'MADE': '#0173b2',
+        'MANU': '#de8f05',
+        'MAPH': '#029e73',
+        'MCU': '#d55e00',
+        'MRU': '#cc78bc',
+        'MUC': '#ca9161'
+    }
 
     # Popup
     gdf['PopUp'] = gdf.apply(popup_macrozona, axis=1)
 
-    # Shapefile
-    lyr = folium.features.GeoJson(
+    # Layer
+    return folium.features.GeoJson(
         gdf,
         name='Macrozoneamento',
         style_function=lambda x: {
-            'fillColor': color_polygon[x['properties']['Macrozona']],
-            'color': color_polygon[x['properties']['Macrozona']],
+            'fillColor': colors[x['properties']['Macrozona']],
+            'color': colors[x['properties']['Macrozona']],
             'weight': 0,
             'fillOpacity': 0.3
         },
@@ -74,7 +65,6 @@ def macrozona():
         control=True,
         show=False,
     )
-    return lyr
 
 
 # PopUp
@@ -105,8 +95,8 @@ def perimetro_urbano():
     gdf = gpd.read_file(os.path.join(root, 'divisa_perimetro.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
-    # Shapefile
-    lyr = folium.features.GeoJson(
+    # Layer
+    return folium.features.GeoJson(
         gdf,
         name='Perimetro Urbano',
         style_function=lambda x: {
@@ -128,18 +118,16 @@ def perimetro_urbano():
         control=True,
         show=False,
     )
-    return lyr
 
 
 def divisa_municipal():
     # Input
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    print(root)
     gdf = gpd.read_file(os.path.join(root, 'divisa_municipal.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
-    # Shapefile
-    lyr = folium.features.GeoJson(
+    # Layer
+    return folium.features.GeoJson(
         gdf,
         name='Divisão Municipal',
         style_function=lambda x: {
@@ -153,7 +141,6 @@ def divisa_municipal():
         control=True,
         show=True,
     )
-    return lyr
 
 
 def divisa_urbano_rural():
@@ -163,18 +150,18 @@ def divisa_urbano_rural():
     gdf = gdf.to_crs(epsg=4326)
 
     # Set dictionary
-    color_polygon = {
+    colors = {
         'Área Rural': '#F1A51F',
         'Área Urbana': '##E1E1E1',
     }
 
-    # Shapefile
-    lyr = folium.features.GeoJson(
+    # Layer
+    return folium.features.GeoJson(
         gdf,
         name='Divisão Urbano Rural',
         style_function=lambda x: {
-            'fillColor': color_polygon[x['properties']['Area']],
-            'color': color_polygon[x['properties']['Area']],
+            'fillColor': colors[x['properties']['Area']],
+            'color': colors[x['properties']['Area']],
             'weight': 1,
             'fillOpacity': 0.3
         },
@@ -183,18 +170,17 @@ def divisa_urbano_rural():
         control=True,
         show=False,
     )
-    return lyr
 
 
 def divisa_abairramento():
     # Input
-    #root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    #gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
+    # root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
+    # gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
     gdf = geo.load_dataset('divisa_abairramento')
     gdf = gdf.to_crs(epsg=4326)
 
-    # Shapefile
-    lyr = folium.features.GeoJson(
+    # Layer
+    return folium.features.GeoJson(
         gdf,
         name='Divisão Abairramento',
         style_function=lambda x: {
@@ -219,10 +205,11 @@ def divisa_abairramento():
         control=True,
         show=False,
     )
-    return lyr
 
 
 if __name__ == '__main__':
+    from src.open_geodata import geo, lyr
+
     # Create Maps
     m = folium.Map(
         location=[-23.9619271, -46.3427499],
@@ -230,18 +217,11 @@ if __name__ == '__main__':
         tiles=None,
     )
 
-    # Read geodata
-    #root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    #gdf = gpd.read_file(os.path.join(root, 'macrozonas.geojson'))
-    #gdf = gdf.to_crs(epsg=4326)
-    #print(gdf.info())
+    # Add Layers
+    m.add_child(macrozona())
 
-    #divisa_abairramento()
-    #a = os.path.isdir('/home/michel/Documents/Conda/envs/pablocarreira-py39/lib/python3.9/site-packages/open_geodata/data/geo/sp_piracicaba/')
-    #print(a)
-    gdf = geo.load_dataset('divisa_abairramento')
-    gdf = gdf.to_crs(epsg=4326)
-    print(gdf.info())
-
-
-    #macrozona()
+    # Save/Open Map
+    down_path = os.path.join(os.path.expanduser('~'), 'Downloads')
+    map_file = os.path.join(down_path, 'map_example.html')
+    m.save(map_file)
+    webbrowser.open(map_file)
