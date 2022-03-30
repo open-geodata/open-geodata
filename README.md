@@ -62,6 +62,10 @@ converts.df2geojson(df, lat='latitude', long='longitude', remove_coords_properti
 
 ### *Datasets*
 
+**br_ibge**
+<br>
+Limites de Municípios e Estados.
+
 **sp_250k**
 <br>
 Limites administrativos municipais do Estado de São Paulo.
