@@ -3,17 +3,21 @@
 
 
 import os
+
+import pandas as pd
 import py7zr
 import geopandas as gpd
+
+
+
 
 
 def get_dataset_names():
     """
 
-    :rtype: object
     """
     list_shp = []
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'geo'))
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
     for path, subdir, files in os.walk(root):
         for file in files:
             list_shp.append(file.split('.', maxsplit=1)[0])
@@ -34,10 +38,10 @@ def load_dataset(name):
 
     # Checa se existe mais de um
     if list_shp.count(name) > 1:
-        raise RuntimeError('Exists "{}" datasets "{}"'.format(list_shp.count(name), name))
+        raise RuntimeError('Exists "{}" datasets named "{}"'.format(list_shp.count(name), name))
 
     # Find file
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data', 'geo'))
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
     for path, subdir, files in os.walk(root):
         for file in files:
             if file.split('.', maxsplit=1)[0] == name:
@@ -59,13 +63,15 @@ def load_dataset(name):
                     pass
             else:
                 raise RuntimeError('.zip tem mais de um gpkg')
-        gdf = gpd.read_file(bio)
+        return gpd.read_file(bio)
 
     # Se o arquivo é um
     if extension == 'geojson':
-        gdf = gpd.read_file(select_file)
+        return gpd.read_file(select_file)
 
-    return gdf
+    # Se o arquivo é um
+    if extension == 'csv':
+        return pd.read_csv(select_file)
 
 
 if __name__ == '__main__':
@@ -89,4 +95,7 @@ if __name__ == '__main__':
     # gdf = share_boundary(gdf, gdf_interest)
 
     # Results
-    print(gdf.head())
+    #print(gdf.head())
+
+    df = load_dataset('tab_municipio_ugrhi')
+    print(df.head())
