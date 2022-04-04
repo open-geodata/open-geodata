@@ -45,7 +45,7 @@ lyr.base.google_hybrid(min_zoom, max_zoom)
 from open_geodata import folium_plus
 
 # Create Map
-m = adds.create_map_multitiles()
+m = folium_plus.adds.create_map_multitiles()
 m
 ```
 
@@ -54,6 +54,9 @@ from open_geodata import converts
 
 converts.df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=True)
 ```
+
+
+
 
 
 <br>
