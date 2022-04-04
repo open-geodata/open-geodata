@@ -3,13 +3,9 @@
 
 
 import os
-
-import pandas as pd
 import py7zr
+import pandas as pd
 import geopandas as gpd
-
-
-
 
 
 def get_dataset_names():
@@ -21,6 +17,8 @@ def get_dataset_names():
     for path, subdir, files in os.walk(root):
         for file in files:
             list_shp.append(file.split('.', maxsplit=1)[0])
+
+    list_shp.sort()
     return list_shp
 
 
@@ -84,18 +82,18 @@ if __name__ == '__main__':
 
     # Read Geaodata
     gdf = load_dataset('sp_250k_wgs84')
-    #gdf = load_dataset('divisa_municipal') # Localmente funciona
-    #gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
+    # gdf = load_dataset('divisa_municipal') # Localmente funciona
+    # gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
 
     # Teste "find_neighbors" attribute table
-    #gdf = find_neighbors(gdf, 'municipio_nome')
+    # gdf = find_neighbors(gdf, 'municipio_nome')
 
     # Teste "find_neighbors" spatial
     # gdf_interest = gdf.loc[gdf['id_municipio'] == 3548906]
     # gdf = share_boundary(gdf, gdf_interest)
 
     # Results
-    #print(gdf.head())
+    # print(gdf.head())
 
     df = load_dataset('tab_municipio_ugrhi')
     print(df.head())

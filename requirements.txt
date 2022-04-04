@@ -7,3 +7,5 @@ pandas>=0.10
 py7zr>=0.18.1
 branca>=0.3.2
 shapely>=1.3.0
+sidrapy>=0.1.1
+
