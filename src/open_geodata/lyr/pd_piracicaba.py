@@ -174,9 +174,8 @@ def divisa_urbano_rural():
 
 def divisa_abairramento():
     # Input
-    # root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    # gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
-    gdf = geo.load_dataset('divisa_abairramento')
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
+    gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
     gdf = gdf.to_crs(epsg=4326)
 
     # Layer
@@ -214,11 +213,11 @@ if __name__ == '__main__':
     m = folium.Map(
         location=[-23.9619271, -46.3427499],
         zoom_start=10,
-        tiles=None,
     )
 
     # Add Layers
     m.add_child(macrozona())
+    m.add_child(divisa_abairramento())
 
     # Save/Open Map
     down_path = os.path.join(os.path.expanduser('~'), 'Downloads')

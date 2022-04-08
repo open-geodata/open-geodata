@@ -20,7 +20,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/open-geodata/open-geodata',
-    keywords='python, endereço aleatório, address',
+    keywords='python, geodata, geoprocessamento',
 
     # Version
     # https://github.com/twisted/incremental
