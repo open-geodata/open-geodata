@@ -7,6 +7,7 @@ import py7zr
 import pandas as pd
 import geopandas as gpd
 import seaborn as sns
+import importlib.resources
 
 
 def get_dataset_names():
@@ -21,6 +22,34 @@ def get_dataset_names():
 
     list_shp.sort()
     return list_shp
+
+
+def get_dataset_names_others(pkg_name):
+    """
+
+    """
+    data_pkg = importlib.resources.files(pkg_name)
+    return [p.name for p in data_pkg.rglob('*') if p.suffix in ('.7z', '.csv')]
+
+
+def load_dataset_others(pkg_name, dataset_name):
+    """
+
+    """
+    data_pkg = importlib.resources.files(pkg_name)
+    for p in data_pkg.rglob('*'):
+        # print(p)
+        if p.name == dataset_name:
+            with py7zr.SevenZipFile(p, 'r') as archive:
+                allfiles = archive.getnames()
+
+                # Quero apenas um arquivo por gpkg
+                if len(allfiles) == 1:
+                    for filename, bio in archive.read(allfiles).items():
+                        pass
+                else:
+                    raise RuntimeError('.zip tem mais de um gpkg')
+            return gpd.read_file(bio)
 
 
 def load_dataset(name):
@@ -108,10 +137,12 @@ if __name__ == '__main__':
 
     # List Geodata
     list_shp = get_dataset_names()
-    print(list_shp)
+    list_shp = get_dataset_names_others('sp_piracicaba')
+    # print(list_shp)
 
     # Read Geaodata
-    gdf = load_dataset('sp_250k_wgs84')
+    # gdf = load_dataset('sp_250k_wgs84')
+    gdf = load_dataset_others('sp_piracicaba', 'divisa_municipal.7z')
     # gdf = load_dataset('divisa_municipal') # Localmente funciona
     # gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
 
@@ -123,10 +154,10 @@ if __name__ == '__main__':
     # gdf = share_boundary(gdf, gdf_interest)
 
     # Results
-    # print(gdf.head())
+    print(gdf.head())
 
-    df = load_dataset('tab_municipio_ugrhi')
-    print(df.head())
+    # df = load_dataset('tab_municipio_ugrhi')
+    # print(df.head())
 
     # create_colors(
     #     os.path.join('outorgas.gpkg'),
