@@ -6,6 +6,7 @@ import os
 import py7zr
 import pandas as pd
 import geopandas as gpd
+import seaborn as sns
 
 
 def get_dataset_names():
@@ -72,6 +73,35 @@ def load_dataset(name):
         return pd.read_csv(select_file)
 
 
+def create_colors(input_geojson, col_categories):
+    """
+    Funçao que cria dictionary com colors para layers
+    :param input_geojson:
+    :param col_categories:
+    :return:
+    """
+    gdf = gpd.read_file(input_geojson)
+
+    list_cols = list(set(gdf.columns))
+    if col_categories not in list_cols:
+        print('"col_categories" must  be in:')
+        print(list_cols)
+
+    # Set palette
+    palette_polygon = 'Paired'
+
+    # Get list of unique values
+    categories = list(set(gdf[col_categories]))
+    categories.sort()
+
+    # See the palette chosed
+    pal = sns.color_palette(palette_polygon, n_colors=len(categories))
+
+    # Set dictionary
+    color_polygon = dict(zip(categories, pal.as_hex()))
+    return color_polygon
+
+
 if __name__ == '__main__':
     from open_geodata import geo
     from open_geodata.functions import share_boundary, find_neighbors
@@ -97,3 +127,8 @@ if __name__ == '__main__':
 
     df = load_dataset('tab_municipio_ugrhi')
     print(df.head())
+
+    # create_colors(
+    #     os.path.join('outorgas.gpkg'),
+    #     col_categories = 'uso'
+    # )

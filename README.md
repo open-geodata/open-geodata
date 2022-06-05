@@ -6,7 +6,7 @@
 
 Pacote para disponibilizar dados espaciais!
 <br>
-Todos os datasets estão com *datum* WGS84 (EPSG: 4326).
+Todos os datasets estão com _datum_ WGS84 (EPSG: 4326).
 
 <br>
 
@@ -55,26 +55,28 @@ from open_geodata import converts
 converts.df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=True)
 ```
 
-
-
-
-
 <br>
 
 ---
 
-### *Datasets*
+### _Datasets_
 
 **br_ibge**
+
 <br>
+
 Limites de Municípios e Estados.
 
 **sp_250k**
+
 <br>
+
 Limites administrativos municipais do Estado de São Paulo.
 
 **sp_piracicaba**
+
 <br>
+
 Limites do Plano Diretor do Município de Piracicaba.
 
 <br>
@@ -89,7 +91,19 @@ Limites do Plano Diretor do Município de Piracicaba.
 
 ---
 
-### *TODO*
+### _TODO_
 
 1. <https://github.com/twisted/incremental>
-2. Definir os *layers*
+2. Definir os _layers_
+
+Participnar dados!
+https://dev.to/bowmanjd/easily-load-non-python-data-files-from-a-python-package-2e8g
+
+
+import pkg_resources
+https://stackoverflow.com/questions/779495/access-data-in-package-subdirectory
+
+
+Use of pkg_resources is discouraged in favor of importlib.resources, importlib.metadata, and their backports (importlib_resources, importlib_metadata). Please consider using those libraries instead of pkg_resources.
+
+https://setuptools.pypa.io/en/latest/pkg_resources.html

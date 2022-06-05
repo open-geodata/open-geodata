@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+import os
+import py7zr
 import geopandas as gpd
 from shapely.geometry import Point
 
@@ -71,7 +72,7 @@ def df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=Tr
     :param remove_coords_properties:
     :return:
     """
-
+    print('Estudar:\nhttps://geopandas.org/en/stable/docs/reference/api/geopandas.points_from_xy.html')
     # Create a new python dict to contain our geojson data, using geojson format
     geojson = {'type': 'FeatureCollection', 'features': []}
 
@@ -128,6 +129,33 @@ def df2geojson2(df, lat='latitude', long='longitude', epsg=4326):
     return gdf
 
 
+def convert_to_7zip(input_path, output_path):
+    """
+
+    :return:
+    TODO Converter para PathLib
+
+    """
+    list_files = os.listdir(input_path)
+    print(list_files)
+    for file in list_files:
+        # File
+        filename = file.split('.', maxsplit=1)[0]
+        print(filename)
+
+        # Paths
+        gpkg_filepath = os.path.join(input_path, file)
+        zip7_filepath = os.path.join(output_path, f'{filename}.7z')
+
+        # Write 7zip
+        with py7zr.SevenZipFile(zip7_filepath, 'w') as archive:
+            archive.write(gpkg_filepath, os.path.basename(gpkg_filepath))
+
+
 if __name__ == '__main__':
-    print(dms2dd('23°06’12,48”S'))
-    print(dms2dd_infoaguas('22 13 52'))
+    #print(dms2dd('23°06’12,48”S'))
+    #print(dms2dd_infoaguas('22 13 52'))
+    a = os.path.abspath(os.path.join('..', 'data', 'geo', 'br_ibge'))
+    b = os.path.abspath(os.path.join('..', 'data', 'geo'))
+    print(a)
+    convert_to_7zip(a, b)

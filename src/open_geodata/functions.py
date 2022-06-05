@@ -36,5 +36,13 @@ def share_boundary(gdf, gdf_interest):
     return gdf[gdf.geometry.apply(lambda x: x.touches(gdf_interest))]
 
 
+def get_centroid(gdf):
+    gdf['apenasparacentroid'] = 35
+    gdf_dissolve = gdf.dissolve(by='apenasparacentroid')
+    gdf_centroid = gdf_dissolve.representative_point()
+    gdf = gdf.drop('apenasparacentroid', axis=1, inplace=True)
+    return [float(gdf_centroid.y), float(gdf_centroid.x)]
+
+
 if __name__ == '__main__':
     pass
