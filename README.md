@@ -63,19 +63,17 @@ converts.df2geojson(df, lat='latitude', long='longitude', remove_coords_properti
 
 **br_ibge**
 
-<br>
-
 Limites de Municípios e Estados.
+
+<br>
 
 **sp_250k**
 
-<br>
-
 Limites administrativos municipais do Estado de São Paulo.
 
-**sp_piracicaba**
-
 <br>
+
+**sp_piracicaba**
 
 Limites do Plano Diretor do Município de Piracicaba.
 
@@ -85,7 +83,7 @@ Limites do Plano Diretor do Município de Piracicaba.
 
 ### Teste
 
-[Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing)
+- [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing)
 
 <br>
 
@@ -95,15 +93,6 @@ Limites do Plano Diretor do Município de Piracicaba.
 
 1. <https://github.com/twisted/incremental>
 2. Definir os _layers_
-
-Participnar dados!
-https://dev.to/bowmanjd/easily-load-non-python-data-files-from-a-python-package-2e8g
-
-
-import pkg_resources
-https://stackoverflow.com/questions/779495/access-data-in-package-subdirectory
-
-
-Use of pkg_resources is discouraged in favor of importlib.resources, importlib.metadata, and their backports (importlib_resources, importlib_metadata). Please consider using those libraries instead of pkg_resources.
-
-https://setuptools.pypa.io/en/latest/pkg_resources.html
+3. Participnar dados! https://dev.to/bowmanjd/easily-load-non-python-data-files-from-a-python-package-2e8g
+4. import pkg_resources https://stackoverflow.com/questions/779495/access-data-in-package-subdirectory
+5. Use of pkg_resources is discouraged in favor of importlib.resources, importlib.metadata, and their backports (importlib_resources, importlib_metadata). Please consider using those libraries instead of pkg_resources. https://setuptools.pypa.io/en/latest/pkg_resources.html

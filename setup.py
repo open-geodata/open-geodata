@@ -34,10 +34,11 @@ setup(
 
     # Entry
     # Our packages live under src but src is not a package itself
-    package_dir={'': 'src'},
+    #package_dir={'': 'src'},
 
     # Quando são diversos módulos...
-    packages=find_packages('src', exclude=['test']),
+    #packages=find_packages('src', exclude=['test']),
+    packages=find_packages(),
 
     # Apenas um módulo...
     # py_modules = ['traquitanas'],     # Quando trata-se apenas de um módulo
