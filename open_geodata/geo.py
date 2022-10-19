@@ -1,24 +1,35 @@
-#!/usr/bin/env python
-# coding: utf-8
+"""
+
+
+"""
 
 
 import os
 import py7zr
+import pprint
 import pandas as pd
 import geopandas as gpd
 import seaborn as sns
 import importlib.resources
+from pathlib import Path
 
 
 def get_dataset_names():
     """
 
     """
-    list_shp = []
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
-    for path, subdir, files in os.walk(root):
-        for file in files:
-            list_shp.append(file.split('.', maxsplit=1)[0])
+    pkg_path = Path(__file__).absolute().parent
+    data_path = pkg_path / 'data'
+    file_data = data_path.rglob('*.*')
+    list_shp = [x for x in file_data]
+    list_shp = [x.relative_to(data_path) for x in list_shp]
+    #list_shp = [str(x) for x in list_shp]
+
+    #list_shp = []
+    # root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
+    # for path, subdir, files in os.walk(root):
+    #     for file in files:
+    #         list_shp.append(file.split('.', maxsplit=1)[0])
 
     list_shp.sort()
     return list_shp
@@ -26,18 +37,21 @@ def get_dataset_names():
 
 def get_dataset_names_others(pkg_name):
     """
+    Pega dados dos pacotes
+    Os dados preciso estar disponibilizados em .7z ou .csv
 
     """
-    data_pkg = importlib.resources.files(pkg_name)
-    return [p.name for p in data_pkg.rglob('*') if p.suffix in ('.7z', '.csv')]
+    # sss
+    package_path = importlib.resources.files(pkg_name)
+    return [p.name for p in package_path.rglob('*') if p.suffix in ('.7z', '.csv')]
 
 
-def load_dataset_others(pkg_name, dataset_name):
+def load_dataset_others(package_name, dataset_name):
     """
 
     """
-    data_pkg = importlib.resources.files(pkg_name)
-    for p in data_pkg.rglob('*'):
+    package_path = importlib.resources.files(package_name)
+    for p in package_path.rglob('*'):
         # print(p)
         if p.name == dataset_name:
             with py7zr.SevenZipFile(p, 'r') as archive:
@@ -62,11 +76,12 @@ def load_dataset(name):
     # Checa se existe
     list_shp = get_dataset_names()
     if name not in list_shp:
-        raise RuntimeError('"{}" not exists'.format(name))
+        raise RuntimeError(f'"{name}" not exists')
 
     # Checa se existe mais de um
     if list_shp.count(name) > 1:
-        raise RuntimeError('Exists "{}" datasets named "{}"'.format(list_shp.count(name), name))
+        raise RuntimeError(
+            f'Exists "{list_shp.count(name)}" datasets named "{name}"')
 
     # Find file
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
@@ -136,13 +151,20 @@ if __name__ == '__main__':
     from open_geodata.functions import share_boundary, find_neighbors
 
     # List Geodata
-    list_shp = get_dataset_names()
+    #list_shp = get_dataset_names()
+    #pprint.pprint(list_shp)
+
+    # List Geodata
     list_shp = get_dataset_names_others('sp_piracicaba')
-    # print(list_shp)
+    pprint.pprint(list_shp)
+    # for i in list_shp:
+    #     #print(i.parents[2])
+    #     a = i.relative_to(i.parents[2])
+    #     print(a)
 
     # Read Geaodata
     # gdf = load_dataset('sp_250k_wgs84')
-    gdf = load_dataset_others('sp_piracicaba', 'divisa_municipal.7z')
+    #gdf = load_dataset_others('sp_piracicaba', 'divisa_municipal.7z')
     # gdf = load_dataset('divisa_municipal') # Localmente funciona
     # gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
 
@@ -154,7 +176,7 @@ if __name__ == '__main__':
     # gdf = share_boundary(gdf, gdf_interest)
 
     # Results
-    print(gdf.head())
+    # print(gdf.head())
 
     # df = load_dataset('tab_municipio_ugrhi')
     # print(df.head())

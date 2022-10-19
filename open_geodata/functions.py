@@ -1,8 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
+"""
+Funções para trabalhar com dados geoespaciais
 
-
-# Funções para trabalhar com dados geoespaciais
+"""
 
 
 def find_neighbors(gdf, column_name):
@@ -16,7 +15,8 @@ def find_neighbors(gdf, column_name):
     gdf['neighbors'] = ''
 
     for index, row in gdf.iterrows():
-        neighbors = gdf[gdf['geometry'].touches(row['geometry'])][column_name].tolist()
+        neighbors = gdf[gdf['geometry'].touches(
+            row['geometry'])][column_name].tolist()
         gdf.at[index, 'neighbors'] = ', '.join(neighbors)
     return gdf
 
