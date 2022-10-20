@@ -18,12 +18,18 @@ def get_dataset_names():
     """
 
     """
-    pkg_path = Path(__file__).absolute().parent
-    data_path = pkg_path / 'data'
+    package_path = Path(__file__).absolute().parent
+    data_path = package_path / 'data'
+    #print(':>>>> ', package_path)
     file_data = data_path.rglob('*.*')
     list_shp = [x for x in file_data]
     list_shp = [x.relative_to(data_path) for x in list_shp]
+    list_shp = [str(x.as_posix()) for x in list_shp]  # Convert to text
     #list_shp = [str(x) for x in list_shp]
+    list_shp = [x.split('.', maxsplit=1)[0]
+                for x in list_shp]  # Splita no . e pega primeira parte
+    # list_shp = [x.replace('\\', '.') for x in list_shp] # Convert Paths Windows
+    list_shp = [x.replace('/', '.') for x in list_shp]  # Convert Paths Linux
 
     #list_shp = []
     # root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
@@ -33,6 +39,52 @@ def get_dataset_names():
 
     list_shp.sort()
     return list_shp
+
+
+def load_dataset(name):
+    """
+    Funções para carregar dados geoespaciais
+
+    :param name:
+    :return:
+    """
+    filename = name.replace('.', '/')
+    filename = Path(filename)
+    package_path = Path(__file__).absolute().parent
+    data_path = package_path / 'data'
+    file_path = data_path / filename
+
+    # Checa se existe
+    list_shp = get_dataset_names()
+    if name not in list_shp:
+        raise RuntimeError(f'"{filename}" not exists')
+
+    # Checa se existe mais de um
+    if list_shp.count(name) > 1:
+        raise RuntimeError(
+            f'Exists "{list_shp.count(name)}" datasets named "{name}"')
+
+    # Teste ambos tipos de arquivos
+    file_path_7z = file_path.with_suffix('.7z')
+    file_path_csv = file_path.with_suffix('.csv')
+
+    # Load por tipo de arquivo
+    if file_path_7z.is_file():
+        # Geodataframe
+        with py7zr.SevenZipFile(file_path_7z, 'r') as archive:
+            allfiles = archive.getnames()
+
+            # Quero apenas um arquivo por gpkg
+            if len(allfiles) == 1:
+                for filename, bio in archive.read(allfiles).items():
+                    pass
+            else:
+                raise RuntimeError('.7z tem mais de um gpkg')
+        return gpd.read_file(bio)
+
+    # Se o arquivo é um
+    if file_path_csv.is_file():
+        return pd.read_csv(file_path_csv)
 
 
 def get_dataset_names_others(pkg_name):
@@ -64,57 +116,6 @@ def load_dataset_others(package_name, dataset_name):
                 else:
                     raise RuntimeError('.zip tem mais de um gpkg')
             return gpd.read_file(bio)
-
-
-def load_dataset(name):
-    """
-    Funções para carregar dados geoespaciais
-
-    :param name:
-    :return:
-    """
-    # Checa se existe
-    list_shp = get_dataset_names()
-    if name not in list_shp:
-        raise RuntimeError(f'"{name}" not exists')
-
-    # Checa se existe mais de um
-    if list_shp.count(name) > 1:
-        raise RuntimeError(
-            f'Exists "{list_shp.count(name)}" datasets named "{name}"')
-
-    # Find file
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
-    for path, subdir, files in os.walk(root):
-        for file in files:
-            if file.split('.', maxsplit=1)[0] == name:
-                select_file = os.path.join(path, file)
-
-    # File
-    filename = os.path.basename(select_file)
-    extension = os.path.splitext(filename)[1][1:]
-
-    # Load por tipo de arquivo
-    if extension == '7z':
-        # Geodataframe
-        with py7zr.SevenZipFile(select_file, 'r') as archive:
-            allfiles = archive.getnames()
-
-            # Quero apenas um arquivo por gpkg
-            if len(allfiles) == 1:
-                for filename, bio in archive.read(allfiles).items():
-                    pass
-            else:
-                raise RuntimeError('.zip tem mais de um gpkg')
-        return gpd.read_file(bio)
-
-    # Se o arquivo é um
-    if extension == 'geojson':
-        return gpd.read_file(select_file)
-
-    # Se o arquivo é um
-    if extension == 'csv':
-        return pd.read_csv(select_file)
 
 
 def create_colors(input_geojson, col_categories):
@@ -154,16 +155,18 @@ if __name__ == '__main__':
     list_shp = get_dataset_names()
     pprint.pprint(list_shp)
 
+    # Read Geaodata
+    gdf = load_dataset('geo.sp.sp_250k_wgs84')
+    print(gdf.head())
+
     # List Geodata
     #list_shp = get_dataset_names_others('sp_piracicaba')
-    #pprint.pprint(list_shp)
+    # pprint.pprint(list_shp)
     # for i in list_shp:
     #     #print(i.parents[2])
     #     a = i.relative_to(i.parents[2])
     #     print(a)
 
-    # Read Geaodata
-    # gdf = load_dataset('sp_250k_wgs84')
     #gdf = load_dataset_others('sp_piracicaba', 'divisa_municipal.7z')
     # gdf = load_dataset('divisa_municipal') # Localmente funciona
     # gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona

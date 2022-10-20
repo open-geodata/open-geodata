@@ -11,6 +11,8 @@ Pacote para disponibilizar dados espaciais!
 <br>
 Todos os datasets estão com _datum_ WGS84 (EPSG: 4326).
 
+Para possibilitar testes do pacote, criei um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).
+
 <br>
 
 ---
@@ -64,29 +66,9 @@ converts.df2geojson(df, lat='latitude', long='longitude', remove_coords_properti
 
 ### _Datasets_
 
-**br_ibge**
-
-Limites de Municípios e Estados.
-
-<br>
-
-**sp_250k**
-
-Limites administrativos municipais do Estado de São Paulo.
-
-<br>
-
-**sp_piracicaba**
-
-Limites do Plano Diretor do Município de Piracicaba.
-
-<br>
-
----
-
-### Teste
-
-- [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing)
+- **br_ibge**: Limites de Municípios e Estados.
+- **sp_250k**: Limites administrativos municipais do Estado de São Paulo.
+- **sp_piracicaba**: Limites do Plano Diretor do Município de Piracicaba.
 
 <br>
 
@@ -97,5 +79,3 @@ Limites do Plano Diretor do Município de Piracicaba.
 1. <https://github.com/twisted/incremental>
 2. Definir os _layers_
 3. Participnar dados! https://dev.to/bowmanjd/easily-load-non-python-data-files-from-a-python-package-2e8g
-4. import pkg_resources https://stackoverflow.com/questions/779495/access-data-in-package-subdirectory
-5. Use of pkg_resources is discouraged in favor of importlib.resources, importlib.metadata, and their backports (importlib_resources, importlib_metadata). Please consider using those libraries instead of pkg_resources. https://setuptools.pypa.io/en/latest/pkg_resources.html
