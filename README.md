@@ -2,8 +2,8 @@
 
 [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
 
-[GitHub](https://github.com/open-geodata/open-geodata)
-[PyPi](https://pypi.org/project/open-geodata/)
+- [GitHub](https://github.com/open-geodata/open-geodata)
+- [PyPi](https://pypi.org/project/open-geodata/)
 
 <br>
 
