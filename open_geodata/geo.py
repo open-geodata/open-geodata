@@ -151,12 +151,12 @@ if __name__ == '__main__':
     from open_geodata.functions import share_boundary, find_neighbors
 
     # List Geodata
-    #list_shp = get_dataset_names()
-    #pprint.pprint(list_shp)
+    list_shp = get_dataset_names()
+    pprint.pprint(list_shp)
 
     # List Geodata
-    list_shp = get_dataset_names_others('sp_piracicaba')
-    pprint.pprint(list_shp)
+    #list_shp = get_dataset_names_others('sp_piracicaba')
+    #pprint.pprint(list_shp)
     # for i in list_shp:
     #     #print(i.parents[2])
     #     a = i.relative_to(i.parents[2])

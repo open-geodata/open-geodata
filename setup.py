@@ -45,7 +45,7 @@ setup(
 
     # Dados
     include_package_data=True,
-    package_data={'': ['data/*']},
+    package_data={'open_geodata': ['data/*']},
 
     # Classificação
     classifiers=[
