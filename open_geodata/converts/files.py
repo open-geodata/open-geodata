@@ -1,57 +1,17 @@
-#!/usr/bin/env python
-# coding: utf-8
-import os
+"""
+
+"""
+
 import py7zr
+from pathlib import Path
+
+
 import geopandas as gpd
 from shapely.geometry import Point
 
 
-def dms2dd(coord):
-    """
-    Convert geographic coordinates in
-    format degrees, minutes and seconds (23°06’12,48”S)
-    in decimal degrees (e.g. -23.10346666666667)
-
-    Estilo Informações Técnicas CETESB
-
-    :param coord: string 23°06’12,48”S
-    :return: float -23.10346666666667
-    """
-    # Splitar coordenada
-    graus = float(coord.split('°')[0])
-    minutos = float((coord.split('°')[1]).split('’')[0])
-    segundos = float((((coord.split('°')[1]).split('’')[1]).split('”')[0]).replace(',', '.'))
-    direction = (((coord.split('°')[1]).split('’')[1]).split('”')[1])
-
-    # Calcular
-    coord_dm = graus + (minutos / 60) + (segundos / 3600)
-
-    # Converter parâmetro textual
-    if direction in ('S', 's', 'O', 'o'):
-        return coord_dm * -1
-    else:
-        return coord_dm
 
 
-def dms2dd_infoaguas(coord_dms):
-    """
-
-    Para usar em uma coluna
-    df.loc[:, 'latitude_dd'] = df['latitude_dms'].astype(str).apply(lambda x: dms2dd(x))
-
-    :param coord_dms:
-    :return:
-    """
-    coord_dms = coord_dms.strip()
-    try:
-        coord_deg = float(coord_dms.split(' ', maxsplit=2)[0])
-        coord_min = float(coord_dms.split(' ', maxsplit=2)[1])
-        coord_sec = float(coord_dms.split(' ', maxsplit=2)[2])
-        coord_dd = coord_deg + (coord_min / 60) + (coord_sec / 3600)
-        coord_dd = coord_dd * -1
-    except:
-        coord_dd = 0
-    return coord_dd
 
 
 def df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=True):
@@ -106,7 +66,7 @@ def df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=Tr
     return geojson
 
 
-def df2geojson2(df, lat='latitude', long='longitude', epsg=4326):
+def df2gdf(df, lat='latitude', long='longitude', epsg=4326):
     """
 
     :param epsg:
@@ -122,40 +82,43 @@ def df2geojson2(df, lat='latitude', long='longitude', epsg=4326):
     # Create Geodataframe
     gdf = gpd.GeoDataFrame(
         df,
-        crs='EPSG:{}'.format(epsg),
+        crs=f'EPSG:{epsg}',
         geometry=geometry
     )
     gdf.drop([lat, long], axis=1, inplace=True, errors='ignore')
     return gdf
 
 
-def convert_to_7zip(input_path, output_path):
+def convert_to_7zip(input_path, output_path, extension='gpkg'):
     """
 
     :return:
-    TODO Converter para PathLib
-
     """
-    list_files = os.listdir(input_path)
-    print(list_files)
-    for file in list_files:
-        # File
-        filename = file.split('.', maxsplit=1)[0]
-        print(filename)
+    list_files = list(input_path.rglob(f'*.{extension}'))    
+    if len(list_files) == 0:        
+        raise RuntimeError(f'Não existem arquivos "{extension}" na pasta {input_path}')
 
+    for file in list_files:
         # Paths
-        gpkg_filepath = os.path.join(input_path, file)
-        zip7_filepath = os.path.join(output_path, f'{filename}.7z')
+        zip7_filepath = output_path / f'{file.stem}.7z'
 
         # Write 7zip
         with py7zr.SevenZipFile(zip7_filepath, 'w') as archive:
-            archive.write(gpkg_filepath, os.path.basename(gpkg_filepath))
+            archive.write(file, file.name)
+
+        # Print
+        print(f'Arquivo "{file.name}" convertido para "{file.stem}.7z"')
+    
+    print(f'Foram convertidos {len(list_files)} arquivos com sucesso!')
+    return 0
+
 
 
 if __name__ == '__main__':
-    #print(dms2dd('23°06’12,48”S'))
-    #print(dms2dd_infoaguas('22 13 52'))
-    a = os.path.abspath(os.path.join('..', 'data', 'geo', 'br_ibge'))
-    b = os.path.abspath(os.path.join('..', 'data', 'geo'))
-    print(a)
-    convert_to_7zip(a, b)
+    
+    # Convert
+    data_path = Path(__file__).parents[1].joinpath('data')
+    ibge_path = data_path / 'geo' / 'br_ibge'
+    convert_to_7zip(ibge_path, ibge_path)
+
+    pass

@@ -1,5 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
+"""
+
+
+"""
+
+
 
 
 import os
@@ -173,7 +177,7 @@ def add_categorical_legend(m, title, color_by_label):
 
 
 if __name__ == '__main__':
-    from src.open_geodata.lyr.pd_piracicaba import macrozona
+    from open_geodata.lyr.pd_piracicaba import macrozona
 
     # Create Map
     m = create_map_multitiles()
@@ -201,3 +205,8 @@ if __name__ == '__main__':
     map_file = os.path.join(down_path, 'map_example.html')
     m.save(map_file)
     webbrowser.open(map_file)
+
+
+
+
+
