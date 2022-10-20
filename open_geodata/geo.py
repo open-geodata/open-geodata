@@ -41,8 +41,6 @@ def _read_7z_file(file_path_7z):
         return gpd.read_file(bio)
 
 
-
-
 def get_dataset_names():
     """
 
@@ -90,21 +88,21 @@ def load_dataset(dataset_name):
     # Se o arquivo é um
     elif file_path_csv.is_file():
         return pd.read_csv(file_path_csv)
-    
+
     else:
         print('Não encontrado')
 
 
-
-def get_dataset_names_others(pkg_name):
+def get_dataset_from_package(package_name):
     """
     Pega dados dos pacotes
     Os dados preciso estar disponibilizados em .7z ou .csv
 
     """
     # sss
-    package_path = importlib.resources.files(pkg_name)
-    list_files = [x for x in package_path.rglob('*') if x.suffix in ('.7z', '.csv')]
+    package_path = importlib.resources.files(package_name)
+    list_files = [x for x in package_path.rglob(
+        '*') if x.suffix in ('.7z', '.csv')]
     list_files = [x.relative_to(package_path) for x in list_files]
     list_files = [x.relative_to('data') for x in list_files]
     for path in ['input', 'output']:
@@ -115,7 +113,7 @@ def get_dataset_names_others(pkg_name):
     return _ajust_list_files(list_files)
 
 
-def load_dataset_others(package_name, dataset_name):
+def load_dataset_from_package(package_name, dataset_name):
     """
 
     """
@@ -126,17 +124,17 @@ def load_dataset_others(package_name, dataset_name):
     # Lista de Arquivo
     list_7zips = list(package_path.rglob(f'{filename}*.7z'))
     list_csv = list(package_path.rglob(f'{filename}*.csv'))
-    
+
     # Pega Valor Único
     file_path_7z = only(list_7zips)
     file_path_csv = only(list_csv)
 
     if file_path_7z.is_file():
         return _read_7z_file(file_path_7z)
-    
+
     elif file_path_csv.is_file():
         return pd.read_csv(file_path_csv)
-        
+
     else:
         print('Não encontrado')
 
@@ -157,7 +155,7 @@ if __name__ == '__main__':
     # list_shp = get_dataset_names_others('sp_piracicaba')
     # pprint.pprint(list_shp)
 
-    gdf = load_dataset_others('sp_piracicaba', 'zips.divisa_municipal')
+    gdf = load_dataset_from_package('sp_piracicaba', 'zips.divisa_municipal')
     print(gdf.head())
     # gdf = load_dataset('divisa_municipal') # Localmente funciona
     # gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
