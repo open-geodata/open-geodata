@@ -4,6 +4,7 @@
 """
 
 
+import imp
 import os
 import pprint
 import folium
@@ -181,7 +182,7 @@ def add_categorical_legend(m, title, color_by_label):
 
 
 if __name__ == '__main__':
-    import sp_piracicaba
+    from sp_piracicaba import lyr
     from open_geodata import geo    
 
     # List Geodata
@@ -196,6 +197,7 @@ if __name__ == '__main__':
     
     # Add Layers
     m.add_child(sp_piracicaba.lyr.macrozona())
+    #sp_piracicaba.
 
     # Add Layer Control
     folium.LayerControl('topright', collapsed=False).add_to(m)

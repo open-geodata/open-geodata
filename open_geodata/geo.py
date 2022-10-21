@@ -116,8 +116,9 @@ def load_dataset_from_package(package_name, dataset_name):
 
     """
     package_path = importlib.resources.files(package_name)
+    print(package_path)
     filename = dataset_name.replace('.', '/')
-    filename = Path(filename)
+    filename = Path(filename)    
 
     # Lista de Arquivo
     list_7zips = list(package_path.rglob(f'{filename}*.7z'))
@@ -142,21 +143,19 @@ if __name__ == '__main__':
     from open_geodata.functions import share_boundary, find_neighbors
 
     # # List Geodata
-    # list_shp = get_dataset_names()
-    # pprint.pprint(list_shp)
+    list_shp = get_dataset_names()
+    pprint.pprint(list_shp)
 
     # # Read Geaodata
-    # gdf = load_dataset('geo.sp.sp_250k_wgs84')
-    # print(gdf.head())
+    gdf = load_dataset('geo.sp.sp_250k_wgs84')
+    print(gdf.head())
 
     # # List Geodata
     list_shp = get_dataset_from_package('sp_piracicaba')
     pprint.pprint(list_shp)
 
-    gdf = load_dataset_from_package('sp_piracicaba', 'zips.divisa_municipal')
+    gdf = load_dataset_from_package('sp_piracicaba', 'geo.divisa_municipal')
     print(gdf.head())
-    # gdf = load_dataset('divisa_municipal') # Localmente funciona
-    # gdf = geo.load_dataset('divisa_abairramento')  # Pacote não funciona
 
     # Teste "find_neighbors" attribute table
     # gdf = find_neighbors(gdf, 'municipio_nome')
