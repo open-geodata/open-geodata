@@ -181,22 +181,21 @@ def add_categorical_legend(m, title, color_by_label):
 
 
 if __name__ == '__main__':
-
-    from open_geodata import geo
-    from sp_piracicaba import lyr as lyr_pira
+    import sp_piracicaba
+    from open_geodata import geo    
 
     # List Geodata
     list_shp = geo.get_dataset_from_package('sp_piracicaba')
     pprint.pprint(list_shp)
 
-    gdf = geo.load_dataset_from_package('sp_piracicaba', 'zips.macrozonas')
+    gdf = geo.load_dataset_from_package('sp_piracicaba', 'geo.macrozonas')
     print(gdf.head())
 
     # Create Map
     m = create_map_multitiles()
     
     # Add Layers
-    m.add_child(lyr_pira.macrozona())
+    m.add_child(sp_piracicaba.lyr.macrozona())
 
     # Add Layer Control
     folium.LayerControl('topright', collapsed=False).add_to(m)
