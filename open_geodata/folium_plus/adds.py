@@ -4,13 +4,13 @@
 """
 
 
-
-
 import os
+import pprint
 import folium
 import webbrowser
 import pandas as pd
 import branca as bc
+from pathlib import Path
 
 
 def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
@@ -30,8 +30,10 @@ def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
     )
 
     # Read table with all tiles servers
-    tiles_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'tab', 'folium'))
-    df = pd.read_csv(os.path.join(tiles_path, 'tiles.csv'), index_col=0)
+    package_path = Path(__file__).absolute().parents[1]
+    data_path = package_path / 'data'
+    tiles_path = data_path / 'tab' / 'folium'
+    df = pd.read_csv(tiles_path / 'tiles.csv', index_col=0)
 
     # Filter some tiles
     # df = df[2:4]
@@ -43,13 +45,15 @@ def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
     # Loop
     for index, row in df.iterrows():
         # Create reference to attribution
-        ref = '<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])
+        attr = row['attribution']
+        name = row['name']
+        link = row['link']
 
         # Create multiples tiles layers
         folium.TileLayer(
-            tiles=row['link'],
-            attr=ref,
-            name=row['name'],
+            tiles=link,
+            attr=f'<a href="{attr}" target="blank">{name}</a>',
+            name=name,
         ).add_to(m)
 
     # Results
@@ -177,13 +181,22 @@ def add_categorical_legend(m, title, color_by_label):
 
 
 if __name__ == '__main__':
-    from open_geodata.lyr.pd_piracicaba import macrozona
+
+    from open_geodata import geo
+    from sp_piracicaba import lyr as lyr_pira
+
+    # List Geodata
+    list_shp = geo.get_dataset_from_package('sp_piracicaba')
+    pprint.pprint(list_shp)
+
+    gdf = geo.load_dataset_from_package('sp_piracicaba', 'zips.macrozonas')
+    print(gdf.head())
 
     # Create Map
     m = create_map_multitiles()
-
+    
     # Add Layers
-    m.add_child(macrozona())
+    m.add_child(lyr_pira.macrozona())
 
     # Add Layer Control
     folium.LayerControl('topright', collapsed=False).add_to(m)
@@ -205,8 +218,3 @@ if __name__ == '__main__':
     map_file = os.path.join(down_path, 'map_example.html')
     m.save(map_file)
     webbrowser.open(map_file)
-
-
-
-
-

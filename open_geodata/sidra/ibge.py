@@ -1,5 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
+"""
+
+"""
 
 # !pip install sidrapy --upgrade
 
@@ -53,5 +54,5 @@ def get_estimated_population(cod_ibge):
 
 if __name__ == '__main__':
     cod_ibge = '3526902'  # Limeira
-    a = get_estimated_population(cod_ibge)
-    print(a)
+    pop = get_estimated_population(cod_ibge)
+    print(pop)
