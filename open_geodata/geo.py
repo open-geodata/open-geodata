@@ -152,8 +152,8 @@ if __name__ == '__main__':
     # print(gdf.head())
 
     # # List Geodata
-    # list_shp = get_dataset_names_others('sp_piracicaba')
-    # pprint.pprint(list_shp)
+    list_shp = get_dataset_from_package('sp_piracicaba')
+    pprint.pprint(list_shp)
 
     gdf = load_dataset_from_package('sp_piracicaba', 'zips.divisa_municipal')
     print(gdf.head())
