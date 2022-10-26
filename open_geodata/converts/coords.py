@@ -5,7 +5,35 @@ Convert Coordenadas
 
 
 
+def dms2dd_daee(coord):
+    """
+    Convert geographic coordinates in
+    format degrees, minutes and seconds (22° 55' 09'')
+    in decimal degrees (e.g. -22.91916666666667)
 
+    Estilo DAEE Hidrologia
+
+    :param coord: string 23° 06' 09''
+    :return: float -22.91916666666667
+    """
+    # Splitar coordenada
+    coord = coord.replace("''", '')
+    coord = coord.replace("'", '-')
+    coord = coord.replace("°", '-')
+    coord = coord.replace(' ', '')
+    coord = coord.split('-')
+    graus = float(coord[0])
+    minutos = float(coord[1])
+    segundos = float(coord[2])
+
+    # Calcular
+    coord_dm = graus + (minutos / 60) + (segundos / 3600)
+
+    # Converter parâmetro textual
+    return coord_dm * -1
+
+
+    
 
 def dms2dd(coord):
     """
