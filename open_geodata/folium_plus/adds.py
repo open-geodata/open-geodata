@@ -1,10 +1,9 @@
 """
-
-
+Adicionando funções ao folium
+nov.22
 """
 
 
-import imp
 import os
 import pprint
 import folium
@@ -16,7 +15,6 @@ from pathlib import Path
 
 def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
     """
-
     :param tile_service:
     :param location:
     :param zoom_start:
@@ -62,8 +60,7 @@ def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
 
 
 def modify_header_legend(m):
-    """
-    """
+    """ """
 
     # Header to Add
     head = """
@@ -153,8 +150,7 @@ def modify_header_legend(m):
 
 
 def add_categorical_legend(m, title, color_by_label):
-    """
-    """
+    """ """
 
     # Modify Header
     m = modify_header_legend(m)
@@ -183,7 +179,7 @@ def add_categorical_legend(m, title, color_by_label):
 
 if __name__ == '__main__':
     from sp_piracicaba import lyr
-    from open_geodata import geo    
+    from open_geodata import geo
 
     # List Geodata
     list_shp = geo.get_dataset_from_package('sp_piracicaba')
@@ -194,10 +190,10 @@ if __name__ == '__main__':
 
     # Create Map
     m = create_map_multitiles()
-    
+
     # Add Layers
     m.add_child(sp_piracicaba.lyr.macrozona())
-    #sp_piracicaba.
+    # sp_piracicaba.
 
     # Add Layer Control
     folium.LayerControl('topright', collapsed=False).add_to(m)
@@ -209,7 +205,7 @@ if __name__ == '__main__':
         'MAPH': '#029e73',
         'MCU': '#d55e00',
         'MRU': '#cc78bc',
-        'MUC': '#ca9161'
+        'MUC': '#ca9161',
     }
     # m = modify_header_legend(m)
     m = add_categorical_legend(m, title='Legenda', color_by_label=colors)
