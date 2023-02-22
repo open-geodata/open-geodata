@@ -6,15 +6,17 @@ nov.22
 
 import os
 import pprint
-import folium
 import webbrowser
-import pandas as pd
-import branca as bc
 from pathlib import Path
+
+import branca as bc
+import folium
+import pandas as pd
 
 
 def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
     """
+    
     :param tile_service:
     :param location:
     :param zoom_start:
@@ -60,8 +62,9 @@ def create_map_multitiles(location=[-23.9619271, -46.3427499], zoom_start=10):
 
 
 def modify_header_legend(m):
-    """ """
-
+    """
+    sdsdsdsd
+    """
     # Header to Add
     head = """
     {% macro header(this, kwargs) %}
@@ -150,7 +153,8 @@ def modify_header_legend(m):
 
 
 def add_categorical_legend(m, title, color_by_label):
-    """ """
+    """
+    """
 
     # Modify Header
     m = modify_header_legend(m)
@@ -179,6 +183,7 @@ def add_categorical_legend(m, title, color_by_label):
 
 if __name__ == '__main__':
     from sp_piracicaba import lyr
+
     from open_geodata import geo
 
     # List Geodata
