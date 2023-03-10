@@ -131,14 +131,14 @@ def load_dataset_from_package(package_name, dataset_name):
     file_path_7z = only(list_7zips)
     file_path_csv = only(list_csv)
 
-    #
-    print(f'A lista de 7zip é: {file_path_7z}')
-    print(f'A lista de csv é: {file_path_csv}')
+    # Prints
+    #print(f'A lista de 7zip é: {file_path_7z}')
+    #print(f'A lista de csv é: {file_path_csv}')
 
-    if file_path_7z.is_file():
+    if file_path_7z is not None and file_path_7z.is_file():
         return _read_7z_file(file_path_7z)
 
-    elif file_path_csv.is_file():
+    elif file_path_csv is not None and file_path_csv.is_file():
         return pd.read_csv(file_path_csv)
 
     else:
