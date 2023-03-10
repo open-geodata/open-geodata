@@ -3,7 +3,6 @@
 
 """
 
-
 import py7zr
 import pprint
 import pandas as pd
@@ -115,10 +114,14 @@ def load_dataset_from_package(package_name, dataset_name):
     """
 
     """
+    # Importa o Package
     package_path = importlib.resources.files(package_name)
     print(package_path)
+
+    #
     filename = dataset_name.replace('.', '/')
-    filename = Path(filename)    
+    filename = Path(filename)
+    print(f'O nome do arquivo é {filename}')
 
     # Lista de Arquivo
     list_7zips = list(package_path.rglob(f'{filename}*.7z'))
@@ -127,6 +130,10 @@ def load_dataset_from_package(package_name, dataset_name):
     # Pega Valor Único
     file_path_7z = only(list_7zips)
     file_path_csv = only(list_csv)
+
+    #
+    print(f'A lista de 7zip é: {file_path_7z}')
+    print(f'A lista de csv é: {file_path_csv}')
 
     if file_path_7z.is_file():
         return _read_7z_file(file_path_7z)
