@@ -19,9 +19,9 @@ Alguns dos dados básicos disponíveis no pacote são:
 
 
 O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPi](https://pypi.org/). É possível
-acessar outros dados instalando pacotes adicionais listados no [wiki](./wiki/Databases)
+acessar outros dados instalando pacotes adicionais listados no [wiki/Dados](https://github.com/open-geodata/open-geodata/wiki/Dados)
 
-> Para mais informações, ver [**Wiki**](./wiki)
+> Para mais informações, ver [**Wiki**](https://github.com/open-geodata/open-geodata/wiki)
 
 <br>
 
