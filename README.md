@@ -3,8 +3,7 @@
 
 [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
 
-- [GitHub](https://github.com/open-geodata/open-geodata)
-- [PyPi](https://pypi.org/project/open-geodata/)
+[GitHub](https://github.com/open-geodata/open-geodata) | [PyPi](https://pypi.org/project/open-geodata/)
 
 <br>
 
@@ -19,10 +18,10 @@ Alguns dos dados básicos disponíveis no pacote são:
 <br>
 
 
-O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial PyPi. É possível
+O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPi](https://pypi.org/). É possível
 acessar outros dados instalando pacotes adicionais listados no [wiki](./wiki/Databases.md)
 
-> Para mais informações, ver [**Wiki**](.wiki/)
+> Para mais informações, ver [**Wiki**](./wiki)
 
 <br>
 

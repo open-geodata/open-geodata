@@ -1,17 +1,18 @@
-# sp_ff_apa_corumbatai
+## APA Corumbatai
 
 
-[PyPi](https://pypi.org/project/sp-ff-apa-corumbatai/)
+Dados espaciais da Área de Proteção Ambiental Corumbataí, disponibilizados no
+pacote [PyPi](https://pypi.org/project/sp-ff-apa-corumbatai/) e
+repositório [GitHub](https://github.com/open-geodata/sp_ff_apa-corumbatai).
 
-Dados espaciais da Área de Proteção Ambiental Corumbataí
-
-```
-!pip3 install sp-ff-apa-corumbatai --upgrade
+```shell
+# Instalar
+pip3 install sp-ff-apa-corumbatai --upgrade
 ```
 
 <br>
 
-dddd
+Após instalar é possível consumir os dados.
 
 ```python
 # Imports
@@ -21,7 +22,7 @@ from open_geodata import geo
 geo.get_dataset_from_package('sp_ff_apa_corumbatai')
 
 # Load Dataset from package
-geo.load_dataset_from_package('sp_ff_apa_corumbatai', dataset_name)
+geo.load_dataset_from_package('sp_ff_apa_corumbatai', 'geo.apa_corumbatai_geologia')
 ```
 
 <br>
@@ -30,13 +31,28 @@ geo.load_dataset_from_package('sp_ff_apa_corumbatai', dataset_name)
 -----
 
 
-# sp_piracicaba
+## Plano Diretor de Piracicaba
 
 
-[PyPi](https://pypi.org/project/sp-piracicaba/)
+Dados espaciais do Plano Diretor do Município de Piracicaba, disponibilizados no
+pacote [PyPi](https://pypi.org/project/sp-piracicaba/) e
+repositório [GitHub](https://github.com/open-geodata/sp_piracicaba).
 
-dados espaciais do Plano Diretor do Município de Piracicaba
+```shell
+# Instalar
+pip3 install sp-piracicaba --upgrade
+```
 
+```python
+# Imports
+from open_geodata import geo
+
+# List Datasets from package (dataframes and geodataframes)
+geo.get_dataset_from_package('sp_piracicaba')
+
+# Load Dataset from package
+geo.load_dataset_from_package('sp_piracicaba', 'geo.divisa_abairramento')
+```
 
 <br>
 
@@ -44,12 +60,28 @@ dados espaciais do Plano Diretor do Município de Piracicaba
 -----
 
 
-# sp-bh-pcj-2020-2035
+## Plano das Bacias PCJ 2020-2035
 
 
-[PyPi](https://pypi.org/project/sp-bh-pcj-2020-2035/)
+Dados espaciais do Plano das Bacias PCJ 2020-2035, disponibilizados no
+pacote [PyPi](https://pypi.org/project/sp-bh-pcj-2020-2035/) e
+repositório [GitHub](https://github.com/open-geodata/sp_bh_pcj-2020-2035).
 
-Dados espaciais do Plano das Bacias PCJ 2020-2035.
+```shell
+# Instalar
+pip3 install sp-bh-pcj-2020-2035 --upgrade
+```
+
+```python
+# Imports
+from open_geodata import geo
+
+# List Datasets from package (dataframes and geodataframes)
+geo.get_dataset_from_package('sp_bh_pcj_2020_2035')
+
+# Load Dataset from package
+geo.load_dataset_from_package('sp_bh_pcj_2020_2035', 'geo.limite da bacia pcj - poligonos')
+```
 
 <br>
 
@@ -57,13 +89,38 @@ Dados espaciais do Plano das Bacias PCJ 2020-2035.
 -----
 
 
-# sp-bh-at
+# Plano de Bacias do Alto Tietê
 
 
-[PyPi](https://pypi.org/project/sp-bh-at/)
+Dados espaciais do Plano de Bacias do Alto Tietê, disponibilizados no
+pacote [PyPi](https://pypi.org/project/sp-bh-at/) e
+repositório [GitHub](https://github.com/open-geodata/sp_bh_at).
 
-Dados espaciais do Plano das Bacias do Alto Tietê
+```shell
+# Instalar
+pip3 install sp-bh-at --upgrade
+```
+
+```python
+# Imports
+from open_geodata import geo
+
+# List Datasets from package (dataframes and geodataframes)
+geo.get_dataset_from_package('sp_bh_at')
+
+# Load Dataset from package
+geo.load_dataset_from_package('sp_bh_at', 'geo.06_bacia_alto_tiete')
+```
+
+<br>
+------
 
 
+## Outras Bases de Dados
 
 
+Abaixo são listadas outras bases de dados para avaliar se são relevantes para estudos e projetos.
+
+Até o momento não foram desenvolvidos pacotes para obtenção e possibilidade de uso com o OpenGeodata.
+
+- [EuroStat](https://ec.europa.eu/eurostat/web/main/home)

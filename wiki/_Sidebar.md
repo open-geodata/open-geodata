@@ -1,6 +1,6 @@
 # Sumário
 
 1. [**Introdução**](Home)
-3. [**Dados**](Databases)
-4. [**Outras Funções**](Funcoes)
-5. [**Como Usar?**](Aperfeiçoamento)
+2. [**Dados**](Databases)
+3. [**Como Usar?**](Como%20Usar)
+4. [**Outras Funções**](Funções)
