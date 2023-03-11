@@ -114,6 +114,35 @@ geo.load_dataset_from_package('sp_bh_at', 'geo.06_bacia_alto_tiete')
 
 <br>
 
+
+-----
+
+
+# Divisão Administrativa CETESB
+
+
+Dados espaciais da Divisão Administrativa da CETESB, disponibilizados no
+pacote [PyPi](https://pypi.org/project/sp-cetesb-divadmin/) e
+repositório [GitHub](https://github.com/open-geodata/sp_cetesb_divadmin).
+
+```shell
+# Instalar
+pip3 install sp-cetesb-divadmin --upgrade
+```
+
+```python
+# Imports
+from open_geodata import geo
+
+# List Datasets from package (dataframes and geodataframes)
+geo.get_dataset_from_package('sp_cetesb_divadmin')
+
+# Load Dataset from package
+geo.load_dataset_from_package('sp_cetesb_divadmin', 'geo.sp_cetesb')
+```
+
+<br>
+
 ------
 
 
