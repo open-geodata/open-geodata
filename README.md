@@ -19,7 +19,7 @@ Alguns dos dados básicos disponíveis no pacote são:
 
 
 O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPi](https://pypi.org/). É possível
-acessar outros dados instalando pacotes adicionais listados no [wiki](./wiki/Databases.md)
+acessar outros dados instalando pacotes adicionais listados no [wiki](./wiki/Databases)
 
 > Para mais informações, ver [**Wiki**](./wiki)
 

@@ -1,5 +1,4 @@
-### Como Usar?
-
+### Instalando
 
 Inicialmente o pacote deve ser instalado
 
