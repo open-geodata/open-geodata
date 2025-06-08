@@ -14,11 +14,23 @@ from more_itertools import one, only
 
 
 def _ajust_list_files(list_files):
-    list_files = [str(x.as_posix()) for x in list_files]  # Convert to text
-    list_files = [x.split('.', maxsplit=1)[0]
-                  for x in list_files]  # Splita no . e pega primeira parte
-    list_files = [x.replace('/', '.')
-                  for x in list_files]  # Convert Paths Linux
+    """
+
+    :param list_files:
+    :return:
+    """
+    # Convert to text
+    list_files = [str(x.as_posix()) for x in list_files]
+
+    # Splita no . e pega primeira parte
+    list_files = [
+        x.split('.', maxsplit=1)[0] for x in list_files
+    ]
+
+    # Convert Paths Linux
+    list_files = [
+        x.replace('/', '.') for x in list_files
+    ]
     list_files = list(set(list_files))
     list_files.sort()
     return list_files
@@ -132,8 +144,8 @@ def load_dataset_from_package(package_name, dataset_name):
     file_path_csv = only(list_csv)
 
     # Prints
-    #print(f'A lista de 7zip é: {file_path_7z}')
-    #print(f'A lista de csv é: {file_path_csv}')
+    # print(f'A lista de 7zip é: {file_path_7z}')
+    # print(f'A lista de csv é: {file_path_csv}')
 
     if file_path_7z is not None and file_path_7z.is_file():
         return _read_7z_file(file_path_7z)

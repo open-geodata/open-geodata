@@ -3,7 +3,6 @@ Adicionando funções ao folium
 nov.22
 """
 
-
 import os
 import pprint
 import webbrowser
@@ -203,7 +202,7 @@ if __name__ == '__main__':
     # Add Layer Control
     folium.LayerControl('topright', collapsed=False).add_to(m)
 
-    # Add Lagend
+    # Add Legend
     colors = {
         'MADE': '#0173b2',
         'MANU': '#de8f05',

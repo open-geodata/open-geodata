@@ -1,11 +1,9 @@
 Além das funções principais (para listar e carregar dados), o pacote entrega outras funções para uso com dados
 geoespaciais.
 
-
 ## Maps Folium
 
-
-Cria mapa folium com diversos *titles* diferentes.
+Cria mapa folium com diversos _titles_ diferentes.
 
 ```python
 from open_geodata import folium_plus
@@ -17,8 +15,7 @@ m
 
 ## Layers
 
-
-Cria objetos de *layers* para serem inlcuidos no map folium.
+Cria objetos de _layers_ para serem inlcuidos no map folium.
 
 ```python
 from open_geodata import lyr
@@ -28,7 +25,6 @@ lyr.base.google_hybrid(min_zoom, max_zoom)
 ```
 
 ## Convert
-
 
 Será removido!
 Usei em um projeto quando não sabia fazer de outra forma.

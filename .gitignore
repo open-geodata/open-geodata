@@ -1,6 +1,10 @@
 # IDEs
 .vscode/
 .idea/
+.vs/
+
+# Data
+_lixo/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

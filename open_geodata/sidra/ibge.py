@@ -2,9 +2,6 @@
 
 """
 
-# !pip install sidrapy --upgrade
-
-
 import sidrapy
 import pandas as pd
 
@@ -32,7 +29,7 @@ def get_estimated_population(cod_ibge):
         'D2N': 'ano'
     }
 
-    # Remane Columns
+    # Rename Columns
     df.rename(
         dict_col,
         axis=1,

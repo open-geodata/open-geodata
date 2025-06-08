@@ -1,9 +1,8 @@
 # Open Geodata
 
-
 [![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
 
-[GitHub](https://github.com/open-geodata/open-geodata) | [PyPi](https://pypi.org/project/open-geodata/)
+[GitHub](https://github.com/open-geodata/open-geodata) | [PyPI](https://pypi.org/project/open-geodata/)
 
 <br>
 
@@ -17,7 +16,6 @@ Alguns dos dados básicos disponíveis no pacote são:
 
 <br>
 
-
 O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPi](https://pypi.org/). É possível
 acessar outros dados instalando pacotes adicionais listados no [wiki/Dados](https://github.com/open-geodata/open-geodata/wiki/Dados)
 
@@ -25,8 +23,7 @@ acessar outros dados instalando pacotes adicionais listados no [wiki/Dados](http
 
 <br>
 
-Para possibilitar testes do pacote, criei
-um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
+Para possibilitar testes do pacote, criei um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
 Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 
 <br>
@@ -37,4 +34,4 @@ Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 
 1. Estudar mais o [incremental](https://github.com/twisted/incremental)
 2. Definir os _layers_ para projetos apartados
-3. Estudar a possibilidade de participnar dados, conforme mencionado [aqui](https://dev.to/bowmanjd/easily-load-non-python-data-files-from-a-python-package-2e8g)!
+3. Estudar a possibilidade de participar dados, conforme mencionado [aqui](https://dev.to/bowmanjd/easily-load-non-python-data-files-from-a-python-package-2e8g)!

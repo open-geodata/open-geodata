@@ -8,6 +8,9 @@ dependencies = [
     "folium>=0.19.7",
     "geopandas>=1.1.0",
     "pandas>=2.3.0",
+    "py7zr>=1.0.0",
+    "selenium>=4.33.0",
+    "sidrapy>=0.1.4",
 ]
 
 [dependency-groups]
