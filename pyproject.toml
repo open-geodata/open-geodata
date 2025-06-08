@@ -17,6 +17,3 @@ dependencies = [
 dev = [
     "notebook>=7.4.3",
 ]
-docs = [
-    "mkdocs>=1.6.1",
-]
