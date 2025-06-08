@@ -1,5 +1,9 @@
-# Criado em 06.10.2022
+# Rotina para publicar a documentação no GitHub Wiki
 # https://github.com/marketplace/actions/publish-to-github-wiki
+# 
+# 
+# Michel Metran
+# Data: 06.10.2022
 
 name: Documentation
 

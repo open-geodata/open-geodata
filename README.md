@@ -1,8 +1,9 @@
 # Open Geodata
 
-[![Publish Python 🐍 distributions 📦 to PyPI](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypi.yml)
-
-[GitHub](https://github.com/open-geodata/open-geodata) | [PyPI](https://pypi.org/project/open-geodata/)
+[![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/open-geodata/open-geodata)
+[![PyPI - Version](https://img.shields.io/pypi/v/brazilian-holidays?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/open-geodata/)\
+[![Read the Docs](https://img.shields.io/readthedocs/brazilian-holidays?logo=ReadTheDocs&label=Read%20The%20Docs)](https://brazilian-holidays.readthedocs.io/)
+[![Publish Python to PyPI](https://github.com/michelmetran/brazilian-holidays/actions/workflows/publish-to-pypipoetry.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypipoetry.yml)
 
 <br>
 
