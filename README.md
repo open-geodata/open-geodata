@@ -36,3 +36,4 @@ Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 1. Estudar mais o [incremental](https://github.com/twisted/incremental)
 2. Definir os _layers_ para projetos apartados
 3. Estudar a possibilidade de participar dados, conforme mencionado [aqui](https://dev.to/bowmanjd/easily-load-non-python-data-files-from-a-python-package-2e8g)!
+4. Embed pdf AMN

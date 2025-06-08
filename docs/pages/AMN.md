@@ -1,11 +1,3 @@
-
-ssss
-
-2013.04.04 - DNPM - Departamento Nacional de Produção Mineral
-
-
-
-
 A Agência Nacional de Mineração ([ANM](https://www.gov.br/anm/pt-br)) é uma autarquia federal, vinculada ao Ministério de Minas e Energia, responsável pela gestão da atividade de mineração e dos recursos minerais brasileiros
 
 É possível consultar as informações dos processos minerários, bem como identificar as poligonais dos respectivos processos. As informações são georreferenciadas e apresentadas por meio de mapas digitais no formato vetorial e raster, no datum SIRGAS2000. O SIGMINE possui caráter meramente informativo, portanto, não dispensa o uso dos instrumentos oficiais pertinentes para produção de efeitos legais.
