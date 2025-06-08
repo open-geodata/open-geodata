@@ -36,6 +36,8 @@ build:
             # https://github.com/readthedocs/readthedocs.org/issues/4912#issuecomment-1992286540
             # - VIRTUAL_ENV=$READTHEDOCS_VIRTUALENV_PATH poetry install --with docs
             #- echo ${TJSP_MNI_USERNAME}
+
+            # https://github.com/astral-sh/uv/issues/10074
             - pip install uv
             - UV_PROJECT_ENVIRONMENT=$READTHEDOCS_VIRTUALENV_PATH uv sync --all-extras --group docs --link-mode=copy
 
