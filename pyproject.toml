@@ -12,6 +12,7 @@ dependencies = [
     "pandas>=2.3.0",
     "py7zr>=1.0.0",
     "selenium>=4.33.0",
+    "sicar",
     "sidrapy>=0.1.4",
 ]
 
@@ -27,3 +28,6 @@ docs = [
     "mkdocs-pdf>=0.1.2",
     "pymdown-extensions>=10.15",
 ]
+
+[tool.uv.sources]
+sicar = { git = "https://github.com/urbanogilson/SICAR" }

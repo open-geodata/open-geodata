@@ -24,7 +24,7 @@
 
 1.Embed
 
-https://pypi.org/project/mkdocs-pdf/
+
 
 ![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/amn/file.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
