@@ -1,8 +1,6 @@
 # Criado em 06.10.2022
 # https://github.com/marketplace/actions/publish-to-github-wiki
 
-
-
 name: Documentation
 
 on: [push]
@@ -17,8 +15,7 @@ jobs:
       - name: Upload Documentation to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
         with:
-          path: "wiki"
+          path: 'wiki'
         env:
           #  GH_PERSONAL_ACCESS_TOKEN
           GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
-          
