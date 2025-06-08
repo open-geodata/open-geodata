@@ -15,21 +15,23 @@
 
 {% endwith %}
 
-saddsdsadasdsa
-dsa
-dsa
-das
-d
-sadsadsadsads
+<br>
+<br>
+<br>
+<br>
 
-![Alt text]('assets/amn/file.pdf'){ type=application/pdf }
+## Outros testes
 
-[dssdsdaddsa]('assets/amn/file.pdf'){ type=application/pdf }
+1.Embed
 
-## Exemplo: Embedando PDF
+https://pypi.org/project/mkdocs-pdf/
 
-<object data="assets/amn/file.pdf" type="application/pdf" width="100%" height="600px">
-    <p>Seu navegador não suporta PDF embedado. <a href="assets/amn/file.pdf">Clique aqui para baixar o PDF</a>.</p>
-</object>
+![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/amn/file.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
-[Baixar PDF](assets/amn/file.pdf)
+<br>
+
+1. Obtendo dddd
+
+[dssdsdaddsa]('./assets/amn/file.pdf'){ type=application/pdf }
+
+[ssss](http://127.0.0.1:8000/pt/latest/assets/amn/file.pdf)
