@@ -6,17 +6,17 @@ import sidrapy
 import pandas as pd
 
 
-def get_estimated_population(cod_ibge):
+def get_estimated_population(id_municipio):
     """
     Retorna a população estimada
-    :param cod_ibge:
+    :param id_municipio:
     :return:
     """
     # Get Table
     df = sidrapy.get_table(
         table_code='6579',
         territorial_level='6',
-        ibge_territorial_code=cod_ibge,
+        ibge_territorial_code=id_municipio,
         period='all',
         header='n',
     )

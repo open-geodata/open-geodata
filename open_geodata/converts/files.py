@@ -1,6 +1,4 @@
-"""
-
-"""
+""" """
 
 import py7zr
 from pathlib import Path
@@ -10,11 +8,9 @@ import geopandas as gpd
 from shapely.geometry import Point
 
 
-
-
-
-
-def df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=True):
+def df2geojson(
+    df, lat='latitude', long='longitude', remove_coords_properties=True
+):
     """
     Convert um dataframe, com colunas de latitude e longitude, em um objeto geojson de pontos
     https://notebook.community/gnestor/jupyter-renderers/notebooks/nteract/pandas-to-geojson
@@ -32,7 +28,9 @@ def df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=Tr
     :param remove_coords_properties:
     :return:
     """
-    print('Estudar:\nhttps://geopandas.org/en/stable/docs/reference/api/geopandas.points_from_xy.html')
+    print(
+        'Estudar:\nhttps://geopandas.org/en/stable/docs/reference/api/geopandas.points_from_xy.html'
+    )
     # Create a new python dict to contain our geojson data, using geojson format
     geojson = {'type': 'FeatureCollection', 'features': []}
 
@@ -45,7 +43,7 @@ def df2geojson(df, lat='latitude', long='longitude', remove_coords_properties=Tr
             'geometry': {
                 'type': 'Point',
                 'coordinates': [],
-            }
+            },
         }
 
         # Fill in the coordinates
@@ -80,11 +78,7 @@ def df2gdf(df, lat='latitude', long='longitude', epsg=4326):
     geometry = [Point(xy) for xy in zip(df[long], df[lat])]
 
     # Create Geodataframe
-    gdf = gpd.GeoDataFrame(
-        df,
-        crs=f'EPSG:{epsg}',
-        geometry=geometry
-    )
+    gdf = gpd.GeoDataFrame(df, crs=f'EPSG:{epsg}', geometry=geometry)
     gdf.drop([lat, long], axis=1, inplace=True, errors='ignore')
     return gdf
 
@@ -94,9 +88,11 @@ def convert_to_7zip(input_path, output_path, extension='gpkg'):
 
     :return:
     """
-    list_files = list(input_path.rglob(f'*.{extension}'))    
-    if len(list_files) == 0:        
-        raise RuntimeError(f'Não existem arquivos "{extension}" na pasta {input_path}')
+    list_files = list(input_path.rglob(f'*.{extension}'))
+    if len(list_files) == 0:
+        raise RuntimeError(
+            f'Não existem arquivos "{extension}" na pasta {input_path}'
+        )
 
     for file in list_files:
         # Paths
@@ -108,14 +104,13 @@ def convert_to_7zip(input_path, output_path, extension='gpkg'):
 
         # Print
         print(f'Arquivo "{file.name}" convertido para "{file.stem}.7z"')
-    
+
     print(f'Foram convertidos {len(list_files)} arquivos com sucesso!')
     return 0
 
 
-
 if __name__ == '__main__':
-    
+
     # Convert
     data_path = Path(__file__).parents[1].joinpath('data')
     ibge_path = data_path / 'geo' / 'br_ibge'

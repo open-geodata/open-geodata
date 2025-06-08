@@ -17,12 +17,22 @@ site_dir: "site" # Default site
 # Opcional
 nav:
   - Home: index.md
-  - Como Instalar?: pages/como-instalar.md
+  - Como Instalar?: pages/Como-Instalar.md
   - Como Usar?:
       - Exemplos: pages/Como-Usar.md
-      - Dados: pages/Dados.md
-      - Funções: dados/Funções.md
-      #- Dados Cadastrais: scripts/cadastro.ipynb
+      - Funções: pages/Funções.md
+      - Ambiente de Desenvolvimento: pages/Ambiente-de-Desenvolvimento.md
+  - Dados:
+      - BR.IBGE: scripts/ibge.ipynb
+      - BR.MapBiomas: pages/Fontes-Dados/MapBiomas.md
+      - BR.DNIT: pages/Fontes-Dados/DNIT.md
+      - BR.ANM: pages/ANM.md
+      - BR.BDGEx: pages/Fontes-Dados/BDGEx.md
+      - BR.ANM (exemplos): scripts\amn.ipynb
+      - Funções: pages/Funções.md
+      - Outros Dados: pages/Fontes-Dados/Outros-Dados.md
+      - Embed: embed.md
+
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
   #     - Consulta de Processos: scripts/consulta_processo.ipynb
   # - Histórico: pages/histórico.md
@@ -106,16 +116,23 @@ markdown_extensions:
       permalink: true
       separator: "_"
 
+  - pymdownx.pathconverter:
+      base_path: "open-geodata" # default: ''
+      relative_path: "" # default ''
+      absolute: true # default: false
+      tags: "a script img link object embed"
+
 plugins:
   - search:
       lang: pt
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      
   - tags:
       tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
       tags_slugify_format: "tag:{slug}"
-      tags_hierarchy: true
+      #tags_hierarchy: true
 
   - social:
       #cards_layout: default
@@ -131,7 +148,7 @@ plugins:
   - mkdocs-jupyter:
       ignore_h1_titles: True
       include_source: True
-      execute: false
+      execute: true
       show_input: True # Default True
       no_input: False # Default False
       #ignore: [ '1*.ipynb' ]

@@ -3,7 +3,7 @@ from .lyr import base
 from .functions import share_boundary
 from .folium_plus import adds, png
 from .converts import coords, files
-from .sidra import ibge
+from .providers import br, sp
 
 __all__ = [
     'share_boundary',
@@ -12,5 +12,5 @@ __all__ = [
     'png',
     'coords',
     'files',
-    'ibge',
+    #'ibge',
 ]

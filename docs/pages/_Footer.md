@@ -1,1 +1,0 @@
-Alguma dúvida, sugestão e/ou contribuição, favor reportar um [problema/*issue*](https://github.com/open-geodata/open-geodata/issues).  
