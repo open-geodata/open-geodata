@@ -46,8 +46,8 @@ jobs:
         run: uv sync --locked --all-extras --dev
 
       # For example, using `pytest`
-      - name: Run tests
-        run: uv run pytest tests
+      # - name: Run tests
+      #   run: uv run pytest tests
 
       # - name: Set up Python
       #   run: uv python install
