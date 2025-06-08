@@ -1,0 +1,158 @@
+# Basic
+site_name: OpenGeodata
+site_author: Michel Metran
+site_description: O e-SAJ (Sistema de Automação da Justiça) é um portal do TJSP, desenvolvido pela Softplan, que facilita a troca de informações e agiliza o trâmite processual. O pacote pyESAJ foi desenvolvido para permitir a interação com o e-SAJ por meio do python.
+#site_url: https://pyESAJ.readthedocs.io/
+site_url: https://opengeodata.readthedocs.io/pt/latest/
+copyright: |
+  &copy; 2025 <a href="https://github.com/open-geodata/"  target="_blank" rel="noopener">Michel Metran</a>
+
+# GitHub Repo Link
+repo_url: https://github.com/open-geodata/open_geodata
+
+docs_dir: "docs" # Default docs
+site_dir: "site" # Default site
+
+# NavBar
+# Opcional
+nav:
+  - Home: pages/Home.md
+  - Como Instalar?: pages/como-instalar.md
+  - Como Usar?:
+      - Exemplos: pages/Como-Usar.md
+      - Dados: pages/Dados.md
+      - Funções: dados/Funções.md
+      #- Dados Cadastrais: scripts/cadastro.ipynb
+  #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
+  #     - Consulta de Processos: scripts/consulta_processo.ipynb
+  # - Histórico: pages/histórico.md
+  # - Como Contribuir?: pages/como-contribuir.md
+  # - Page Object Model: pages/pacote.md
+  # - Bugs: pages/bugs.md
+  # - Intimações: pages/intimações.md
+  # - Me, Myself and I: pages/autor.md
+
+theme:
+  # Breadcrumbs
+  features:
+    - navigation.path
+    - navigation.top
+    #- navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    #- toc.integrate
+    - content.code.annotation
+    - content.code.copy
+
+  language: pt-BR
+
+  icon:
+    repo: fontawesome/brands/github
+    favicon: attachment/favicon-32x32.png
+
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+# https://facelessuser.github.io/pymdown-extensions/
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji # Suporte a emojis
+  - pymdownx.tasklist # Suporte à tarefas
+  - pymdownx.mark # Marcado
+  - pymdownx.tilde # Realçado
+  - pymdownx.highlight # Código
+  #  - pymdownx.superfences:
+  #      custom_fences:
+  #        - name: mermaid
+  #          class: mermaid
+  #          format: !!python/name:pymdownx.superfences.fence_code_format
+  #            # Referências
+  #            # https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/mkdocs.yml
+
+  - toc:
+      permalink: true
+      separator: "_"
+
+plugins:
+  - search:
+      lang: pt
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags:
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      tags_slugify_format: "tag:{slug}"
+      tags_hierarchy: true
+
+  - social:
+      #cards_layout: default
+      cards_layout_options:
+        background_color: "#ff1493"
+        background_image: docs/assets/bug-paginacao.png
+        color: "#ffffff"
+        #font_family: Ubuntu
+        # logo: docs/assets/logo.png
+        #title: My custom title
+
+  #- projects
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+      include_source: True
+      execute: false
+      show_input: True # Default True
+      no_input: False # Default False
+      #ignore: [ '1*.ipynb' ]
+      include: ["*.ipynb"] # Default: ["*.py", "*.ipynb"]
+      remove_tag_config:
+        remove_cell_tags:
+          - hide_code
+
+extra:
+  analytics:
+    provider: google
+    property: GT-PZVTRDZX
+
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/michelmetran
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/michelmetran/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/michelmetran
+
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/#versioning
+  version:
+    provider: mike

@@ -42,15 +42,15 @@ jobs:
           python-version: '3.11'
           # python-version-file: '.python-version'
 
+      - name: Lock UV dependencies
+        run: uv lock
+
       - name: Install the project
         run: uv sync --locked --all-extras --dev
 
       # For example, using `pytest`
       # - name: Run tests
       #   run: uv run pytest tests
-
-      # - name: Set up Python
-      #   run: uv python install
 
       # # load cached venv if cache exists
       # - name: Load cached venv
