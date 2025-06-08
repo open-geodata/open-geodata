@@ -13,12 +13,10 @@ repo_url: https://github.com/open-geodata/open_geodata
 docs_dir: "docs" # Default docs
 site_dir: "site" # Default site
 
-
-
 # NavBar
 # Opcional
 nav:
-  - Home: pages/Home.md
+  - Home: index.md
   - Como Instalar?: pages/como-instalar.md
   - Como Usar?:
       - Exemplos: pages/Como-Usar.md
