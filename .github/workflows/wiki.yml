@@ -22,4 +22,4 @@ jobs:
           path: 'wiki'
         env:
           #  GH_PERSONAL_ACCESS_TOKEN
-          GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+          GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN  }}
