@@ -1,6 +1,5 @@
 """
 Funções para trabalhar com dados geoespaciais
-
 """
 
 

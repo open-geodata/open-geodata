@@ -1,15 +1,15 @@
 """
-
-
+sssss
 """
 
-import py7zr
-import pprint
-import pandas as pd
-import geopandas as gpd
 import importlib.resources
+import pprint
+import tempfile
 from pathlib import Path
 
+import geopandas as gpd
+import pandas as pd
+import py7zr
 from more_itertools import one, only
 
 
@@ -23,14 +23,10 @@ def _ajust_list_files(list_files):
     list_files = [str(x.as_posix()) for x in list_files]
 
     # Splita no . e pega primeira parte
-    list_files = [
-        x.split('.', maxsplit=1)[0] for x in list_files
-    ]
+    list_files = [x.split('.', maxsplit=1)[0] for x in list_files]
 
     # Convert Paths Linux
-    list_files = [
-        x.replace('/', '.') for x in list_files
-    ]
+    list_files = [x.replace('/', '.') for x in list_files]
     list_files = list(set(list_files))
     list_files.sort()
     return list_files
@@ -43,11 +39,15 @@ def _read_7z_file(file_path_7z):
 
             # Quero apenas um arquivo por gpkg
             if len(allfiles) == 1:
-                for filename, bio in archive.read(allfiles).items():
-                    pass
+                # for filename, bio in archive.read(allfiles).items():
+                #     pass
+                with tempfile.TemporaryDirectory() as temp_dir:
+                    temp_dir = Path(temp_dir)
+                    archive.extract(path=temp_dir, targets=allfiles)
+                    return gpd.read_file(list(temp_dir.glob('*'))[0])
+
             else:
                 raise RuntimeError('.zip tem mais de um gpkg')
-        return gpd.read_file(bio)
 
 
 def get_dataset_names():
@@ -63,7 +63,7 @@ def get_dataset_names():
     return _ajust_list_files(list_files)
 
 
-def load_dataset(dataset_name):
+def load_dataset(dataset_name) -> pd.DataFrame | gpd.GeoDataFrame:
     """
     Funções para carregar dados geoespaciais
 
@@ -85,7 +85,8 @@ def load_dataset(dataset_name):
     # Checa se existe mais de um
     if list_shp.count(dataset_name) > 1:
         raise RuntimeError(
-            f'Exists "{list_shp.count(dataset_name)}" datasets named "{dataset_name}"')
+            f'Exists "{list_shp.count(dataset_name)}" datasets named "{dataset_name}"'
+        )
 
     # Teste ambos tipos de arquivos
     file_path_7z = file_path.with_suffix('.7z')
@@ -111,8 +112,9 @@ def get_dataset_from_package(package_name):
     """
     # sss
     package_path = importlib.resources.files(package_name)
-    list_files = [x for x in package_path.rglob(
-        '*') if x.suffix in ('.7z', '.csv')]
+    list_files = [
+        x for x in package_path.rglob('*') if x.suffix in ('.7z', '.csv')
+    ]
     list_files = [x.relative_to(package_path) for x in list_files]
     list_files = [x.relative_to('data') for x in list_files]
     for path in ['input', 'output']:
@@ -124,9 +126,7 @@ def get_dataset_from_package(package_name):
 
 
 def load_dataset_from_package(package_name, dataset_name):
-    """
-
-    """
+    """ """
     # Importa o Package
     package_path = importlib.resources.files(package_name)
     print(package_path)
@@ -160,7 +160,7 @@ def load_dataset_from_package(package_name, dataset_name):
 
 if __name__ == '__main__':
     from open_geodata import geo
-    from open_geodata.functions import share_boundary, find_neighbors
+    from open_geodata.functions import find_neighbors, share_boundary
 
     # # List Geodata
     list_shp = get_dataset_names()

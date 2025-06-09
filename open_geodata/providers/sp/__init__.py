@@ -1,0 +1,1 @@
+from .cetesb import div_admin

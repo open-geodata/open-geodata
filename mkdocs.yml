@@ -22,17 +22,20 @@ nav:
       - Exemplos: pages/Como-Usar.md
       - Funções: pages/Funções.md
       - Ambiente de Desenvolvimento: pages/Ambiente-de-Desenvolvimento.md
-  - Dados:
-      - BR.IBGE: scripts/ibge.ipynb
-      - BR.MapBiomas: pages/Fontes-Dados/MapBiomas.md
-      - BR.DNIT: pages/Fontes-Dados/DNIT.md
-      - BR.BDGEx: pages/Fontes-Dados/BDGEx.md
+  - Dados (Brasil):
       - BR.ANM: pages/AMN.md
-      - BR.ANM (exemplos): scripts/amn.ipynb
-      - BR.SFB (exemplos): scripts/sfb.ipynb
+      - BR.ANM (exemplos): scripts/br_amn.ipynb
+      - BR.BDGEx: pages/Fontes-Dados/BDGEx.md
+      - BR.DNIT: pages/Fontes-Dados/DNIT.md
+      - BR.IBGE: scripts/br_ibge.ipynb
+      - BR.MapBiomas: pages/Fontes-Dados/MapBiomas.md
+      - BR.SFB (exemplos): scripts/br_sfb.ipynb
+  - Dados (São Paulo):
+      - SP.CETESB: pages/Fontes-Dados/CETESB.md
+      - SP.CETESB (exemplos): scripts/sp_cetesb_divamin.ipynb
+  - Outros:
       - Funções: pages/Funções.md
       - Outros Dados: pages/Fontes-Dados/Outros-Dados.md
-      - Embed: embed.md
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
   #     - Consulta de Processos: scripts/consulta_processo.ipynb
@@ -120,11 +123,11 @@ markdown_extensions:
       permalink: true
       separator: "_"
 
-  # - pymdownx.pathconverter:
-  #     base_path: "open-geodata" # default: ''
-  #     relative_path: "" # default ''
-  #     absolute: true # default: false
-  #     tags: "a script img link object embed"
+  - pymdownx.pathconverter:
+      base_path: "open-geodata" # default: ''
+      relative_path: "" # default ''
+      absolute: true # default: false
+      tags: "a script img link object embed"
 
 plugins:
   - search:

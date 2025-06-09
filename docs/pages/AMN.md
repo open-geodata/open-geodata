@@ -69,4 +69,4 @@ FeatureClassToGeodatabase_conversion %workspace%\AC.shp;%workspace%\AL.shp;%work
 
 Bem como um _.pdf_ da época, com as instruções para baixar os arquivos no extindo DNPM.
 
-![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/amn/file.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/br_amn/file.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
