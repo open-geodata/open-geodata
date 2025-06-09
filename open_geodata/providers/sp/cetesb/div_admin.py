@@ -245,6 +245,7 @@ class CETESB:
         # Padrão
         gdf = geo.load_dataset('geo.sp.sp_250k_wgs84')
         gdf = gdf.drop(['municipio_nome'], axis=1, inplace=False)
+        gdf['id_municipio'] = gdf['id_municipio'].astype(int)
         gdf['geometry'] = gdf['geometry'].simplify(0.0015)
 
         # Tabela AgÊncias e Municípios

@@ -13,7 +13,7 @@ class SICAR:
 
     def __init__(
         self,
-        tesseract_path,
+        tesseract_path: str | Path,
     ):
         """
         Initialize the Sicar data provider with optional parameters.
