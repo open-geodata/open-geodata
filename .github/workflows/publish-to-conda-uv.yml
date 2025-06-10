@@ -54,12 +54,30 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
+          channels: conda-forge,michelmetran
           python-version: ${{ matrix.python-version }}
+          activate-environment: test
 
       - name: Conda info
         shell: bash -el {0}
         run: conda info
 
+      - name: Conda Install
+        shell: bash -el {0}
+        run: conda install anaconda-client
+
       - name: Conda list
         shell: pwsh
         run: conda list
+
+
+
+      - name: Publish distribution 📦 to Anaconda if Push
+        shell: bash -l {0}
+        run: |
+        
+          PKG_NAME=open-geodata
+          mkdir ~/conda-bld
+          conda config --set anaconda_upload no
+          conda build "conda/"
+          anaconda -t ${{ secrets.ANACONDA_TOKEN }} upload -u ${{ secrets.CONDA_USERNAME }} /usr/share/miniconda/conda-bld/noarch/$PKG_NAME-$VERSION-py_0.tar.bz2 --force        
