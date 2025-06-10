@@ -1,7 +1,10 @@
 [project]
 name = "open-geodata"
-version = "23.0.4"
-description = "Add your description here"
+version = "23.0.5"
+description = "Dados Espaciais do Brasil"
+authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
+keywords = ["geodata", "geoprocessamento", "github", "utility"]
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -17,10 +20,17 @@ dependencies = [
     "sidrapy>=0.1.4",
 ]
 
+[project.urls]
+#Homepage = "https://github.com/Malwarebytes/ghas-cli"
+Issues = "https://github.com/michelmetran/open-geodata/issues"
+Documentation = "https://open-geodata.readthedocs.io/pt/latest/"
+Repository = "https://github.com/michelmetran/open-geodata"
+Changelog = "https://github.com/Malwarebytes/ghas-cli/releases"
+funding = "https://www.malwarebytes.com/"
+
+
 [dependency-groups]
-dev = [
-    "notebook>=7.4.3",
-]
+dev = ["notebook>=7.4.3"]
 docs = [
     "mkdocs>=1.6.1",
     "mkdocs-jupyter>=0.25.1",
@@ -32,4 +42,17 @@ docs = [
 [tool.uv.sources]
 sicar = { git = "https://github.com/urbanogilson/SICAR" }
 
-include = ["data/**/*"]
+
+# [tool.uv]
+# package = true
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+
+[tool.uv.build-backend]
+module-root = ""
+
+[tool.uv.build-backend.data]
+data = "open_geodata/data"
