@@ -30,12 +30,18 @@ jobs:
       #   run: |
       #     export LC_ALL=C
 
+
+      # https://github.com/actions/checkout
       - name: Check out repository
         uses: actions/checkout@v4
 
+
+      # https://github.com/astral-sh/setup-uv
       - name: Install uv
         uses: astral-sh/setup-uv@v5
 
+
+      # https://github.com/actions/setup-python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

@@ -16,6 +16,7 @@ dependencies = [
     "pandas>=2.3.0",
     "py7zr>=1.0.0",
     "selenium>=4.33.0",
+    # pip install git+https://github.com/urbanogilson/SICAR
     "sicar",
     "sidrapy>=0.1.4",
 ]
@@ -25,8 +26,8 @@ dependencies = [
 Issues = "https://github.com/michelmetran/open-geodata/issues"
 Documentation = "https://open-geodata.readthedocs.io/pt/latest/"
 Repository = "https://github.com/michelmetran/open-geodata"
-Changelog = "https://github.com/Malwarebytes/ghas-cli/releases"
-funding = "https://www.malwarebytes.com/"
+#Changelog = "https://github.com/Malwarebytes/ghas-cli/releases"
+#Funding = "https://www.malwarebytes.com/"
 
 
 [dependency-groups]
