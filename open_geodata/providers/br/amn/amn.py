@@ -58,9 +58,7 @@ class ANM:
         """
         ssl._create_default_https_context = ssl._create_unverified_context
         url = self.layers.loc[self.layers['nome'] == layer, 'url'].values[0]
-
-        gdf = gpd.read_file(filename=url)
-        return gdf
+        return gpd.read_file(filename=url)
 
     def download_file(self, layer: str, output_path: str | Path):
         """
