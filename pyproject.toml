@@ -1,6 +1,6 @@
 [project]
 name = "open-geodata"
-version = "23.0.7"
+version = "23.0.8"
 description = "Dados Espaciais do Brasil"
 authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
 keywords = ["geodata", "geoprocessamento", "github", "utility"]
@@ -45,16 +45,16 @@ docs = [
 sicar = { git = "https://github.com/urbanogilson/SICAR" }
 
 
-# [tool.uv]
-# package = true
+[tool.uv]
+package = true
 
-# [build-system]
-# requires = ["uv_build"]
-# build-backend = "uv_build"
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
 
 
-# [tool.uv.build-backend]
-# module-root = ""
+[tool.uv.build-backend]
+module-root = ""
 
-# [tool.uv.build-backend.data]
-# data = "open_geodata/data"
+[tool.uv.build-backend.data]
+data = "open_geodata/db"
