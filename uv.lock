@@ -1616,7 +1616,7 @@ wheels = [
 
 [[package]]
 name = "open-geodata"
-version = "23.0.5"
+version = "23.0.8"
 source = { editable = "." }
 dependencies = [
     { name = "folium" },
