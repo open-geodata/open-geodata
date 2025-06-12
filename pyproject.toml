@@ -14,6 +14,7 @@ dependencies = [
     "matplotlib>=3.10.3",
     "more-itertools>=10.7.0",
     "pandas>=2.3.0",
+    "pooch>=1.8.2",
     "py7zr>=1.0.0",
     "selenium>=4.33.0",
     # pip install git+https://github.com/urbanogilson/SICAR
@@ -47,13 +48,13 @@ sicar = { git = "https://github.com/urbanogilson/SICAR" }
 # [tool.uv]
 # package = true
 
-[build-system]
-requires = ["uv_build"]
-build-backend = "uv_build"
+# [build-system]
+# requires = ["uv_build"]
+# build-backend = "uv_build"
 
 
-[tool.uv.build-backend]
-module-root = ""
+# [tool.uv.build-backend]
+# module-root = ""
 
-[tool.uv.build-backend.data]
-data = "open_geodata/data"
+# [tool.uv.build-backend.data]
+# data = "open_geodata/data"

@@ -64,7 +64,7 @@ jobs:
 
       - name: Conda Install
         shell: bash -el {0}
-        run: |        
+        run: |
           conda install anaconda-client
           conda install conda-build
 

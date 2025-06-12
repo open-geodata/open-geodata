@@ -1,0 +1,17 @@
+{
+  "sp_bh_pcj-2020-2035": {
+    "poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/sp_bh_pcj_2020_2035/data/output/geo/rm%20piracicaba%20-%20poligonos.7z",
+      "hash": "b36d70d9e3dd510ace47a3b47fbb0445abe9be4a9356701d3e18073c010347dc",
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "biomas": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/sp_bh_pcj_2020_2035/data/output/geo/bioma%20-%20poligonos.7z",
+      "hash": "0d484a7eecf5a2856f4c4b5924eef49f5cdda54a1a589131f90147905a5fca7e",
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    }
+  }
+}

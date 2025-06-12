@@ -1,0 +1,10 @@
+{
+  "sp_tjsp": {
+    "divadmin": {
+      "url": "https://github.com/open-geodata/sp_tjsp_divadmin/raw/refs/heads/main/sp_tjsp_divadmin/data/output/gpkg/sp_tjsp_divadmin.gpkg",
+      "hash": "a6a4af1a37dc31cabc8e5c8f4e8b8897e58e9b3fa7853a8611f79786156392ec",
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_tjsp_divadmin"
+    }
+  }
+}
