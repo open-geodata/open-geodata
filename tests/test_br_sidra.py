@@ -6,7 +6,9 @@ class PolygonTestCase(unittest.TestCase):
         import open_geodata as geo
 
         # São Carlos
-        df = geo.br.ibge.ibge_sidra.get_estimated_population(id_municipio=3548906)
+        df = geo.br.ibge.ibge_sidra.get_estimated_population(
+            id_municipio=3548906
+        )
 
         # Pega Numero de Habitantes para 2019
         n_habitantes = df.loc[df['ano'] == 2019]['n_habitantes'].values[0]

@@ -39,8 +39,6 @@ def _read_7z_file(file_path_7z):
 
             # Quero apenas um arquivo por gpkg
             if len(allfiles) == 1:
-                # for filename, bio in archive.read(allfiles).items():
-                #     pass
                 with tempfile.TemporaryDirectory() as temp_dir:
                     temp_dir = Path(temp_dir)
                     archive.extract(path=temp_dir, targets=allfiles)
