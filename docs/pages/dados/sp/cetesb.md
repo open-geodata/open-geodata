@@ -7,7 +7,7 @@ Fiz através da iteração da consulta dos municípios por meio do formulário d
 
 Os _scripts_ também transformam o dado tabular em arquivos espaciais (_geojson_ e _gpkg_). E cria mapa _folium_.
 
-[![Mapa](./docs/imgs/mapa.png)](https://michelmetran.com.br/posts/div-admin-cetesb/)
+[![Mapa](./assets/docs/imgs/mapa.png)](https://michelmetran.com.br/posts/div-admin-cetesb/)
 
 <br>
 
@@ -29,6 +29,12 @@ Após algum tempo encontrei também a delimitação das Agências Ambientais no 
 
 - http://datageo.ambiente.sp.gov.br/serviceTranslator/rest/getXml/Geoserver_Publico/VWM_AGENCIA_CETESB_50_CETESB_20160201_POL/1454333714664/wms
 - http://datageo.ambiente.sp.gov.br/geoserver/datageo/VWM_AGENCIA_CETESB_50_CETESB_20160201_POL/wfs?version=1.0.0&request=GetFeature&outputFormat=SHAPE-ZIP&typeName=VWM_AGENCIA_CETESB_50_CETESB_20160201_POL
+
+<br>
+
+---
+
+## DataGeo
 
 ![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/sp_cetesb/2014.11.05%20-%20DD%20325%20-%20Atribui%C3%A7%C3%B5es%20das%20Unidades%20da%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
@@ -53,3 +59,6 @@ As agências, administrativamente, estão vinculadas aos Departamentos da CETESB
 Encontrei um documento de 2015,no qual já tentava automaticar a obtenção dos dados da CETESB, usando o programa [Macro Express](https://www.macros.com/).
 
 ![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/sp_cetesb/2025.08.25%20-%20Roteiro%20Atualiza%C3%A7%C3%A3o%20Base%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+
+
+![Alt text](./assets/sp_cetesb/2025.08.25%20-%20Roteiro%20Atualiza%C3%A7%C3%A3o%20Base%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }

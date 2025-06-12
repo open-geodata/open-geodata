@@ -2,7 +2,7 @@
 site_name: OpenGeodata
 site_author: Michel Metran
 site_description: O e-SAJ (Sistema de Automação da Justiça) é um portal do TJSP, desenvolvido pela Softplan, que facilita a troca de informações e agiliza o trâmite processual. O pacote pyESAJ foi desenvolvido para permitir a interação com o e-SAJ por meio do python.
-site_url: https://opengeodata.readthedocs.io/pt/latest/
+site_url: https://opengeodata.readthedocs.io/
 copyright: |
   &copy; 2025 <a href="https://github.com/michelmetran/"  target="_blank" rel="noopener">Michel Metran</a>
 
@@ -22,21 +22,21 @@ nav:
       - Funções: pages/Funções.md
       - Ambiente de Desenvolvimento: pages/Ambiente-de-Desenvolvimento.md
   - Dados (Brasil):
-      - BR.ANM: pages/Fontes-Dados/AMN.md
+      - BR.ANM: pages/dados/br/amn.md
       - BR.ANM (exemplos class): scripts/br_amn_class.ipynb
       - BR.ANM (exemplos pooch): scripts/br_amn_pooch.ipynb
-      - BR.BDGEx: pages/Fontes-Dados/BDGEx.md
-      - BR.SNISB: pages/Fontes-Dados/SNISB.md
-      - BR.DNIT: pages/Fontes-Dados/DNIT.md
+      - BR.BDGEx: pages/dados/br/bdgex.md
+      - BR.SNISB: pages/dados/br/snisb.md
+      - BR.DNIT: pages/dados/br/dnit.md
       - BR.IBGE: scripts/br_ibge.ipynb
-      - BR.MapBiomas: pages/Fontes-Dados/MapBiomas.md
+      - BR.MapBiomas: pages/dados/br/map_biomas.md
       - BR.SFB (exemplos): scripts/br_sfb.ipynb
   - Dados (São Paulo):
-      - SP.CETESB: pages/Fontes-Dados/CETESB.md
+      - SP.CETESB: pages/dados/sp/cetesb.md
       - SP.CETESB (exemplos): scripts/sp_cetesb_divamin.ipynb
   - Outros:
       - Funções: pages/Funções.md
-      - Outros Dados: pages/Fontes-Dados/Outros-Dados.md
+      - Outros Dados: pages/dados/outros_dados.md
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
   #     - Consulta de Processos: scripts/consulta_processo.ipynb
@@ -182,5 +182,5 @@ extra:
       link: https://twitter.com/michelmetran
 
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/#versioning
-  version:
-    provider: mike
+  # version:
+  #   provider: mike

@@ -20,7 +20,15 @@ Os dados dos processos minerários são atualizados diariamente e podem ser obti
 Por meio do SIGMINE é possível identificar, visualmente, os polígonos dos processos minerários.
 Os dados espaciais são disponíbilizados por meio de plataformas _online_, tais como [SIG web da Agência Nacional de Mineração - ANM](https://geo.anm.gov.br/portal/apps/webappviewer/index.html?id=6a8f5ccc4b6a4c2bba79759aa952d908).
 
-[![SIGMINE](./docs/assets/br_amn/sigmine.jpg)](https://geo.anm.gov.br/portal/apps/webappviewer/index.html?id=6a8f5ccc4b6a4c2bba79759aa952d908)
+![SIGMINE](/assets/br_amn/sigmine.jpg)
+
+A partir do _post_
+
+![SIGMINE](./../../../assets/br_amn/sigmine.jpg)
+
+A partir de _docs_
+
+![SIGMINE](./assets/br_amn/sigmine.jpg)
 
 <br>
 
