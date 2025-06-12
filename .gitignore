@@ -5,6 +5,7 @@
 
 # Data
 _lixo/
+__lixo/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
