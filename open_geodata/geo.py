@@ -2,10 +2,9 @@
 sssss
 """
 
-import importlib.resources
 import json
 import pkgutil
-import pprint
+
 import tempfile
 from pathlib import Path
 from urllib.parse import quote, unquote, urlparse, urlunparse
@@ -14,7 +13,10 @@ import geopandas as gpd
 import pandas as pd
 import pooch
 import py7zr
-from more_itertools import one, only
+
+# import importlib.resources
+# import pprint
+# from more_itertools import one, only
 
 
 class DB:
@@ -105,9 +107,9 @@ class DB:
         return pooch.file_hash(filename, alg="sha256")
 
     def read_7z(self, name, *args, **kwargs) -> gpd.GeoDataFrame:
+        layer = kwargs.get('layer', None)
         file_path_7z = self.get_data(name=name)
 
-        layer = kwargs.get('layer', None)
         with py7zr.SevenZipFile(file_path_7z, 'r') as archive:
             allfiles = archive.getnames()
 
@@ -122,6 +124,7 @@ class DB:
                     ext = filename.suffix.lower()
                     if ext in ['.gpkg']:
                         return gpd.read_file(filename=filename, layer=layer)
+
                     else:
                         raise Exception(
                             f'Não tem configuração para extesão {ext}'
