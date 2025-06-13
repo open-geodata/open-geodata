@@ -172,8 +172,15 @@ def load_dataset(db, name) -> pd.DataFrame | gpd.GeoDataFrame:
     elif ext in ['.csv', '.xls', '.xlsx']:
         return pd.read_csv(filepath_or_buffer=filepath)
 
+    elif ext in ['.zip']:
+        try:
+            return pd.read_csv(filepath_or_buffer=filepath)
+        
+        except Exception as e:
+            raise e
+
     else:
-        raise Exception('Deu ruim')
+        raise Exception(f'Extensão {ext} não configurada.')
 
 
 # def _ajust_list_files(list_files):

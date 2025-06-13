@@ -1,6 +1,6 @@
 [project]
 name = "open-geodata"
-version = "23.0.11"
+version = "23.0.12"
 description = "Dados Espaciais do Brasil"
 authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
 keywords = ["geodata", "geoprocessamento", "github", "utility"]
@@ -8,6 +8,7 @@ license = "MIT"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "earthengine-api>=1.5.19",
     "folium>=0.19.7",
     "geopandas>=1.1.0",
     "mapclassify>=2.9.0",
