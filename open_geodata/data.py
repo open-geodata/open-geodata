@@ -134,29 +134,6 @@ class DB:
                 raise RuntimeError('.zip tem mais de um gpkg')
 
 
-# def _ajust_list_files(list_files):
-#     """
-
-#     :param list_files:
-#     :return:
-#     """
-#     # Convert to text
-#     list_files = [str(x.as_posix()) for x in list_files]
-
-#     # Splita no . e pega primeira parte
-#     list_files = [x.split('.', maxsplit=1)[0] for x in list_files]
-
-#     # Convert Paths Linux
-#     list_files = [x.replace('/', '.') for x in list_files]
-#     list_files = list(set(list_files))
-#     list_files.sort()
-#     return list_files
-
-
-# def _read_7z_file(file_path_7z):
-#     if file_path_7z.is_file():
-
-
 def load_dataset(db, name) -> pd.DataFrame | gpd.GeoDataFrame:
     """
     Funções para carregar dados geoespaciais
@@ -193,10 +170,33 @@ def load_dataset(db, name) -> pd.DataFrame | gpd.GeoDataFrame:
 
     # Se o arquivo é um
     elif ext in ['.csv', '.xls', '.xlsx']:
-        return pd.read_csv(filepath)
+        return pd.read_csv(filepath_or_buffer=filepath)
 
     else:
         raise Exception('Deu ruim')
+
+
+# def _ajust_list_files(list_files):
+#     """
+
+#     :param list_files:
+#     :return:
+#     """
+#     # Convert to text
+#     list_files = [str(x.as_posix()) for x in list_files]
+
+#     # Splita no . e pega primeira parte
+#     list_files = [x.split('.', maxsplit=1)[0] for x in list_files]
+
+#     # Convert Paths Linux
+#     list_files = [x.replace('/', '.') for x in list_files]
+#     list_files = list(set(list_files))
+#     list_files.sort()
+#     return list_files
+
+
+# def _read_7z_file(file_path_7z):
+#     if file_path_7z.is_file():
 
 
 # def get_dataset_names():

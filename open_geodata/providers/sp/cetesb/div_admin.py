@@ -111,12 +111,11 @@ class CETESB:
             list_addresses.append(list_address)
 
         # Create Table from dictionarys
-        df = pd.DataFrame.from_dict(list_addresses)
-        return df
+        return pd.DataFrame.from_dict(list_addresses)
 
     def get_all_agencias_adjusted(self):
         # Obtem Tabela Padrão com os nomes de municípios
-        df_mun = geo.geo.load_dataset('tab.sp.tab_municipio_nome')
+        df_mun = geo.geo.load_dataset(db='sp', name='tab.tab_municipio_nome')
 
         # Obtem Tabela da CETESB
         df_cetesb = self.get_all_agencias()

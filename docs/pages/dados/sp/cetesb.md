@@ -1,7 +1,7 @@
 _Script_ para obter a divisão administrativa da CETESB, em formato tabular.\
 Fiz através da iteração da consulta dos municípios por meio do formulário disponível em:
 
-> https://licenciamento.cetesb.sp.gov.br/municipioss.asp?muni=SANTOS
+> [https://licenciamento.cetesb.sp.gov.br/municipios.asp](https://licenciamento.cetesb.sp.gov.br/municipios.asp){target="_blank"}
 
 <br>
 
@@ -34,7 +34,7 @@ Após algum tempo encontrei também a delimitação das Agências Ambientais no 
 
 ## DataGeo
 
-![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/sp_cetesb/2014.11.05%20-%20DD%20325%20-%20Atribui%C3%A7%C3%B5es%20das%20Unidades%20da%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+![2014.11.05 - DD 325 - Atribuições das Unidades da CETESB](./../../../assets/sp/cetesb/2014.11.05%20-%20DD%20325%20-%20Atribui%C3%A7%C3%B5es%20das%20Unidades%20da%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
 
 <br>
 
@@ -56,4 +56,4 @@ As agências, administrativamente, estão vinculadas aos Departamentos da CETESB
 
 Encontrei um documento de 2015,no qual já tentava automaticar a obtenção dos dados da CETESB, usando o programa [Macro Express](https://www.macros.com/).
 
-![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/sp_cetesb/2025.08.25%20-%20Roteiro%20Atualiza%C3%A7%C3%A3o%20Base%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+![2015.08.25 - Roteiro Atualização Base CETESB](./../../../assets/sp/cetesb/2015.08.25%20-%20Roteiro%20Atualiza%C3%A7%C3%A3o%20Base%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }

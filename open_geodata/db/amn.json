@@ -7,21 +7,21 @@
       "details": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-geograficas-da-mineracao-sigmine"
     },
 
-    "Áreas de bloqueio": {
+    "Áreas de Bloqueio": {
       "url": "https://app.anm.gov.br/dadosabertos/SIGMINE/BLOQUEIO.zip",
       "hash": null,
       "description": "Poligonais das áreas bloqueadas para mineração. Formato: Shapefile.",
       "details": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-geograficas-da-mineracao-sigmine"
     },
 
-    "Áreas de proteção de fonte": {
+    "Áreas de Proteção de Fonte": {
       "url": "https://app.anm.gov.br/dadosabertos/SIGMINE/PROTECAO_FONTE.zip",
       "hash": null,
       "description": "Poligonais das áreas de proteção de fonte associadas aos processos minerários ativos mantidos pela Agência Nacional de Mineração. Formato: Shapefile.",
       "details": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-geograficas-da-mineracao-sigmine"
     },
 
-    "Áreas de servidão": {
+    "Áreas de Servidão": {
       "url": "https://app.anm.gov.br/dadosabertos/SIGMINE/AREA_SERVIDAO.zip",
       "hash": null,
       "description": "Poligonais das áreas de servidão associadas aos processos minerários ativos mantidos pela Agência Nacional de Mineração. Formato: Shapefile. Nota: Dados com baixa qualidade, recomenda-se prudência nas análises.",
@@ -35,28 +35,28 @@
       "details": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-geograficas-da-mineracao-sigmine"
     },
 
-    "Processos minerários ativos - Brasil": {
+    "Processos Minerários Ativos - Brasil": {
       "url": "https://app.anm.gov.br/dadosabertos/SIGMINE/PROCESSOS_MINERARIOS/BRASIL.zip",
       "hash": null,
       "description": "Poligonais dos processos minerários ativos (incluindo áreas em disponibilidade) mantidos pela Agência Nacional de Mineração. Extensão geográfica: Brasil. Formato: Shapefile.",
       "details": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-geograficas-da-mineracao-sigmine"
     },
 
-    "Processos minerários inativos - Brasil": {
+    "Processos Minerários Inativos - Brasil": {
       "url": "https://app.anm.gov.br/dadosabertos/SIGMINE/PROCESSOS_MINERARIOS/BRASIL_INATIVOS.zip",
       "hash": null,
       "description": "Poligonais dos processos minerários inativos mantidos pela Agência Nacional de Mineração. Extensão geográfica: Brasil. Formato: Shapefile.",
       "details": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-geograficas-da-mineracao-sigmine"
     },
-    
-    "Processos minerários ativos - ZEE": {
+
+    "Processos Minerários Ativos - ZEE": {
       "url": "https://app.anm.gov.br/dadosabertos/SIGMINE/PROCESSOS_MINERARIOS/ZEE.zip",
       "hash": null,
       "description": "Poligonais dos processos minerários ativos (incluindo áreas em disponibilidade) mantidos pela Agência Nacional de Mineração. Extensão geográfica: Zona Econômica Exclusiva. Formato: Shapefile.",
       "details": "https://dados.gov.br/dados/conjuntos-dados/sistema-de-informacoes-geograficas-da-mineracao-sigmine"
     },
 
-    "Reservas garimpeiras": {
+    "Reservas Garimpeiras": {
       "url": "https://app.anm.gov.br/dadosabertos/SIGMINE/RESERVAS_GARIMPEIRAS.zip",
       "hash": null,
       "description": "Poligonais das reservas garimpeiras estabelecidas pela Agência Nacional de Mineração. Formato: Shapefile.",

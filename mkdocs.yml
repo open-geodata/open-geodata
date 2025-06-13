@@ -16,26 +16,25 @@ site_dir: "site" # Default site
 # Opcional
 nav:
   - Home: index.md
-  - Como Instalar?: pages/Como-Instalar.md
+  - Como Instalar?: pages/como_instalar.md
   - Como Usar?:
-      - Exemplos: pages/Como-Usar.md
-      - Funções: pages/Funções.md
-      - Ambiente de Desenvolvimento: pages/Ambiente-de-Desenvolvimento.md
+      - Exemplos: pages/como_usar.md
+      - Funções: pages/funções.md
+      - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
   - Dados (Brasil):
       - BR.ANM: pages/dados/br/amn.md
-      - BR.ANM (exemplos class): scripts/br_amn_class.ipynb
-      - BR.ANM (exemplos pooch): scripts/br_amn_pooch.ipynb
+      - BR.ANM (exemplos class): pages/dados/br/amn_class.ipynb
+      - BR.ANM (exemplos pooch): pages/dados/br/amn_pooch.ipynb
       - BR.BDGEx: pages/dados/br/bdgex.md
       - BR.SNISB: pages/dados/br/snisb.md
       - BR.DNIT: pages/dados/br/dnit.md
-      - BR.IBGE: scripts/br_ibge.ipynb
+      - BR.IBGE: pages/dados/br/ibge.ipynb
       - BR.MapBiomas: pages/dados/br/map_biomas.md
-      - BR.SFB (exemplos): scripts/br_sfb.ipynb
+      - BR.SFB (exemplos): pages/dados/br/sfb.ipynb
   - Dados (São Paulo):
       - SP.CETESB: pages/dados/sp/cetesb.md
-      - SP.CETESB (exemplos): scripts/sp_cetesb_divamin.ipynb
+      - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
   - Outros:
-      - Funções: pages/Funções.md
       - Outros Dados: pages/dados/outros_dados.md
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
@@ -120,17 +119,17 @@ markdown_extensions:
   #            # https://github.com/facelessuser/pymdown-extensions/blob/main/docs/src/mkdocs.yml
 
   # https://pypi.org/project/mkdocs-pdf/
-  #- attr_list
+  - attr_list
 
   - toc:
       permalink: true
       separator: "_"
 
-  - pymdownx.pathconverter:
-      base_path: "open-geodata" # default: ''
-      relative_path: "" # default ''
-      absolute: true # default: false
-      tags: "a script img link object embed"
+  # - pymdownx.pathconverter:
+  #     base_path: "open-geodata" # default: ''
+  #     relative_path: "" # default ''
+  #     absolute: true # default: false
+  #     tags: "a script img link object embed"
 
 plugins:
   - search:
@@ -168,7 +167,7 @@ plugins:
           - hide_code
 
   # https://pypi.org/project/mkdocs-pdf/
-  #- mkdocs-pdf
+  - mkdocs-pdf
 
 extra:
   analytics:
@@ -184,5 +183,5 @@ extra:
       link: https://twitter.com/michelmetran
 
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/#versioning
-  # version:
-  #   provider: mike
+  version:
+    provider: mike

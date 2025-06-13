@@ -18,33 +18,20 @@ Para possibilitar testes do pacote, criei
 um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
 Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 
-![SIGMINE](./assets/br/amn/sigmine.jpg)
+<br>
 
-![ssss](./assets/esaj.gif)
+Alguma dúvida, sugestão e/ou contribuição, favor reportar um [problema/_issue_](https://github.com/michelmetran/open-geodata/issues).
 
-- [earthnow](https://earthnow.usgs.gov/observer/?sessionId=8e5a1e6dd8f15ef0eb3cb4c8bbf725928507)
-- [earth :: an animated map of global wind, weather, and ocean conditions](http://earth.nullschool.net/#current%2Fwind%2Fsurface%2Flevel%2Forthographic%3D46.17%2C5.18%2C248)
-- [EOS-EarthData](https://eos-earthdata.sr.unh.edu/)
-- [Earth View](http://earthview.withgoogle.com/)
-- [flightradar24](http://www.flightradar24.com/)
-- [glovis](http://glovis.usgs.gov/)
-- [Intact Forest Landscapes](http://www.intactforests.org/)
-- [European Soil Data Centre (ESDAC)](https://esdac.jrc.ec.europa.eu/)
-- [RedList](https://www.iucnredlist.org/)
-- [Landsat Science](https://landsat.gsfc.nasa.gov/)
-- [SRTM](http://srtm.csi.cgiar.org/SELECTION/inputCoord.asp)
-- [arquivoestado](http://www.arquivoestado.sp.gov.br/web/digitalizado/cartografico/documentos_cartograficos)
-- [GIS Lounge](https://www.gislounge.com/)
-- [GIS Café](http://www.giscafe.com/)
-- [Story Maps](https://storymaps.arcgis.com/)
-- [ArcGIS Resource Center](https://resources.arcgis.com/en/help/)
-- [ArcGIS Online](http://www.arcgis.com/home/)
-- [ArcScripts](http://arcscripts.esri.com/)
-- [Landsat Imagery](http://www.esri.com/software/landsat-imagery)
-- [ESRI](http://www.esri.com/)
-- [EuroStat](https://ec.europa.eu/eurostat/web/main/home)
-- [ssss](http://datageo.casamilitar.sp.gov.br/geonetworkgrd/srv/por/catalog.search#/home)
-- [Instituto Geográfico e Cartográfico](http://www.igc.sp.gov.br/)
-- [Blog do Fernando Quadro](https://www.fernandoquadro.com.br/)
+!!! note
 
-Alguma dúvida, sugestão e/ou contribuição, favor reportar um [problema/_issue_](https://github.com/open-geodata/open-geodata/issues).
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+
+
+!!! note "Phasellus posuere in sem ut cursus"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.

@@ -11,7 +11,7 @@ A Agência Nacional de Mineração ([ANM](https://www.gov.br/anm/pt-br)) é uma 
 
 Os dados dos processos minerários são atualizados diariamente e podem ser obtidos no [Portal da Geoinformação Mineral](https://geo.anm.gov.br/portal/home/index.html).
 
-![Paginacao](../../../assets/bug-paginacao.png)
+![Paginacao](./../../../assets/bug-paginacao.png)
 
 <br>
 
@@ -22,15 +22,7 @@ Os dados dos processos minerários são atualizados diariamente e podem ser obti
 Por meio do SIGMINE é possível identificar, visualmente, os polígonos dos processos minerários.
 Os dados espaciais são disponíbilizados por meio de plataformas _online_, tais como [SIG web da Agência Nacional de Mineração - ANM](https://geo.anm.gov.br/portal/apps/webappviewer/index.html?id=6a8f5ccc4b6a4c2bba79759aa952d908).
 
-![SIGMINE](/assets/br_amn/sigmine.jpg)
-
-A partir do _post_
-
-![SIGMINE](./../../../assets/br_amn/sigmine.jpg)
-
-A partir de _docs_
-
-![SIGMINE](./assets/br_amn/sigmine.jpg)
+![SIGMINE](./../../../assets/br/amn/sigmine.jpg)
 
 <br>
 
@@ -102,4 +94,4 @@ FeatureClassToGeodatabase_conversion %workspace%\AC.shp;%workspace%\AL.shp;%work
 
 Bem como um _.pdf_ da época, com as instruções para baixar os arquivos no extindo DNPM.
 
-![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/br_amn/2013.04.04%20-%20DNPM%20-%20Departamento%20Nacional%20de%20Produ%C3%A7%C3%A3o%20Mineral.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
+![2013.04.04 - DNPM - Departamento Nacional de Produção Mineral](./../../../assets/br/amn/2013.04.04%20-%20DNPM%20-%20Departamento%20Nacional%20de%20Produ%C3%A7%C3%A3o%20Mineral.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
