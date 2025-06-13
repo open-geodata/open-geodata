@@ -29,7 +29,7 @@ nav:
       - BR.SNISB: pages/dados/br/snisb.md
       - BR.DNIT: pages/dados/br/dnit.md
       - BR.IBGE: pages/dados/br/ibge.ipynb
-      - BR.MapBiomas: pages/dados/br/map_biomas.md
+      - BR.MapBiomas: pages/dados/br/map_biomas.ipynb
       - BR.SFB (exemplos): pages/dados/br/sfb.ipynb
   - Dados (São Paulo):
       - SP.CETESB: pages/dados/sp/cetesb.md

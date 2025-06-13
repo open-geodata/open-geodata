@@ -10,6 +10,7 @@ requires-python = ">=3.11"
 dependencies = [
     "earthengine-api>=1.5.19",
     "folium>=0.19.7",
+    "geemap>=0.35.3",
     "geopandas>=1.1.0",
     "mapclassify>=2.9.0",
     "matplotlib>=3.10.3",

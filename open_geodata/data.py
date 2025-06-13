@@ -143,6 +143,12 @@ def load_dataset(db, name) -> pd.DataFrame | gpd.GeoDataFrame:
     """
 
     db_obj = DB(db=db)
+    list_data = db_obj.list_data
+    if name not in list_data:
+        list_data_str = '\n'.join(list_data)
+        raise Exception(f'Deve ser um dado listado abaixo\n{list_data_str}')
+
+    #
     filepath = db_obj.get_data(name=name)
     # filename = dataset_name.replace('.', '/')
     # filename = Path(filename)
@@ -175,7 +181,7 @@ def load_dataset(db, name) -> pd.DataFrame | gpd.GeoDataFrame:
     elif ext in ['.zip']:
         try:
             return pd.read_csv(filepath_or_buffer=filepath)
-        
+
         except Exception as e:
             raise e
 

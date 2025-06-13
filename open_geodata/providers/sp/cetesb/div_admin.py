@@ -89,10 +89,11 @@ class CETESB:
         #
         package_path = Path(__file__).parents[3].absolute()
         data_path = package_path / 'data'
-        # print(data_path)
+        print(data_path)
 
         # Read Dataframe
-        df = pd.read_csv(data_path / 'tab' / 'sp_cetesb' / 'tab_municipios.csv')
+        # df = pd.read_csv(data_path / 'tab' / 'sp_cetesb' / 'tab_municipios.csv')
+        df = geo.data.load_dataset(db='sp', name='tab.municipio_idcetesb')
         # print(df.head())
 
         # Create empty list
@@ -115,7 +116,7 @@ class CETESB:
 
     def get_all_agencias_adjusted(self):
         # Obtem Tabela Padrão com os nomes de municípios
-        df_mun = geo.geo.load_dataset(db='sp', name='tab.tab_municipio_nome')
+        df_mun = geo.data.load_dataset(db='sp', name='tab.municipio_nome')
 
         # Obtem Tabela da CETESB
         df_cetesb = self.get_all_agencias()
