@@ -5,6 +5,9 @@ O gerenciamento de pacotes é feito pelo [UV]()
 ```shell
 # Ativa ambiente
 .venv\Scripts\activate
+
+
+deactivate
 ```
 
 <br>

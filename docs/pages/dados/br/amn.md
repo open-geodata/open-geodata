@@ -11,6 +11,8 @@ A Agência Nacional de Mineração ([ANM](https://www.gov.br/anm/pt-br)) é uma 
 
 Os dados dos processos minerários são atualizados diariamente e podem ser obtidos no [Portal da Geoinformação Mineral](https://geo.anm.gov.br/portal/home/index.html).
 
+![Paginacao](../../../assets/bug-paginacao.png)
+
 <br>
 
 ---

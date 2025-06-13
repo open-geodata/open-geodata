@@ -18,6 +18,10 @@ Para possibilitar testes do pacote, criei
 um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
 Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 
+![SIGMINE](./assets/br/amn/sigmine.jpg)
+
+![ssss](./assets/esaj.gif)
+
 - [earthnow](https://earthnow.usgs.gov/observer/?sessionId=8e5a1e6dd8f15ef0eb3cb4c8bbf725928507)
 - [earth :: an animated map of global wind, weather, and ocean conditions](http://earth.nullschool.net/#current%2Fwind%2Fsurface%2Flevel%2Forthographic%3D46.17%2C5.18%2C248)
 - [EOS-EarthData](https://eos-earthdata.sr.unh.edu/)

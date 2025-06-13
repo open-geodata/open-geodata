@@ -7,8 +7,6 @@ Fiz através da iteração da consulta dos municípios por meio do formulário d
 
 Os _scripts_ também transformam o dado tabular em arquivos espaciais (_geojson_ e _gpkg_). E cria mapa _folium_.
 
-[![Mapa](./assets/docs/imgs/mapa.png)](https://michelmetran.com.br/posts/div-admin-cetesb/)
-
 <br>
 
 ## OpenGeodata
@@ -59,6 +57,3 @@ As agências, administrativamente, estão vinculadas aos Departamentos da CETESB
 Encontrei um documento de 2015,no qual já tentava automaticar a obtenção dos dados da CETESB, usando o programa [Macro Express](https://www.macros.com/).
 
 ![Alt text](https://open-geodata.readthedocs.io/pt/latest/assets/sp_cetesb/2025.08.25%20-%20Roteiro%20Atualiza%C3%A7%C3%A3o%20Base%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
-
-
-![Alt text](./assets/sp_cetesb/2025.08.25%20-%20Roteiro%20Atualiza%C3%A7%C3%A3o%20Base%20CETESB.pdf){ type=application/pdf style="min-height:50vh;width:100%" }
