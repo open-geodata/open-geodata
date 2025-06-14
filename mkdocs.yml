@@ -40,6 +40,7 @@ nav:
       - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
       - SP.Defesa Civil: pages/dados/sp/defesa_civil_divamin.ipynb
       - SP.MPSP: pages/dados/sp/mpsp.ipynb
+      - SP.SP: pages/dados/sp/sp.ipynb
   - Outros:
       - Atlas Rural de Piracicbaa: pages/dados/outros/sp_atlas_rural_piracicaba.ipynb
       - APA Corumbataí: pages/dados/outros/sp_ff_apa_corumbatai.ipynb
