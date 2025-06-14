@@ -93,7 +93,8 @@ class CETESB:
 
         # Read Dataframe
         # df = pd.read_csv(data_path / 'tab' / 'sp_cetesb' / 'tab_municipios.csv')
-        df = geo.data.load_dataset(db='sp', name='tab.municipio_idcetesb')
+        df = geo.data.load_dataset(db='sp', name='tab.municipio_cetesb')
+        df = geo.data.load_dataset(db='sp', name='tab.municipio_cetesb')
         # print(df.head())
 
         # Create empty list
@@ -243,7 +244,7 @@ class CETESB:
     def get_geodataframe(self):
 
         # Padrão
-        gdf = geo.load_dataset('geo.sp.sp_250k_wgs84')
+        gdf = geo.load_dataset(db='sp', name='geo.sp_250k_wgs84')
         gdf = gdf.drop(['municipio_nome'], axis=1, inplace=False)
         gdf['id_municipio'] = gdf['id_municipio'].astype(int)
         gdf['geometry'] = gdf['geometry'].simplify(0.0015)

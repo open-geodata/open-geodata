@@ -35,6 +35,7 @@ nav:
       - SP.CETESB: pages/dados/sp/cetesb.md
       - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
   - Outros:
+      - APA Corumbataí: pages/dados/outros/sp_ff_apa_corumbatai.ipynb
       - Outros Dados: pages/dados/outros_dados.md
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb

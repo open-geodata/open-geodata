@@ -1,0 +1,101 @@
+{
+  "geo": {
+    "apa_corumbatai_app": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_app.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_app_apa": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_app_apa.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_geologia": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_geologia.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_hidro_dupla": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_hidro_dupla.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_hidro_nascente": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_hidro_nascente.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_hidro_represa": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_hidro_represa.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_hidro_simples": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_hidro_simples.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_limite": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_limite.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_uso_reg": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_uso_reg.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_veg_mun": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbaapa_corumbatai_veg_muntai_app.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_veg_reg": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_veg_reg.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_zpa": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_zpa.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_zph": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_zph.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    },
+
+    "apa_corumbatai_zvs": {
+      "url": "https://github.com/open-geodata/sp_ff_apa-corumbatai/raw/refs/heads/main/data/output/geo/apa_corumbatai_zvs.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_ff_apa-corumbatai"
+    }
+  }
+}

@@ -1,12 +1,24 @@
 # Sistema Nacional de Informações sobre Segurança de Barragens (SNISB)
 
-- http://www.snisb.gov.br/portal/snisb
-- https://portal1.snirh.gov.br/ana/apps/webappviewer/index.html?id=93e7af22c2294572b5aa554dfc048bc4
+- https://www.snisb.gov.br/portal/snisb
+- https://www.snisb.gov.br
+
 - https://progestao.ana.gov.br/portal/progestao/destaque-superior/eventos/fnoga/i-seminario-fnoga-fev-2018/sp_apres-semin-fnoga_fev18_segurancadebarragem.pdf
 
 <br>
 
 ---
+
+## ArcGIS
+
+- https://portal1.snirh.gov.br/ana/apps/webappviewer/index.html?id=93e7af22c2294572b5aa554dfc048bc4
+- https://portal1.snirh.gov.br/server/rest/services/SPR/massa_dagua_dominio/MapServer
+
+<br>
+
+---
+
+## Norma
 
 [Lei Federal 12.334](http://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2010/Lei/L12334.htm), de 2010.
 

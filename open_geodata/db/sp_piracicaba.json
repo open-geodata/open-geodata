@@ -1,0 +1,38 @@
+{
+  "geo": {
+    "divisa_abairramento": {
+      "url": "https://github.com/open-geodata/sp_piracicaba/raw/refs/heads/main/data/output/geo/divisa_abairramento.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba"
+    },
+
+    "divisa_municipal": {
+      "url": "https://github.com/open-geodata/sp_piracicaba/raw/refs/heads/main/data/output/geo/divisa_municipal.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba"
+    },
+
+    "divisa_perimetro": {
+      "url": "https://github.com/open-geodata/sp_piracicaba/raw/refs/heads/main/data/output/geo/divisa_perimetro.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba"
+    },
+
+    "divisa_urbanorural": {
+      "url": "https://github.com/open-geodata/sp_piracicaba/raw/refs/heads/main/data/output/geo/divisa_urbanorural.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba"
+    },
+
+    "macrozonas": {
+      "url": "https://github.com/open-geodata/sp_piracicaba/raw/refs/heads/main/data/output/geo/macrozonas.7z",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba"
+    }
+  }
+}
