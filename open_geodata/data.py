@@ -190,6 +190,10 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
     elif ext in ['.csv', '.xls', '.xlsx']:
         return pd.read_csv(filepath_or_buffer=filepath)
 
+    # Se o arquivo é um
+    elif ext in ['.gpkg']:
+        return gpd.read_file(filename=filepath)
+
     elif ext in ['.zip']:
         with ZipFile(file=filepath) as zip_obj:
             for info in zip_obj.infolist():

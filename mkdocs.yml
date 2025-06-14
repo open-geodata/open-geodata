@@ -38,8 +38,10 @@ nav:
       - SP.CATI - Urbanizado (2016): pages/dados/sp/cati_exemplo.ipynb
       - SP.CETESB: pages/dados/sp/cetesb.md
       - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
+      - SP.Defesa Civil: pages/dados/sp/defesa_civil_divamin.ipynb
       - SP.MPSP: pages/dados/sp/mpsp.ipynb
   - Outros:
+      - Atlas Rural de Piracicbaa: pages/dados/outros/sp_atlas_rural_piracicaba.ipynb
       - APA Corumbataí: pages/dados/outros/sp_ff_apa_corumbatai.ipynb
       - Piracicaba: pages/dados/outros/sp_piracicaba.ipynb
       - Plano das Bacias PCJ 2020-2035: pages/dados/outros/sp_bh_pcj_2020_2035.ipynb

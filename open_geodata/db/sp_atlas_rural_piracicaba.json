@@ -1,0 +1,52 @@
+{
+  "geo": {
+    "apps": {
+      "url": "https://github.com/open-geodata/sp_piracicaba_atlasrural/raw/refs/heads/main/data/output/gpkg/apps.gpkg",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba_atlasrural"
+    },
+
+    "bacias_hidrograficas": {
+      "url": "https://github.com/open-geodata/sp_piracicaba_atlasrural/raw/refs/heads/main/data/output/gpkg/bacias_hidrograficas.gpkg",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba_atlasrural"
+    },
+
+    "drenagem": {
+      "url": "https://github.com/open-geodata/sp_piracicaba_atlasrural/raw/refs/heads/main/data/output/gpkg/drenagem.gpkg",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba_atlasrural"
+    },
+
+    "estradas": {
+      "url": "https://github.com/open-geodata/sp_piracicaba_atlasrural/raw/refs/heads/main/data/output/gpkg/estradas.gpkg",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba_atlasrural"
+    },
+
+    "solos_rural": {
+      "url": "https://github.com/open-geodata/sp_piracicaba_atlasrural/raw/refs/heads/main/data/output/gpkg/solos_rural.gpkg",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba_atlasrural"
+    },
+
+    "solos_urbanos": {
+      "url": "https://github.com/open-geodata/sp_piracicaba_atlasrural/raw/refs/heads/main/data/output/gpkg/solos_urbanos.gpkg",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba_atlasrural"
+    },
+
+    "uso_da_terra": {
+      "url": "https://github.com/open-geodata/sp_piracicaba_atlasrural/raw/refs/heads/main/data/output/gpkg/uso_da_terra.gpkg",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://github.com/open-geodata/sp_piracicaba_atlasrural"
+    }
+  }
+}

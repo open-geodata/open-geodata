@@ -28,3 +28,12 @@ geo.load_dataset_from_package('sp_tjsp_divadmin', 'geo.sp_tjsp_divadmin')
 - https://sigel.aneel.gov.br/arcgis/rest/services
 - https://geo.anm.gov.br/arcgis/rest/
 - https://portal1.snirh.gov.br/server/rest/services
+
+<br>
+
+## Geoserver
+
+- https://geoservicos.ibge.gov.br/geoserver/web/
+- https://geoserver.funai.gov.br/geoserver/web/
+- https://servicos.dnit.gov.br/dnitgeo/geoserver/web/
+- http://datageo.ambiente.sp.gov.br/geoserver/web/

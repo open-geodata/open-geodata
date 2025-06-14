@@ -1,0 +1,10 @@
+{
+  "geo": {
+    "sp_defesa_civil": {
+      "url": "https://github.com/open-geodata/sp_defesacivil_divadmin/raw/refs/heads/main/data/output/geo/sp_defesacivil.7z",
+      "hash": null,
+      "description": "Divisão Adminstrativa da Defesa Civil",
+      "details": "https://github.com/open-geodata/sp_defesacivil_divadmin"
+    }
+  }
+}
