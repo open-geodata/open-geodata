@@ -11,6 +11,7 @@ from urllib.parse import quote, unquote, urlparse, urlunparse
 
 import geopandas as gpd
 import pandas as pd
+from zipfile import ZipFile
 import pooch
 import py7zr
 
@@ -152,6 +153,8 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
     """
 
     db_obj = DB(db=db)
+
+    # Confere se o nome do objeto está na lista
     list_data = db_obj.list_data
     if name not in list_data:
         list_data_str = '\n'.join(list_data)
@@ -188,11 +191,20 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
         return pd.read_csv(filepath_or_buffer=filepath)
 
     elif ext in ['.zip']:
-        try:
-            return pd.read_csv(filepath_or_buffer=filepath)
+        with ZipFile(file=filepath) as zip_obj:
+            for info in zip_obj.infolist():
+                if Path(info.filename).suffix.lower() == '.shp':
+                    try:
+                        return gpd.read_file(filename=filepath)
 
-        except Exception as e:
-            raise e
+                    except Exception as e:
+                        raise e
+
+            try:
+                return pd.read_csv(filepath_or_buffer=filepath)
+
+            except Exception as e:
+                raise e
 
     else:
         raise Exception(f'Extensão {ext} não configurada.')

@@ -23,18 +23,19 @@ nav:
       - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
   - Dados (Brasil):
       - BR.ANM: pages/dados/br/amn.md
-      - BR.ANM (exemplos class): pages/dados/br/amn_class.ipynb
-      - BR.ANM (exemplos pooch): pages/dados/br/amn_pooch.ipynb
+      - BR.ANM (class): pages/dados/br/amn_class.ipynb
+      - BR.ANM (pooch): pages/dados/br/amn_pooch.ipynb
       - BR.ANEEL: pages/dados/br/aneel.md
       - BR.BDGEx: pages/dados/br/bdgex.md
       - BR.SNISB: pages/dados/br/snisb.md
       - BR.DNIT: pages/dados/br/dnit.md
-      - BR.IBGE: pages/dados/br/ibge.ipynb
+      - BR.IBGE (class): pages/dados/br/ibge_class.ipynb
+      - BR.IBGE (pooch): pages/dados/br/ibge_pooch.ipynb
       - BR.MapBiomas: pages/dados/br/map_biomas.ipynb
       - BR.SFB (exemplos): pages/dados/br/sfb.ipynb
   - Dados (São Paulo):
       - SP.CATI: pages/dados/sp/cati.md
-      - SP.CATI - Urbanizado (2016): pages/dados/sp/cati.ipynb
+      - SP.CATI - Urbanizado (2016): pages/dados/sp/cati_exemplo.ipynb
       - SP.CETESB: pages/dados/sp/cetesb.md
       - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
       - SP.MPSP: pages/dados/sp/mpsp.ipynb

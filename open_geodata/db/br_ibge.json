@@ -1,0 +1,38 @@
+{
+  "geo": {
+    "br-malha_municipal-2024": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/Brasil/BR_Municipios_2024.zip",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://geoftp.ibge.gov.br"
+    },
+
+    "sp-malha_municipal-2024": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/UFs/SP/SP_Municipios_2024.zip",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://geoftp.ibge.gov.br"
+    },
+
+    "sp-reg-imediata-2024": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/UFs/SP/SP_RG_Imediatas_2024.zip",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://geoftp.ibge.gov.br"
+    },
+
+    "sp-reg-intermediaria-2024": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/UFs/SP/SP_RG_Intermediarias_2024.zip",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://geoftp.ibge.gov.br"
+    },
+
+    "br-regiões-2024": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/Brasil/BR_Regioes_2024.zip",
+      "hash": null,
+      "description": "Nome corrigido dos 645 municípios do Estado de Sâo Paulo",
+      "details": "https://geoftp.ibge.gov.br"
+    }
+  }
+}

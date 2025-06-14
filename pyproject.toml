@@ -1,6 +1,6 @@
 [project]
 name = "open-geodata"
-version = "23.0.13"
+version = "23.0.14"
 description = "Dados Espaciais do Brasil"
 authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
 keywords = ["geodata", "geoprocessamento", "github", "utility"]
