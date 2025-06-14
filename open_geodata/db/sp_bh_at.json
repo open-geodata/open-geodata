@@ -1,0 +1,122 @@
+{
+  "geo": {
+    "01_aprm": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/01_aprm.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "06_bacia_alto_tiete": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/06_bacia_alto_tiete.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "16_hidrografia": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/16_hidrografia.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "17_hidrografia_complementar": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/17_hidrografia_complementar.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "45_subbacias": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/45_subbacias.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "57_area_protegida_revisao": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/57_area_protegida_revisao.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "58_area_protegida_zona_amortecimento": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/58_area_protegida_zona_amortecimento.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "62_mov_massa_e_inundacao": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/62_mov_massa_e_inundacao.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "101_rmsp": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/101_rmsp.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "apps": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/apps.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "apps_hidrografia": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/apps_hidrografia.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "apps_nascentes": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/apps_nascentes.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "áreas contaminadas e reabilitadas na ugrhi 6 - ano 2020": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/áreas contaminadas e reabilitadas na ugrhi 6 - ano 2020.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "comite_alto_tiete": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/comite_alto_tiete.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "municípios da região metropolitana de são paulo": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/municípios da região metropolitana de são paulo.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "municipios ugrhi 6": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/municipios ugrhi 6.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    },
+
+    "reservatórios_rmsp": {
+      "url": "https://github.com/open-geodata/sp_bh_at/raw/refs/heads/main/data/output/geo/01_apreservatórios_rmsprm.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_at"
+    }
+  }
+}

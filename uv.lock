@@ -1996,6 +1996,7 @@ dependencies = [
     { name = "pandas" },
     { name = "pooch" },
     { name = "py7zr" },
+    { name = "rarfile" },
     { name = "selenium" },
     { name = "sicar" },
     { name = "sidrapy" },
@@ -2025,6 +2026,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.3.0" },
     { name = "pooch", specifier = ">=1.8.2" },
     { name = "py7zr", specifier = ">=1.0.0" },
+    { name = "rarfile", specifier = ">=4.2" },
     { name = "selenium", specifier = ">=4.33.0" },
     { name = "sicar", git = "https://github.com/urbanogilson/SICAR" },
     { name = "sidrapy", specifier = ">=0.1.4" },
@@ -2863,6 +2865,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ad/b7/de2b42dd96dfdb1c0feb5f43d53db2d3a060607f878da7576f35dff68789/pyzstd-0.17.0-pp311-pypy311_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:da65158c877eac78dcc108861d607c02fb3703195c3a177f2687e0bcdfd519d0", size = 329417, upload_time = "2025-05-10T14:14:37.487Z" },
     { url = "https://files.pythonhosted.org/packages/52/65/d4e8196e068e6b430499fb2a5092380eb2cb7eecf459b9d4316cff7ecf6c/pyzstd-0.17.0-pp311-pypy311_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:226ca0430e2357abae1ade802585231a2959b010ec9865600e416652121ba80b", size = 349448, upload_time = "2025-05-10T14:14:38.797Z" },
     { url = "https://files.pythonhosted.org/packages/9e/15/b5ed5ad8c8d2d80c5f5d51e6c61b2cc05f93aaf171164f67ccc7ade815cd/pyzstd-0.17.0-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:e3a19e8521c145a0e2cd87ca464bf83604000c5454f7e0746092834fd7de84d1", size = 241668, upload_time = "2025-05-10T14:14:40.18Z" },
+]
+
+[[package]]
+name = "rarfile"
+version = "4.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/26/3f/3118a797444e7e30e784921c4bfafb6500fb288a0c84cb8c32ed15853c16/rarfile-4.2.tar.gz", hash = "sha256:8e1c8e72d0845ad2b32a47ab11a719bc2e41165ec101fd4d3fe9e92aa3f469ef", size = 153476, upload_time = "2024-04-03T17:10:53.798Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/62/fc/ab37559419ca36dd8dd317c3a98395ed4dcee2beeb28bf6059b972906727/rarfile-4.2-py3-none-any.whl", hash = "sha256:8757e1e3757e32962e229cab2432efc1f15f210823cc96ccba0f6a39d17370c9", size = 29052, upload_time = "2024-04-03T17:10:52.632Z" },
 ]
 
 [[package]]

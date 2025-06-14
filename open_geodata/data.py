@@ -24,6 +24,15 @@ class DB:
         self.project = project
         self.cache = None
 
+        db_path = Path(__file__).parent / 'db'
+        list_dbs = list(db_path.rglob('*.json'))
+        list_dbs = [x.stem for x in list_dbs]
+        if db not in list_dbs:
+            list_dbs_str = '\n'.join(list_dbs)
+            raise Exception(
+                f'O db deve ser um dos listados abaixo\n{list_dbs_str}'
+            )
+
         json_data = pkgutil.get_data(
             package=self.project, resource=f'db/{db}.json'
         )
@@ -134,7 +143,7 @@ class DB:
                 raise RuntimeError('.zip tem mais de um gpkg')
 
 
-def load_dataset(db, name) -> pd.DataFrame | gpd.GeoDataFrame:
+def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
     """
     Funções para carregar dados geoespaciais
 

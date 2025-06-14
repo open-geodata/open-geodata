@@ -1,10 +1,7 @@
 """
-
+sss
 
 """
-
-
-
 
 import folium
 
@@ -17,7 +14,11 @@ def google_hybrid(min_zoom, max_zoom):
     }
     return folium.TileLayer(
         tiles=row['link'],
-        attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
+        attr=(
+            '<a href="{}" target="blank">{}</a>'.format(
+                row['attribution'], row['name']
+            )
+        ),
         name=row['name'],
         min_zoom=min_zoom,
         max_zoom=max_zoom,
@@ -36,7 +37,11 @@ def google_satellite(min_zoom, max_zoom):
     }
     return folium.TileLayer(
         tiles=row['link'],
-        attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
+        attr=(
+            '<a href="{}" target="blank">{}</a>'.format(
+                row['attribution'], row['name']
+            )
+        ),
         name=row['name'],
         min_zoom=min_zoom,
         max_zoom=max_zoom,
@@ -55,7 +60,11 @@ def google_terrain(min_zoom, max_zoom):
     }
     return folium.TileLayer(
         tiles=row['link'],
-        attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
+        attr=(
+            '<a href="{}" target="blank">{}</a>'.format(
+                row['attribution'], row['name']
+            )
+        ),
         name=row['name'],
         min_zoom=min_zoom,
         max_zoom=max_zoom,
@@ -74,7 +83,11 @@ def google_streets(min_zoom, max_zoom):
     }
     return folium.TileLayer(
         tiles=row['link'],
-        attr=('<a href="{}" target="blank">{}</a>'.format(row['attribution'], row['name'])),
+        attr=(
+            '<a href="{}" target="blank">{}</a>'.format(
+                row['attribution'], row['name']
+            )
+        ),
         name=row['name'],
         min_zoom=min_zoom,
         max_zoom=max_zoom,

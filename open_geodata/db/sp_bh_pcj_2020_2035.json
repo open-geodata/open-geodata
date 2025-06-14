@@ -1,0 +1,199 @@
+{
+  "geo": {
+    "área de recarga - poligonos": {
+      "url": "hhttps://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/%C3%A1rea%20de%20recarga%20-%20poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "áreas de contribuição - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/%C3%A1reas%20de%20contribui%C3%A7%C3%A3o%20-%20poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "barragens previstas - pontos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/barragens previstas - pontos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "bioma - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/bioma - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "caracterização vegetação ibge zonas - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/caracterização vegetação ibge zonas - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "domínio morfoestrutural - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/domínio morfoestrutural - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "geologia - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/geologia - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "hidrografia principal - linhas": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/hidrografia principal - linhas.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "hidrografias secundárias - linhas": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/hidrografias secundárias - linhas.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "limite da bacia pcj - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/limite da bacia pcj - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "limite de sub-bacias - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/limite de sub-bacias - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "limite estadual - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/limite estadual - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "municipal - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/municipal - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "municipal de interesse regional - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/municipal de interesse regional - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "nascentes - pontos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/nascentes - pontos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "outorgas daee - pontos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/outorgas daee - pontos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "pedologia - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/pedologia - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "priorização conservação recuperação restrição - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/priorização conservação recuperação restrição - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "região geomorfológica - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/região geomorfológica - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "regional - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/regional - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "regional de grande porte - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/regional de grande porte - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "represas principais - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/represas principais - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "represas secundárias - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/represas secundárias - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "rio tietê - linhas": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/rio tietê - linhas.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "rm piracicaba - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/rm piracicaba - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "suscetibilidade à erosão - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/suscetibilidade à erosão - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "unidade geomorfológica - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/unidade geomorfológica - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    },
+
+    "uso da terra - poligonos": {
+      "url": "https://github.com/open-geodata/sp_bh_pcj-2020-2035/raw/refs/heads/main/data/output/geo/uso da terra - poligonos.7z",
+      "hash": null,
+      "description": "Alguma coisa que não eu lembro",
+      "details": "https://github.com/open-geodata/sp_bh_pcj-2020-2035"
+    }
+  }
+}

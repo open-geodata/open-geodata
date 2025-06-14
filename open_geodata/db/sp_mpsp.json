@@ -1,0 +1,52 @@
+{
+  "div_admin": {
+    "sp_mpsp": {
+      "url": "https://github.com/open-geodata/sp_mpsp_divadmin/raw/refs/heads/main/data/output/geo/sp_mpsp.7z",
+      "hash": null,
+      "description": "",
+      "details": "https://github.com/open-geodata/sp_mpsp_divadmin"
+    },
+
+    "sp_mpsp_ar": {
+      "url": "https://github.com/open-geodata/sp_mpsp_divadmin/raw/refs/heads/main/data/output/geo/sp_mpsp_ar.7z",
+      "hash": null,
+      "description": "",
+      "details": "https://github.com/open-geodata/sp_mpsp_divadmin"
+    },
+
+    "sp_mpsp_gaeco": {
+      "url": "https://github.com/open-geodata/sp_mpsp_divadmin/raw/refs/heads/main/data/output/geo/sp_mpsp_gaeco.7z",
+      "hash": null,
+      "description": "",
+      "details": "https://github.com/open-geodata/sp_mpsp_divadmin"
+    },
+
+    "sp_mpsp_gaema": {
+      "url": "https://github.com/open-geodata/sp_mpsp_divadmin/raw/refs/heads/main/data/output/geo/sp_mpsp_gaema.7z",
+      "hash": null,
+      "description": "",
+      "details": "https://github.com/open-geodata/sp_mpsp_divadmin"
+    },
+
+    "sp_mpsp_macrorregioes": {
+      "url": "https://github.com/open-geodata/sp_mpsp_divadmin/raw/refs/heads/main/data/output/geo/sp_mpsp_macrorregioes.7z",
+      "hash": null,
+      "description": "",
+      "details": "https://github.com/open-geodata/sp_mpsp_divadmin"
+    },
+
+    "sp_mpsp_pjreg": {
+      "url": "https://github.com/open-geodata/sp_mpsp_divadmin/raw/refs/heads/main/data/output/geo/sp_mpsp_pjreg.7z",
+      "hash": null,
+      "description": "",
+      "details": "https://github.com/open-geodata/sp_mpsp_divadmin"
+    },
+
+    "sp_mpsp_rp": {
+      "url": "https://github.com/open-geodata/sp_mpsp_divadmin/raw/refs/heads/main/data/output/geo/sp_mpsp_rp.7z",
+      "hash": null,
+      "description": "",
+      "details": "https://github.com/open-geodata/sp_mpsp_divadmin"
+    }
+  }
+}

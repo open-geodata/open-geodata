@@ -25,6 +25,7 @@ nav:
       - BR.ANM: pages/dados/br/amn.md
       - BR.ANM (exemplos class): pages/dados/br/amn_class.ipynb
       - BR.ANM (exemplos pooch): pages/dados/br/amn_pooch.ipynb
+      - BR.ANEEL: pages/dados/br/aneel.md
       - BR.BDGEx: pages/dados/br/bdgex.md
       - BR.SNISB: pages/dados/br/snisb.md
       - BR.DNIT: pages/dados/br/dnit.md
@@ -32,10 +33,16 @@ nav:
       - BR.MapBiomas: pages/dados/br/map_biomas.ipynb
       - BR.SFB (exemplos): pages/dados/br/sfb.ipynb
   - Dados (São Paulo):
+      - SP.CATI: pages/dados/sp/cati.md
+      - SP.CATI - Urbanizado (2016): pages/dados/sp/cati.ipynb
       - SP.CETESB: pages/dados/sp/cetesb.md
       - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
+      - SP.MPSP: pages/dados/sp/mpsp.ipynb
   - Outros:
       - APA Corumbataí: pages/dados/outros/sp_ff_apa_corumbatai.ipynb
+      - Piracicaba: pages/dados/outros/sp_piracicaba.ipynb
+      - Plano das Bacias PCJ 2020-2035: pages/dados/outros/sp_bh_pcj_2020_2035.ipynb
+      - Plano da Bacia Hidrográfica do Alto Tietê (2018): pages/dados/outros/sp_bh_at.ipynb
       - Outros Dados: pages/dados/outros_dados.md
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
